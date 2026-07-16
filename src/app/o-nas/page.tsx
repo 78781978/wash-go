@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { StatCounter } from "@/components/StatCounter";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
 import { stats, values } from "@/lib/site-config";
+import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
   title: "O nas",
@@ -40,11 +41,23 @@ export default function ONasPage() {
       <section className="bg-white py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
           <MotionReveal>
-            <p className="text-xs font-semibold uppercase tracking-wider text-blue">Nasza historia</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-navy text-balance">
-              Zaczęliśmy od jednego stanowiska. Zostaliśmy, bo pokochaliśmy detale.
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-foreground/60">
+            <div className="flex items-center gap-5">
+              {/* eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually */}
+              <img
+                src={`${basePath}/logo-badge.png`}
+                alt="Wash & Go"
+                width={112}
+                height={112}
+                className="h-24 w-24 shrink-0 rounded-full shadow-lg shadow-navy/20 sm:h-28 sm:w-28"
+              />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue">Nasza historia</p>
+                <h2 className="mt-2 font-display text-2xl font-semibold leading-tight text-navy text-balance sm:text-3xl">
+                  Zaczęliśmy od jednego stanowiska
+                </h2>
+              </div>
+            </div>
+            <p className="mt-6 text-base leading-relaxed text-foreground/60">
               Wash&amp;Go powstało z przekonania, że mycie samochodu może — i powinno — wyglądać jak
               usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
               mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut oka.

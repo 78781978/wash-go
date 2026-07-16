@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
-
-const repoName = "wash-go";
+import { basePath } from "./src/lib/base-path";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath,
+  assetPrefix: `${basePath}/`,
   trailingSlash: true,
   images: {
     unoptimized: true,
