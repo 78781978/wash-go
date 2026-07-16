@@ -1,0 +1,383 @@
+export const site = {
+  name: "Wash & Go",
+  claim: "Ręczna myjnia samochodowa premium",
+  city: "Kraków",
+  address: "ul. Zielonych Wzgórz 12, 31-559 Kraków",
+  phone: "+48 12 345 67 89",
+  phoneHref: "tel:+48123456789",
+  email: "kontakt@washandgo.pl",
+  nip: "PL 675 000 12 34",
+  hoursWeekdays: "8:00 – 21:00",
+  hoursWeekend: "9:00 – 20:00",
+  mapsUrl: "https://maps.google.com/?q=Wash%20%26%20Go%20Krak%C3%B3w",
+  social: {
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com",
+  },
+};
+
+export type NavLink = { href: string; label: string };
+
+export const navLinks: NavLink[] = [
+  { href: "/", label: "Strona główna" },
+  { href: "/uslugi", label: "Usługi" },
+  { href: "/cennik", label: "Cennik" },
+  { href: "/oferta-dla-firm", label: "Oferta dla firm" },
+  { href: "/nasze-prace", label: "Nasze prace" },
+  { href: "/o-nas", label: "O nas" },
+  { href: "/kontakt", label: "Kontakt" },
+];
+
+export const footerLegalLinks: NavLink[] = [
+  { href: "/polityka-prywatnosci", label: "Polityka prywatności i cookies" },
+  { href: "/wymagane-zgody", label: "Wymagane zgody" },
+];
+
+export type Service = {
+  slug: string;
+  title: string;
+  short: string;
+  description: string;
+  bullets: string[];
+  duration: string;
+  icon: "spray" | "foam" | "sparkle" | "interior" | "shield" | "wind" | "drop" | "polish";
+};
+
+export const serviceCategories: {
+  title: string;
+  intro: string;
+  services: Service[];
+}[] = [
+  {
+    title: "Mycie zewnętrzne",
+    intro: "Bezdotykowe i ręczne mycie karoserii z aktywną pianą i technologią chroniącą lakier.",
+    services: [
+      {
+        slug: "mycie-bezdotykowe",
+        title: "Mycie bezdotykowe",
+        short: "Delikatne mycie ciśnieniowe bez ryzyka rys",
+        description:
+          "Wstępne płukanie i mycie wysokociśnieniowe bez kontaktu z lakierem – idealne do usuwania grubego brudu przed myciem ręcznym.",
+        bullets: ["Płukanie wstępne pod ciśnieniem", "Neutralizacja owadów i smoły", "Zero ryzyka mikrorys"],
+        duration: "10–15 min",
+        icon: "spray",
+      },
+      {
+        slug: "aktywna-piana",
+        title: "Aktywna piana",
+        short: "Gęsta piana o neutralnym pH",
+        description:
+          "Gruba warstwa aktywnej piany rozpuszcza brud i zabezpiecza lakier na czas mycia ręcznego, minimalizując tarcie.",
+        bullets: ["pH neutralne dla powłok i folii PPF", "Głębokie oczyszczenie mikroszczelin", "Przyjemny, świeży zapach"],
+        duration: "5–10 min",
+        icon: "foam",
+      },
+      {
+        slug: "mycie-reczne",
+        title: "Mycie ręczne dwuwiadrowe",
+        short: "Metoda two-bucket, miękkie rękawice",
+        description:
+          "Mycie ręczne rękawicą z mikrofibry metodą dwóch wiader, felgi i progi czyszczone osobnymi środkami.",
+        bullets: ["Osobne środki do felg i progów", "Metoda two-bucket ograniczająca rysy", "Czyszczenie wnęk kół"],
+        duration: "20–25 min",
+        icon: "drop",
+      },
+      {
+        slug: "nablyszczanie-osmoza",
+        title: "Nabłyszczanie i osmoza",
+        short: "Płukanie wodą demineralizowaną",
+        description:
+          "Ostatnie płukanie wodą po osmozie odwróconej – bez kamienia i zacieków, oraz nabłyszczacz na lakier, gumy i plastiki zewnętrzne.",
+        bullets: ["Woda demineralizowana – brak zacieków", "Nabłyszczacz lakieru i plastików", "Suszenie ręcznikiem z mikrofibry"],
+        duration: "10 min",
+        icon: "sparkle",
+      },
+    ],
+  },
+  {
+    title: "Wnętrze i detailing",
+    intro: "Pełna pielęgnacja kabiny pasażerskiej oraz zabiegi detailingowe podnoszące wartość auta.",
+    services: [
+      {
+        slug: "odkurzanie-tapicerki",
+        title: "Odkurzanie i czyszczenie tapicerki",
+        short: "Odkurzanie, pranie tapicerki, mata podłogowa",
+        description:
+          "Dokładne odkurzenie całej kabiny, czyszczenie tapicerki materiałowej lub skórzanej oraz mat podłogowych.",
+        bullets: ["Odkurzanie foteli, bagażnika i szczelin", "Pranie tapicerki ekstrakcyjne", "Pielęgnacja skóry"],
+        duration: "30–45 min",
+        icon: "interior",
+      },
+      {
+        slug: "czyszczenie-deski-plastikow",
+        title: "Czyszczenie deski rozdzielczej i plastików",
+        short: "Odświeżenie plastików i konsoli",
+        description:
+          "Czyszczenie i pielęgnacja deski rozdzielczej, konsoli środkowej, listew i plastikowych elementów wnętrza.",
+        bullets: ["Dezynfekcja powierzchni dotykowych", "Matowa pielęgnacja bez efektu plastiku", "Czyszczenie ekranów i szyb wewnętrznych"],
+        duration: "15–20 min",
+        icon: "shield",
+      },
+      {
+        slug: "ozonowanie",
+        title: "Ozonowanie i neutralizacja zapachów",
+        short: "Usuwanie nieprzyjemnych zapachów",
+        description:
+          "Zabieg ozonowania eliminujący bakterie, roztocza i nieprzyjemne zapachy (dym, zwierzęta, wilgoć) z wnętrza i klimatyzacji.",
+        bullets: ["Dezynfekcja układu wentylacji", "Neutralizacja zapachu dymu i zwierząt", "Bezpieczne dla tapicerki i elektroniki"],
+        duration: "20 min",
+        icon: "wind",
+      },
+      {
+        slug: "polerowanie-lakieru",
+        title: "Polerowanie i korekta lakieru",
+        short: "Usuwanie hologramów i rys",
+        description:
+          "Jedno- lub dwuetapowa korekta lakieru przywracająca głębię koloru i usuwająca drobne rysy oraz hologramy.",
+        bullets: ["Pomiar grubości lakieru przed zabiegiem", "Korekta jedno- lub dwuetapowa", "Zabezpieczenie woskiem na finiszu"],
+        duration: "od 2 godz.",
+        icon: "polish",
+      },
+    ],
+  },
+  {
+    title: "Ochrona i wykończenie",
+    intro: "Powłoki i zabezpieczenia, które utrzymują efekt mycia znacznie dłużej.",
+    services: [
+      {
+        slug: "powloka-ceramiczna",
+        title: "Powłoka ceramiczna",
+        short: "Ochrona lakieru do 12 miesięcy",
+        description:
+          "Nakładana ręcznie powłoka ceramiczna zwiększająca połysk, ułatwiająca mycie i chroniąca przed czynnikami atmosferycznymi.",
+        bullets: ["Efekt hydrofobowy", "Ochrona UV i chemiczna", "Trwałość do 12 miesięcy"],
+        duration: "od 1,5 godz.",
+        icon: "shield",
+      },
+      {
+        slug: "wosk-ochronny",
+        title: "Wosk ochronny na gorąco",
+        short: "Głęboki połysk i ochrona na 4–6 tyg.",
+        description:
+          "Wosk nakładany na gorąco tuż po myciu – wnika w mikropory lakieru, wzmacniając połysk i odporność na warunki drogowe.",
+        bullets: ["Głęboki, mokry połysk", "Dodatkowa ochrona na 4–6 tygodni", "Ułatwia kolejne mycie"],
+        duration: "10 min",
+        icon: "sparkle",
+      },
+      {
+        slug: "czyszczenie-felg",
+        title: "Czyszczenie i pielęgnacja felg",
+        short: "Dedykowane środki kwasowe/bezkwasowe",
+        description:
+          "Głębokie czyszczenie felg z osadu hamulcowego oraz nałożenie powłoki ułatwiającej utrzymanie czystości.",
+        bullets: ["Usuwanie osadu klocków hamulcowych", "Czyszczenie wnęk i śrub", "Powłoka ochronna na felgi"],
+        duration: "15 min",
+        icon: "spray",
+      },
+      {
+        slug: "czarnienie-plastikow",
+        title: "Czarnienie plastików zewnętrznych",
+        short: "Odświeżenie zderzaków i listew",
+        description:
+          "Przywrócenie głębokiej czerni wypłowiałym plastikowym elementom nadwozia – zderzakom, listwom i progom.",
+        bullets: ["Efekt matowy, bez tłustego połysku", "Ochrona przed promieniowaniem UV", "Trwałość do kilku tygodni"],
+        duration: "15 min",
+        icon: "drop",
+      },
+    ],
+  },
+];
+
+export type PricingTier = {
+  name: string;
+  tagline: string;
+  featured?: boolean;
+  prices: { label: string; price: string }[];
+  features: string[];
+};
+
+export const pricingTiers: PricingTier[] = [
+  {
+    name: "Express",
+    tagline: "Szybkie odświeżenie na już",
+    prices: [
+      { label: "Auto osobowe", price: "59 zł" },
+      { label: "SUV / Kombi", price: "69 zł" },
+      { label: "Van / Bus", price: "89 zł" },
+    ],
+    features: [
+      "Mycie bezdotykowe wstępne",
+      "Aktywna piana",
+      "Mycie ręczne two-bucket",
+      "Płukanie osmozą",
+      "Suszenie ręcznikiem z mikrofibry",
+      "Czyszczenie felg",
+    ],
+  },
+  {
+    name: "Premium",
+    tagline: "Najczęściej wybierany pakiet",
+    featured: true,
+    prices: [
+      { label: "Auto osobowe", price: "129 zł" },
+      { label: "SUV / Kombi", price: "149 zł" },
+      { label: "Van / Bus", price: "179 zł" },
+    ],
+    features: [
+      "Wszystko z pakietu Express",
+      "Odkurzanie całego wnętrza",
+      "Czyszczenie tapicerki i plastików",
+      "Nabłyszczanie opon i plastików",
+      "Wosk ochronny na gorąco",
+      "Czyszczenie szyb wewnątrz i na zewnątrz",
+    ],
+  },
+  {
+    name: "Detailing",
+    tagline: "Pełna regeneracja auta",
+    prices: [
+      { label: "Auto osobowe", price: "od 349 zł" },
+      { label: "SUV / Kombi", price: "od 399 zł" },
+      { label: "Van / Bus", price: "od 449 zł" },
+    ],
+    features: [
+      "Wszystko z pakietu Premium",
+      "Pranie tapicerki ekstrakcyjne",
+      "Ozonowanie i dezynfekcja",
+      "Jednoetapowa korekta lakieru",
+      "Powłoka ceramiczna 3 miesiące",
+      "Czarnienie plastików zewnętrznych",
+    ],
+  },
+];
+
+export const addOns: { name: string; price: string }[] = [
+  { name: "Powłoka ceramiczna 12 mies.", price: "od 799 zł" },
+  { name: "Ozonowanie wnętrza", price: "79 zł" },
+  { name: "Pranie tapicerki (komplet)", price: "od 249 zł" },
+  { name: "Polerowanie reflektorów", price: "od 99 zł" },
+  { name: "Dezynfekcja klimatyzacji", price: "69 zł" },
+  { name: "Czarnienie opon", price: "19 zł" },
+  { name: "Pranie sufitu", price: "od 129 zł" },
+  { name: "Woskowanie na gorąco", price: "39 zł" },
+];
+
+export type FleetPlan = {
+  name: string;
+  desc: string;
+  features: string[];
+};
+
+export const fleetPlans: FleetPlan[] = [
+  {
+    name: "Flota Start",
+    desc: "Dla małych flot do 5 pojazdów",
+    features: [
+      "Rabat 10% na wszystkie usługi",
+      "Faktura zbiorcza raz w miesiącu",
+      "Elastyczne terminy bez kolejki",
+      "Jeden opiekun klienta",
+    ],
+  },
+  {
+    name: "Flota Business",
+    desc: "Dla firm z 6–20 pojazdami",
+    features: [
+      "Rabat 18% na wszystkie usługi",
+      "Dedykowany harmonogram mycia",
+      "Mycie poza godzinami szczytu",
+      "Raport miesięczny i limit budżetu",
+    ],
+  },
+  {
+    name: "Flota Enterprise",
+    desc: "Dla flot powyżej 20 pojazdów i firm leasingowych",
+    features: [
+      "Indywidualny rabat i cennik",
+      "Możliwość mycia na terenie klienta",
+      "Umowa roczna i priorytetowa obsługa",
+      "Opiekun handlowy i rozliczenia B2B",
+    ],
+  },
+];
+
+export const stats = [
+  { value: 12000, suffix: "+", label: "umytych samochodów rocznie" },
+  { value: 4.9, suffix: "/5", label: "średnia ocena klientów", decimals: 1 },
+  { value: 8, suffix: " lat", label: "doświadczenia na rynku" },
+  { value: 100, suffix: "%", label: "wody z odzysku i osmozy" },
+];
+
+export const processSteps = [
+  { title: "Umów wizytę", desc: "Zadzwoń, napisz lub po prostu wjedź – bez wcześniejszej rezerwacji." },
+  { title: "Wybierz pakiet", desc: "Doradzimy zakres mycia dopasowany do stanu i typu Twojego auta." },
+  { title: "Odbierz kawę", desc: "Poczekaj w komfortowej strefie klienta z kawą i Wi-Fi." },
+  { title: "Odbierz lśniące auto", desc: "Kontrola jakości i krótki przegląd wykonanych usług przed wydaniem kluczyków." },
+];
+
+export type Testimonial = { name: string; car: string; text: string; rating: number };
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Michał K.",
+    car: "Audi A6",
+    text: "Poziom jak w salonie – dbałość o detale w wnękach kół i progach robi wrażenie. Wracam co dwa tygodnie.",
+    rating: 5,
+  },
+  {
+    name: "Agnieszka W.",
+    car: "Škoda Kodiaq",
+    text: "Powłoka ceramiczna trzyma świetnie, auto brudzi się wyraźnie wolniej. Obsługa bardzo rzeczowa i miła.",
+    rating: 5,
+  },
+  {
+    name: "Firma TransLog Sp. z o.o.",
+    car: "Flota 14 pojazdów",
+    text: "Współpracujemy od dwóch lat – faktura zbiorcza, elastyczne godziny i zero problemów z rozliczeniami.",
+    rating: 5,
+  },
+  {
+    name: "Tomasz P.",
+    car: "BMW X5",
+    text: "Ozonowanie wnętrza uratowało mi auto po transporcie psa – zapach zniknął całkowicie.",
+    rating: 5,
+  },
+];
+
+export const galleryItems = [
+  { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const },
+  { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const },
+  { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const },
+  { title: "Mycie floty – TransLog Sp. z o.o.", category: "Flota", tone: "navy" as const },
+  { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const },
+  { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const },
+  { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const },
+  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const },
+  { title: "Wosk na gorąco – Ford Mustang", category: "Wykończenie", tone: "blue" as const },
+];
+
+export const values = [
+  { title: "Precyzja", desc: "Każdy etap mycia wykonujemy ręcznie, z dbałością o detale, których nie widać na pierwszy rzut oka." },
+  { title: "Bezpieczne środki", desc: "Kosmetyki samochodowe pH neutralne, bezpieczne dla lakieru, folii PPF i powłok ceramicznych." },
+  { title: "Transparentność", desc: "Jasny cennik bez ukrytych opłat – wiesz dokładnie, za co płacisz." },
+  { title: "Ekologia", desc: "Woda z odzysku i systemu osmozy, biodegradowalna chemia, zamknięty obieg ścieków." },
+];
+
+export const faqs = [
+  {
+    q: "Czy trzeba się wcześniej umawiać?",
+    a: "Nie, obsługujemy klientów również bez rezerwacji. Przy dużym natężeniu ruchu polecamy jednak wcześniejszy kontakt telefoniczny lub rezerwację na wybraną godzinę.",
+  },
+  {
+    q: "Jak długo trwa mycie ręczne?",
+    a: "Pakiet Express to około 20–25 minut, pakiet Premium 45–60 minut, a pełny detailing z korektą lakieru może zająć od 2 do kilku godzin w zależności od zakresu.",
+  },
+  {
+    q: "Czy oferujecie strefę oczekiwania?",
+    a: "Tak, w komfortowej strefie klienta czeka kawa, Wi-Fi oraz miejsce do pracy zdalnej na czas mycia lub detailingu.",
+  },
+  {
+    q: "Czy wystawiacie faktury VAT?",
+    a: "Tak, każda usługa może zostać rozliczona fakturą VAT, a klientom flotowym oferujemy rozliczenia zbiorcze w cyklu miesięcznym.",
+  },
+];
