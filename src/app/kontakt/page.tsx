@@ -75,6 +75,18 @@ export default function KontaktPage() {
               <ContactForm />
             </MotionReveal>
           </div>
+
+          <MotionReveal delay={0.2} className="mt-8">
+            <div className="overflow-hidden rounded-2xl border border-line">
+              <iframe
+                title="Mapa dojazdu — Wash & Go"
+                src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
+                className="h-[420px] w-full grayscale-[15%]"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </MotionReveal>
         </div>
       </section>
     </>
