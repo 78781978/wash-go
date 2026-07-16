@@ -17,16 +17,18 @@ export function LogoMark({ className = "" }: { className?: string }) {
 export function Logo({
   className = "",
   markClassName = "h-10 w-10",
+  textClassName = "text-xl",
   dark = false,
 }: {
   className?: string;
   markClassName?: string;
+  textClassName?: string;
   dark?: boolean;
 }) {
   return (
     <Link href="/" className={`group flex items-center gap-3 ${className}`}>
       <LogoMark className={`${markClassName} shrink-0 transition-transform duration-300 group-hover:rotate-6`} />
-      <span className={`font-display text-xl font-semibold tracking-tight ${dark ? "text-white" : "text-navy"}`}>
+      <span className={`font-display font-semibold tracking-tight ${textClassName} ${dark ? "text-white" : "text-navy"}`}>
         wash<span className="text-blue-2">&amp;</span>go
       </span>
     </Link>

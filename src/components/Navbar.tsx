@@ -31,17 +31,17 @@ export function Navbar() {
         scrolled ? "shadow-[0_4px_30px_rgba(10,18,48,0.25)]" : ""
       } border-b border-white/10`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
-        <Logo dark markClassName="h-9 w-9" />
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 sm:py-6">
+        <Logo dark markClassName="h-[108px] w-[108px]" textClassName="text-2xl sm:text-3xl" />
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden shrink-0 items-center xl:gap-1 lg:flex">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                className={`relative whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium transition-colors xl:px-4 ${
                   active ? "text-white" : "text-white/70 hover:text-white"
                 }`}
               >
@@ -58,17 +58,17 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <a
             href={site.phoneHref}
-            className="flex items-center gap-2 text-sm font-medium text-white/85 hover:text-white"
+            className="hidden items-center gap-2 whitespace-nowrap text-sm font-medium text-white/85 hover:text-white xl:flex"
           >
             <Phone className="h-4 w-4 text-blue-2" />
             {site.phone}
           </a>
           <Link
             href="/kontakt"
-            className="rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
+            className="whitespace-nowrap rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
           >
             Umów wizytę
           </Link>

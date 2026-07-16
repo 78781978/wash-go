@@ -27,7 +27,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div>
-            <Logo dark markClassName="h-10 w-10" />
+            <Logo dark markClassName="h-20 w-20" textClassName="text-2xl" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               Premium ręczna myjnia samochodowa. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.
             </p>
