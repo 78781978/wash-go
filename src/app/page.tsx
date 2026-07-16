@@ -3,6 +3,7 @@ import { ArrowRight, ShieldCheck, SprayCan, Sparkles, Droplets, Star, Building2 
 import { MotionReveal, MotionStagger, MotionItem } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { HeroVisual } from "@/components/HeroVisual";
+import { FoamWash } from "@/components/FoamWash";
 import { Marquee } from "@/components/Marquee";
 import { StatCounter } from "@/components/StatCounter";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -44,7 +45,7 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-navy">
-        <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
+        <FoamWash />
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-blue/25 blur-3xl animate-float-slow" />
         <div className="pointer-events-none absolute -left-24 top-1/2 h-80 w-80 rounded-full bg-blue-2/15 blur-3xl animate-float-slower" />
 
@@ -63,7 +64,10 @@ export default function Home() {
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
                 Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali — bez pośpiechu, bez rys,
-                z kosmetykami premium. Efekt, który utrzymuje się tygodniami.
+                z kosmetykami premium.
+              </p>
+              <p className="mt-3 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
+                Efekt, który utrzymuje się tygodniami.
               </p>
             </MotionReveal>
             <MotionReveal delay={0.24} className="mt-9 flex flex-wrap items-center gap-4">

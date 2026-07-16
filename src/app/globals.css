@@ -125,3 +125,54 @@ body {
 .text-balance {
   text-wrap: balance;
 }
+
+@keyframes foam-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.5);
+  }
+  14% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1);
+  }
+  52% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1);
+  }
+  66% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.85);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.85);
+  }
+}
+
+.animate-foam {
+  animation: foam-rise 9s ease-in-out infinite;
+}
+
+@keyframes water-sweep {
+  0%,
+  40% {
+    transform: translateX(-140%) skewX(-10deg);
+    opacity: 0;
+  }
+  47% {
+    opacity: 1;
+  }
+  63% {
+    transform: translateX(140%) skewX(-10deg);
+    opacity: 1;
+  }
+  70%,
+  100% {
+    transform: translateX(140%) skewX(-10deg);
+    opacity: 0;
+  }
+}
+
+.animate-water-sweep {
+  animation: water-sweep 9s ease-in-out infinite;
+}

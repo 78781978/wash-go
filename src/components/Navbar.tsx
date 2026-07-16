@@ -31,32 +31,13 @@ export function Navbar() {
         scrolled ? "shadow-[0_4px_30px_rgba(10,18,48,0.25)]" : ""
       } border-b border-white/10`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 sm:py-6">
-        <Logo dark markClassName="h-[108px] w-[108px]" textClassName="text-2xl sm:text-3xl" />
-
-        <nav className="hidden shrink-0 items-center xl:gap-1 lg:flex">
-          {navLinks.map((link) => {
-            const active = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`relative whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium transition-colors xl:px-4 ${
-                  active ? "text-white" : "text-white/70 hover:text-white"
-                }`}
-              >
-                {active && (
-                  <motion.span
-                    layoutId="nav-pill"
-                    className="absolute inset-0 rounded-full bg-white/10"
-                    transition={{ type: "spring", stiffness: 400, damping: 32 }}
-                  />
-                )}
-                <span className="relative">{link.label}</span>
-              </Link>
-            );
-          })}
-        </nav>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+        <Logo
+          dark
+          markClassName="h-20 w-20 sm:h-32 sm:w-32 lg:h-[324px] lg:w-[324px]"
+          textClassName="text-2xl sm:text-3xl"
+          gapClassName="gap-2"
+        />
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <a
@@ -82,6 +63,32 @@ export function Navbar() {
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
+
+      <nav className="hidden border-t border-white/10 lg:block">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-1 px-5 py-2 sm:px-8">
+          {navLinks.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`relative whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  active ? "text-white" : "text-white/70 hover:text-white"
+                }`}
+              >
+                {active && (
+                  <motion.span
+                    layoutId="nav-pill"
+                    className="absolute inset-0 rounded-full bg-white/10"
+                    transition={{ type: "spring", stiffness: 400, damping: 32 }}
+                  />
+                )}
+                <span className="relative">{link.label}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
 
       <AnimatePresence>
         {open && (

@@ -18,18 +18,21 @@ export function Logo({
   className = "",
   markClassName = "h-10 w-10",
   textClassName = "text-xl",
+  gapClassName = "gap-3",
   dark = false,
 }: {
   className?: string;
   markClassName?: string;
   textClassName?: string;
+  gapClassName?: string;
   dark?: boolean;
 }) {
   return (
-    <Link href="/" className={`group flex items-center gap-3 ${className}`}>
+    <Link href="/" className={`group flex items-center ${gapClassName} ${className}`}>
       <LogoMark className={`${markClassName} shrink-0 transition-transform duration-300 group-hover:rotate-6`} />
-      <span className={`font-display font-semibold tracking-tight ${textClassName} ${dark ? "text-white" : "text-navy"}`}>
-        wash<span className="text-blue-2">&amp;</span>go
+      <span className={`font-display font-extrabold uppercase tracking-wide ${textClassName}`}>
+        <span className={dark ? "text-white" : "text-navy"}>wash&amp;</span>
+        <span className="text-blue-2">go</span>
       </span>
     </Link>
   );

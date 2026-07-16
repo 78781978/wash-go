@@ -59,16 +59,6 @@ export function HeroVisual() {
           ))}
         </div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, x: 16 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        className="absolute -right-6 -top-6 hidden rounded-2xl border border-line bg-white px-4 py-3 shadow-xl sm:block"
-      >
-        <p className="font-display text-lg font-bold text-navy">4.9/5</p>
-        <p className="text-[11px] text-foreground/50">ocena klientów</p>
-      </motion.div>
     </motion.div>
   );
 }
