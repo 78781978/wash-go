@@ -153,26 +153,23 @@ body {
   animation: foam-rise 9s ease-in-out infinite;
 }
 
-@keyframes water-sweep {
-  0%,
-  40% {
-    transform: translateX(-140%) skewX(-10deg);
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-40px);
     opacity: 0;
   }
-  47% {
-    opacity: 1;
+  12% {
+    opacity: 0.85;
   }
-  63% {
-    transform: translateX(140%) skewX(-10deg);
-    opacity: 1;
+  82% {
+    opacity: 0.85;
   }
-  70%,
   100% {
-    transform: translateX(140%) skewX(-10deg);
+    transform: translateY(420px);
     opacity: 0;
   }
 }
 
-.animate-water-sweep {
-  animation: water-sweep 9s ease-in-out infinite;
+.animate-rain {
+  animation: rain-fall linear infinite;
 }

@@ -34,8 +34,8 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         <Logo
           dark
-          markClassName="h-20 w-20 sm:h-32 sm:w-32 lg:h-[324px] lg:w-[324px]"
-          textClassName="text-2xl sm:text-3xl"
+          markClassName="h-10 w-10 sm:h-16 sm:w-16 lg:h-[162px] lg:w-[162px]"
+          textClassName="text-xl sm:text-2xl"
           gapClassName="gap-2"
         />
 

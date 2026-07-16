@@ -7,8 +7,8 @@ export function LogoMark({ className = "" }: { className?: string }) {
     <img
       src={`${basePath}/logo-mark.png`}
       alt="Wash & Go"
-      width={128}
-      height={128}
+      width={420}
+      height={420}
       className={`${className} rounded-full object-contain`}
     />
   );
