@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { MessageSquare, Mail, Megaphone, Cookie, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -69,9 +70,9 @@ export default function WymaganeZgodyPage() {
                 zrealizowania danej funkcji strony (np. odpowiedzi na formularz kontaktowy). Pozostałe zgody
                 są dobrowolne i nie wpływają na możliwość skorzystania z podstawowych usług Wash&amp;Go.
                 Szczegóły przetwarzania danych opisujemy w{" "}
-                <a href="/polityka-prywatnosci" className="font-medium text-blue underline underline-offset-2">
+                <Link href="/polityka-prywatnosci" className="font-medium text-blue underline underline-offset-2">
                   polityce prywatności i cookies
-                </a>
+                </Link>
                 .
               </p>
             </div>
