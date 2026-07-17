@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2016", text: "Otwarcie pierwszego stanowiska ręcznego mycia w Krakowie." },
+  { year: "2016", text: "Otwarcie pierwszego stanowiska ręcznego mycia w Goleniowie." },
   { year: "2019", text: "Rozbudowa hali o strefę detailingu i korekty lakieru." },
   { year: "2021", text: "Wdrożenie systemu osmozy i pełnego odzysku wody." },
   { year: "2023", text: "Uruchomienie oferty flotowej dla klientów biznesowych." },

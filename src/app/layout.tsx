@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     template: `%s — ${site.name}`,
   },
   description:
-    "Wash & Go to ręczna myjnia samochodowa premium w Krakowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
+    "Wash & Go to ręczna myjnia samochodowa premium w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
   keywords: [
     "myjnia ręczna",
     "myjnia samochodowa",
-    "detailing Kraków",
+    "detailing Goleniów",
     "powłoka ceramiczna",
     "mycie aut firmowych",
     "wash & go",
