@@ -2,14 +2,31 @@
 
 import { motion } from "framer-motion";
 import { Car, SprayCan, Droplets, Sparkles } from "lucide-react";
+import type { Locale } from "@/lib/i18n";
 
-const chips = [
-  { icon: SprayCan, label: "Mycie bezdotykowe" },
-  { icon: Droplets, label: "Aktywna piana" },
-  { icon: Sparkles, label: "Nabłyszczanie i osmoza" },
-];
+const copy = {
+  pl: {
+    station: "Stanowisko 01",
+    free: "Wolne teraz",
+    chips: [
+      { icon: SprayCan, label: "Mycie bezdotykowe" },
+      { icon: Droplets, label: "Aktywna piana" },
+      { icon: Sparkles, label: "Nabłyszczanie i osmoza" },
+    ],
+  },
+  en: {
+    station: "Bay 01",
+    free: "Free now",
+    chips: [
+      { icon: SprayCan, label: "Touchless pre-wash" },
+      { icon: Droplets, label: "Active foam" },
+      { icon: Sparkles, label: "Gloss finish & osmosis" },
+    ],
+  },
+};
 
-export function HeroVisual() {
+export function HeroVisual({ locale = "pl" }: { locale?: Locale }) {
+  const t = copy[locale];
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.94, y: 16 }}
@@ -24,11 +41,11 @@ export function HeroVisual() {
 
         <div className="relative flex items-center justify-between">
           <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white/70">
-            Stanowisko 01
+            {t.station}
           </span>
           <span className="flex items-center gap-1.5 text-[11px] font-medium text-emerald-300">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            Wolne teraz
+            {t.free}
           </span>
         </div>
 
@@ -48,7 +65,7 @@ export function HeroVisual() {
         </div>
 
         <div className="relative mt-10 grid grid-cols-3 gap-2.5">
-          {chips.map(({ icon: Icon, label }) => (
+          {t.chips.map(({ icon: Icon, label }) => (
             <div
               key={label}
               className="flex flex-col items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-2 py-3.5 text-center"

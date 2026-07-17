@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
 import { Logo } from "./Logo";
-import { footerLegalLinks, navLinks, site } from "@/lib/site-config";
+import { footerLegalLinks as footerLegalLinksPl, navLinks as navLinksPl, site } from "@/lib/site-config";
+import { footerLegalLinks as footerLegalLinksEn, navLinks as navLinksEn } from "@/lib/site-config.en";
+import { localeFromPathname } from "@/lib/i18n";
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
@@ -21,16 +26,43 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
+const copy = {
+  pl: {
+    tagline: "Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.",
+    nav: "Nawigacja",
+    legal: "Informacje prawne",
+    contact: "Kontakt",
+    hoursWeekday: "Pon–Pt",
+    hoursWeekend: "Sob–Nd",
+    rights: "Wszelkie prawa zastrzeżone.",
+    strapline: "Ręczna myjnia samochodowa premium",
+  },
+  en: {
+    tagline: "A hand car wash in Goleniów. We take care of your car with the precision you'd expect from a showroom.",
+    nav: "Navigation",
+    legal: "Legal",
+    contact: "Contact",
+    hoursWeekday: "Mon–Fri",
+    hoursWeekend: "Sat–Sun",
+    rights: "All rights reserved.",
+    strapline: "Premium hand car wash",
+  },
+};
+
 export function Footer() {
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
+  const navLinks = locale === "en" ? navLinksEn : navLinksPl;
+  const footerLegalLinks = locale === "en" ? footerLegalLinksEn : footerLegalLinksPl;
+  const t = copy[locale];
+
   return (
     <footer className="bg-ink text-white">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div>
             <Logo dark markClassName="h-20 w-20" textClassName="text-2xl" />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-              Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.
-            </p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">{t.tagline}</p>
             <div className="mt-5 flex gap-3">
               <a
                 href={site.social.facebook}
@@ -55,7 +87,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">
-              Nawigacja
+              {t.nav}
             </h3>
             <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
@@ -70,7 +102,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">
-              Informacje prawne
+              {t.legal}
             </h3>
             <ul className="mt-4 space-y-2.5">
               {footerLegalLinks.map((link) => (
@@ -86,7 +118,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white/50">
-              Kontakt
+              {t.contact}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2.5">
@@ -103,15 +135,15 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-blue-2" />
-                <span>Pon–Pt {site.hoursWeekdays}<br />Sob–Nd {site.hoursWeekend}</span>
+                <span>{t.hoursWeekday} {site.hoursWeekdays}<br />{t.hoursWeekend} {site.hoursWeekend}</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/45 sm:flex-row">
-          <p>© {new Date().getFullYear()} {site.name}. Wszelkie prawa zastrzeżone.</p>
-          <p>Ręczna myjnia samochodowa premium · {site.city}</p>
+          <p>© {new Date().getFullYear()} {site.name}. {t.rights}</p>
+          <p>{t.strapline} · {site.city}</p>
         </div>
       </div>
     </footer>

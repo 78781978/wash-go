@@ -7,11 +7,15 @@ export function PageHero({
   title,
   description,
   crumb,
+  homeHref = "/",
+  homeLabel = "Strona główna",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
   crumb: string;
+  homeHref?: string;
+  homeLabel?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-navy pb-20 pt-16 sm:pb-24 sm:pt-20">
@@ -22,7 +26,7 @@ export function PageHero({
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <MotionReveal>
           <nav className="flex items-center gap-1.5 text-xs font-medium text-white/50">
-            <Link href="/" className="hover:text-white/80">Strona główna</Link>
+            <Link href={homeHref} className="hover:text-white/80">{homeLabel}</Link>
             <ChevronRight className="h-3 w-3" />
             <span className="text-white/80">{crumb}</span>
           </nav>

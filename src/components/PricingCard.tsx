@@ -2,8 +2,15 @@ import Link from "next/link";
 import { Check } from "lucide-react";
 import type { PricingTier } from "@/lib/site-config";
 import { MotionItem } from "./MotionReveal";
+import type { Locale } from "@/lib/i18n";
 
-export function PricingCard({ tier }: { tier: PricingTier }) {
+const copy = {
+  pl: { featured: "Najczęściej wybierany", choose: (name: string) => `Wybieram ${name}`, contactHref: "/kontakt" },
+  en: { featured: "Most popular", choose: (name: string) => `Choose ${name}`, contactHref: "/en/contact" },
+};
+
+export function PricingCard({ tier, locale = "pl" }: { tier: PricingTier; locale?: Locale }) {
+  const t = copy[locale];
   return (
     <MotionItem
       className={`relative flex h-full flex-col rounded-3xl p-7 ${
@@ -14,7 +21,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
     >
       {tier.featured && (
         <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-blue px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white shadow-lg">
-          Najczęściej wybierany
+          {t.featured}
         </span>
       )}
 
@@ -44,14 +51,14 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
       </ul>
 
       <Link
-        href="/kontakt"
+        href={t.contactHref}
         className={`mt-7 block rounded-full py-3 text-center text-sm font-semibold transition-all ${
           tier.featured
             ? "bg-blue text-white hover:bg-blue-2"
             : "bg-navy text-white hover:bg-blue"
         }`}
       >
-        Wybieram {tier.name}
+        {t.choose(tier.name)}
       </Link>
     </MotionItem>
   );

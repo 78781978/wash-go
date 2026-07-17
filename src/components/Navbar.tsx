@@ -6,12 +6,20 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Logo } from "./Logo";
-import { navLinks, site } from "@/lib/site-config";
+import { LanguageSwitch } from "./LanguageSwitch";
+import { navLinks as navLinksPl, site } from "@/lib/site-config";
+import { navLinks as navLinksEn } from "@/lib/site-config.en";
+import { localeFromPathname } from "@/lib/i18n";
+
+const cta = { pl: "Umów wizytę", en: "Book a visit" };
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
+  const navLinks = locale === "en" ? navLinksEn : navLinksPl;
+  const contactHref = locale === "en" ? "/en/contact" : "/kontakt";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -48,20 +56,24 @@ export function Navbar() {
             {site.phone}
           </a>
           <Link
-            href="/kontakt"
+            href={contactHref}
             className="whitespace-nowrap rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
           >
-            Umów wizytę
+            {cta[locale]}
           </Link>
+          <LanguageSwitch />
         </div>
 
-        <button
-          aria-label="Menu"
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-white lg:hidden"
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <LanguageSwitch />
+          <button
+            aria-label="Menu"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-10 w-10 items-center justify-center rounded-full text-white"
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       <nav className="hidden border-t border-white/10 lg:block">
@@ -112,10 +124,10 @@ export function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/kontakt"
+                href={contactHref}
                 className="mt-2 rounded-xl bg-blue px-4 py-3 text-center text-base font-semibold text-white"
               >
-                Umów wizytę
+                {cta[locale]}
               </Link>
             </nav>
           </motion.div>

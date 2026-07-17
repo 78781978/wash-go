@@ -6,14 +6,24 @@ export type LegalSection = {
   content: ReactNode;
 };
 
-export function LegalLayout({ sections, updated }: { sections: LegalSection[]; updated: string }) {
+export function LegalLayout({
+  sections,
+  updated,
+  tocLabel = "Spis treści",
+  updatedLabel = "Ostatnia aktualizacja",
+}: {
+  sections: LegalSection[];
+  updated: string;
+  tocLabel?: string;
+  updatedLabel?: string;
+}) {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[260px_1fr]">
           <aside className="hidden lg:block">
             <div className="sticky top-28">
-              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/40">Spis treści</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/40">{tocLabel}</p>
               <nav className="mt-4 space-y-1">
                 {sections.map((s) => (
                   <a
@@ -26,7 +36,7 @@ export function LegalLayout({ sections, updated }: { sections: LegalSection[]; u
                 ))}
               </nav>
               <p className="mt-6 border-t border-line pt-4 text-xs text-foreground/40">
-                Ostatnia aktualizacja: {updated}
+                {updatedLabel}: {updated}
               </p>
             </div>
           </aside>
