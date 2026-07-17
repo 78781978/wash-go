@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <Logo dark markClassName="h-20 w-20" textClassName="text-2xl" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-              Premium ręczna myjnia samochodowa. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.
+              Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.
             </p>
             <div className="mt-5 flex gap-3">
               <a
