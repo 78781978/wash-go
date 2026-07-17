@@ -299,7 +299,7 @@ export default function Home() {
               Umów swoje auto na dziś
             </h2>
             <p className="mt-4 text-base text-white/60">
-              Zadzwoń, napisz lub wjedź bez rezerwacji — czekamy na Ciebie w {site.city}.
+              Zadzwoń - czekamy na Ciebie w Goleniowie.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link
