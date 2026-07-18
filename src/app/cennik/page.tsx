@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Info, PhoneCall } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { SectionHeading } from "@/components/SectionHeading";
 import { PricingCard } from "@/components/PricingCard";
-import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
-import { addOns, pricingTiers, site } from "@/lib/site-config";
+import { MotionStagger, MotionReveal } from "@/components/MotionReveal";
+import { pricingTiers, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cennik",
-  description: "Przejrzysty cennik ręcznej myjni Wash & Go — pakiety Express, Premium, Detailing oraz usługi dodatkowe.",
+  description: "Cennik ręcznej myjni Wash & Go — pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
 };
 
 export default function CennikPage() {
@@ -18,13 +17,13 @@ export default function CennikPage() {
       <PageHero
         eyebrow="Cennik"
         crumb="Cennik"
-        title="Ceny bez niespodzianek"
-        description="Trzy pakiety dopasowane do potrzeb oraz lista usług dodatkowych, które możesz domówić w dowolnym momencie."
+        title="Usługi dopasowane do Twojego auta"
+        description="Wybierz zakres mycia, a dokładną wycenę potwierdzimy na miejscu, przed rozpoczęciem usługi."
       />
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <MotionStagger className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <MotionStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pricingTiers.map((tier) => (
               <PricingCard key={tier.name} tier={tier} />
             ))}
@@ -33,32 +32,10 @@ export default function CennikPage() {
           <MotionReveal className="mt-8 flex items-start gap-3 rounded-2xl border border-line bg-mist px-5 py-4">
             <Info className="mt-0.5 h-4 w-4 shrink-0 text-blue" />
             <p className="text-sm text-foreground/60">
-              Ceny mogą się różnić w zależności od stanu i rozmiaru pojazdu (np. auta dostawcze, pojazdy po długim
-              postoju, silne zabrudzenie). Ostateczną wycenę potwierdzamy zawsze przed rozpoczęciem usługi.
+              Cena zależy od stanu i rozmiaru pojazdu (np. auta dostawcze, pojazdy po długim postoju, silne
+              zabrudzenie). Ostateczną wycenę potwierdzamy zawsze przed rozpoczęciem usługi.
             </p>
           </MotionReveal>
-        </div>
-      </section>
-
-      <section className="bg-mist py-24">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionHeading
-            eyebrow="Usługi dodatkowe"
-            title="Rozszerz swój pakiet"
-            description="Dokup pojedyncze zabiegi do wybranego pakietu mycia — bez konieczności umawiania osobnej wizyty."
-          />
-
-          <MotionStagger className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-2">
-            {addOns.map((a) => (
-              <MotionItem
-                key={a.name}
-                className="flex items-center justify-between rounded-xl border border-line bg-white px-5 py-4"
-              >
-                <span className="text-sm font-medium text-navy">{a.name}</span>
-                <span className="font-display text-sm font-semibold text-blue">{a.price}</span>
-              </MotionItem>
-            ))}
-          </MotionStagger>
         </div>
       </section>
 

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
 import { Logo } from "./Logo";
-import { footerLegalLinks as footerLegalLinksPl, navLinks as navLinksPl, site } from "@/lib/site-config";
-import { footerLegalLinks as footerLegalLinksEn, navLinks as navLinksEn } from "@/lib/site-config.en";
+import { footerLegalLinks as footerLegalLinksPl, navLinks as navLinksPl, site as sitePl } from "@/lib/site-config";
+import { footerLegalLinks as footerLegalLinksEn, navLinks as navLinksEn, site as siteEn } from "@/lib/site-config.en";
 import { localeFromPathname } from "@/lib/i18n";
 
 function FacebookIcon({ className }: { className?: string }) {
@@ -33,7 +33,8 @@ const copy = {
     legal: "Informacje prawne",
     contact: "Kontakt",
     hoursWeekday: "Pon–Pt",
-    hoursWeekend: "Sob–Nd",
+    hoursSaturday: "Sob",
+    hoursSunday: "Niedz",
     rights: "Wszelkie prawa zastrzeżone.",
     strapline: "Ręczna myjnia samochodowa premium",
   },
@@ -43,7 +44,8 @@ const copy = {
     legal: "Legal",
     contact: "Contact",
     hoursWeekday: "Mon–Fri",
-    hoursWeekend: "Sat–Sun",
+    hoursSaturday: "Sat",
+    hoursSunday: "Sun",
     rights: "All rights reserved.",
     strapline: "Premium hand car wash",
   },
@@ -54,6 +56,7 @@ export function Footer() {
   const locale = localeFromPathname(pathname);
   const navLinks = locale === "en" ? navLinksEn : navLinksPl;
   const footerLegalLinks = locale === "en" ? footerLegalLinksEn : footerLegalLinksPl;
+  const site = locale === "en" ? siteEn : sitePl;
   const t = copy[locale];
 
   return (
@@ -135,7 +138,13 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-blue-2" />
-                <span>{t.hoursWeekday} {site.hoursWeekdays}<br />{t.hoursWeekend} {site.hoursWeekend}</span>
+                <span>
+                  {t.hoursWeekday} {site.hoursWeekdays}
+                  <br />
+                  {t.hoursSaturday} {site.hoursSaturday}
+                  <br />
+                  {t.hoursSunday}: {site.hoursSunday}
+                </span>
               </li>
             </ul>
           </div>

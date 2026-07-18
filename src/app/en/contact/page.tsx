@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
 import { MotionReveal } from "@/components/MotionReveal";
-import { site } from "@/lib/site-config";
+import { site } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
   title: "Contact — Wash & Go",
@@ -14,7 +14,11 @@ const infoCards = [
   { icon: MapPin, label: "Address", value: site.address },
   { icon: Phone, label: "Phone", value: site.phone, href: site.phoneHref },
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
-  { icon: Clock, label: "Opening hours", value: `Mon–Fri: ${site.hoursWeekdays}\nSat–Sun: ${site.hoursWeekend}` },
+  {
+    icon: Clock,
+    label: "Opening hours",
+    value: `Mon–Fri: ${site.hoursWeekdays}\nSat: ${site.hoursSaturday}\nSun: ${site.hoursSunday}`,
+  },
 ];
 
 export default function ContactPage() {

@@ -222,12 +222,12 @@ export default function HomeEn() {
           <SectionHeading
             eyebrow="Pricing"
             title="Clear wash packages"
-            description="No hidden fees — the price depends only on the scope and vehicle size you choose."
+            description="Choose your wash scope — we'll confirm the exact price on-site."
             align="center"
           />
 
-          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {pricingTiers.map((tier) => (
+          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pricingTiers.slice(0, 4).map((tier) => (
               <PricingCard key={tier.name} tier={tier} locale="en" />
             ))}
           </MotionStagger>

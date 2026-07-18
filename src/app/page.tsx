@@ -215,12 +215,12 @@ export default function Home() {
           <SectionHeading
             eyebrow="Cennik"
             title="Przejrzyste pakiety mycia"
-            description="Bez ukrytych opłat — cena zależy tylko od wybranego zakresu i wielkości pojazdu."
+            description="Wybierz zakres mycia — dokładną wycenę potwierdzimy na miejscu."
             align="center"
           />
 
-          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {pricingTiers.map((tier) => (
+          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pricingTiers.slice(0, 4).map((tier) => (
               <PricingCard key={tier.name} tier={tier} />
             ))}
           </MotionStagger>

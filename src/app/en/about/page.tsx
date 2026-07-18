@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Award, Droplet, Leaf, Wrench } from "lucide-react";
+import {
+  ArrowRight,
+  Armchair,
+  Award,
+  Droplet,
+  Droplets,
+  Leaf,
+  Ruler,
+  Snowflake,
+  Sparkles,
+  Truck,
+  Wifi,
+  Wind,
+  Wrench,
+} from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StatCounter } from "@/components/StatCounter";
@@ -26,6 +40,17 @@ const facility = [
   { icon: Leaf, title: "Closed water loop", desc: "Wastewater is treated and partly reclaimed for the pre-wash stage." },
   { icon: Wrench, title: "Professional equipment", desc: "Polishers, extractors and premium-class foam generators." },
   { icon: Award, title: "Certified chemistry", desc: "Car care products from trusted brands, safe for coatings." },
+];
+
+const amenities = [
+  { icon: Armchair, label: "Waiting lounge" },
+  { icon: Truck, label: "Vans & delivery vehicles" },
+  { icon: Wifi, label: "Wi-Fi" },
+  { icon: Droplets, label: "Washer fluid top-up" },
+  { icon: Sparkles, label: "Auto SPA services" },
+  { icon: Snowflake, label: "Refrigerated unit disinfection" },
+  { icon: Wind, label: "Ozone treatment" },
+  { icon: Ruler, label: "Max. height: 250 cm" },
 ];
 
 export default function AboutPage() {
@@ -116,6 +141,28 @@ export default function AboutPage() {
                 </div>
                 <h3 className="mt-5 font-display text-base font-semibold">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/55">{f.desc}</p>
+              </MotionItem>
+            ))}
+          </MotionStagger>
+        </div>
+      </section>
+
+      <section className="bg-mist py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <SectionHeading
+            eyebrow="Amenities"
+            title="Everything you need, on site"
+          />
+          <MotionStagger className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {amenities.map((a) => (
+              <MotionItem
+                key={a.label}
+                className="flex items-center gap-3 rounded-2xl border border-line bg-white p-5"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-soft text-blue">
+                  <a.icon className="h-5 w-5" />
+                </div>
+                <span className="text-sm font-medium text-navy">{a.label}</span>
               </MotionItem>
             ))}
           </MotionStagger>

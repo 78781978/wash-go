@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Info, PhoneCall } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { SectionHeading } from "@/components/SectionHeading";
 import { PricingCard } from "@/components/PricingCard";
-import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
+import { MotionStagger, MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
-import { addOns, pricingTiers } from "@/lib/site-config.en";
+import { pricingTiers } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
   title: "Pricing — Wash & Go",
-  description: "Clear pricing for Wash & Go hand car wash — Express, Premium, Detailing packages and add-on services.",
+  description: "Pricing for Wash & Go hand car wash — the full list of exterior wash, interior cleaning and add-on services.",
 };
 
 export default function PricingPage() {
@@ -19,15 +18,15 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         crumb="Pricing"
-        title="No-surprises pricing"
+        title="Services matched to your car"
         homeHref="/en"
         homeLabel="Home"
-        description="Three packages matched to your needs, plus a list of add-on services you can book at any time."
+        description="Choose your wash scope and we'll confirm the exact price on-site before starting the service."
       />
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <MotionStagger className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <MotionStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pricingTiers.map((tier) => (
               <PricingCard key={tier.name} tier={tier} locale="en" />
             ))}
@@ -40,28 +39,6 @@ export default function PricingPage() {
               heavy soiling). We always confirm the final price before starting the service.
             </p>
           </MotionReveal>
-        </div>
-      </section>
-
-      <section className="bg-mist py-24">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionHeading
-            eyebrow="Add-on services"
-            title="Extend your package"
-            description="Add single treatments to your chosen wash package — no need to book a separate visit."
-          />
-
-          <MotionStagger className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-2">
-            {addOns.map((a) => (
-              <MotionItem
-                key={a.name}
-                className="flex items-center justify-between rounded-xl border border-line bg-white px-5 py-4"
-              >
-                <span className="text-sm font-medium text-navy">{a.name}</span>
-                <span className="font-display text-sm font-semibold text-blue">{a.price}</span>
-              </MotionItem>
-            ))}
-          </MotionStagger>
         </div>
       </section>
 

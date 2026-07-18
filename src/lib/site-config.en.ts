@@ -3,6 +3,7 @@ import { site as sitePl, type NavLink, type Service, type PricingTier, type Flee
 export const site = {
   ...sitePl,
   claim: "Premium hand car wash",
+  hoursSunday: "Closed",
 };
 
 export const navLinks: NavLink[] = [
@@ -166,69 +167,14 @@ export const serviceCategories: {
 ];
 
 export const pricingTiers: PricingTier[] = [
-  {
-    name: "Express",
-    tagline: "A quick refresh, right now",
-    prices: [
-      { label: "Car / hatchback", price: "59 zł" },
-      { label: "SUV / estate", price: "69 zł" },
-      { label: "Van / minibus", price: "89 zł" },
-    ],
-    features: [
-      "Touchless pre-wash",
-      "Active foam",
-      "Two-bucket hand wash",
-      "Osmosis rinse",
-      "Hand-dried with microfibre towels",
-      "Wheel cleaning",
-    ],
-  },
-  {
-    name: "Premium",
-    tagline: "Our most popular package",
-    featured: true,
-    prices: [
-      { label: "Car / hatchback", price: "129 zł" },
-      { label: "SUV / estate", price: "149 zł" },
-      { label: "Van / minibus", price: "179 zł" },
-    ],
-    features: [
-      "Everything in Express",
-      "Full interior vacuuming",
-      "Upholstery and trim cleaning",
-      "Tyre and trim gloss finish",
-      "Hot protective wax",
-      "Interior and exterior glass cleaning",
-    ],
-  },
-  {
-    name: "Detailing",
-    tagline: "A full reset for your car",
-    prices: [
-      { label: "Car / hatchback", price: "from 349 zł" },
-      { label: "SUV / estate", price: "from 399 zł" },
-      { label: "Van / minibus", price: "from 449 zł" },
-    ],
-    features: [
-      "Everything in Premium",
-      "Extraction upholstery cleaning",
-      "Ozone treatment & disinfection",
-      "One-stage paint correction",
-      "Ceramic coating, 3 months",
-      "Exterior trim restoration",
-    ],
-  },
-];
-
-export const addOns: { name: string; price: string }[] = [
-  { name: "Ceramic coating, 12 months", price: "from 799 zł" },
-  { name: "Interior ozone treatment", price: "79 zł" },
-  { name: "Full upholstery cleaning", price: "from 249 zł" },
-  { name: "Headlight polishing", price: "from 99 zł" },
-  { name: "AC system disinfection", price: "69 zł" },
-  { name: "Tyre dressing", price: "19 zł" },
-  { name: "Headliner cleaning", price: "from 129 zł" },
-  { name: "Hot waxing", price: "39 zł" },
+  { name: "Exterior wash", features: ["Exterior wash"] },
+  { name: "Full package", featured: true, features: ["Exterior wash", "Interior cleaning"] },
+  { name: "Exterior wash with waxing", features: ["Exterior wash", "Waxing"] },
+  { name: "Full package with waxing", features: ["Exterior wash", "Interior cleaning", "Waxing"] },
+  { name: "Interior cleaning", features: ["Interior cleaning"] },
+  { name: "Interior shampoo wash", features: ["Interior cleaning", "Upholstery shampoo wash"] },
+  { name: "Washer fluid top-up", features: ["Washer fluid top-up"] },
+  { name: "Interior ozone treatment", features: ["Interior ozone treatment"] },
 ];
 
 export const fleetPlans: FleetPlan[] = [
@@ -331,7 +277,7 @@ export const faqs = [
   },
   {
     q: "How long does a hand wash take?",
-    a: "The Express package takes about 20–25 minutes, Premium 45–60 minutes, and full detailing with paint correction can take from 2 to several hours depending on scope.",
+    a: "An exterior wash alone takes about 20–25 minutes, a full package with interior cleaning 45–60 minutes, and add-ons like upholstery shampooing or ozone treatment extend the time depending on scope.",
   },
   {
     q: "Do you have a waiting area?",

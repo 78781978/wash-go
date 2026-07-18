@@ -5,8 +5,18 @@ import { MotionItem } from "./MotionReveal";
 import type { Locale } from "@/lib/i18n";
 
 const copy = {
-  pl: { featured: "Najczęściej wybierany", choose: (name: string) => `Wybieram ${name}`, contactHref: "/kontakt" },
-  en: { featured: "Most popular", choose: (name: string) => `Choose ${name}`, contactHref: "/en/contact" },
+  pl: {
+    featured: "Najczęściej wybierany",
+    priceNote: "Wycena na miejscu",
+    choose: (name: string) => `Zapytaj o ${name}`,
+    contactHref: "/kontakt",
+  },
+  en: {
+    featured: "Most popular",
+    priceNote: "Priced on-site",
+    choose: (name: string) => `Ask about ${name}`,
+    contactHref: "/en/contact",
+  },
 };
 
 export function PricingCard({ tier, locale = "pl" }: { tier: PricingTier; locale?: Locale }) {
@@ -28,20 +38,9 @@ export function PricingCard({ tier, locale = "pl" }: { tier: PricingTier; locale
       <h3 className={`font-display text-xl font-semibold ${tier.featured ? "text-white" : "text-navy"}`}>
         {tier.name}
       </h3>
-      <p className={`mt-1.5 text-sm ${tier.featured ? "text-white/60" : "text-foreground/55"}`}>{tier.tagline}</p>
+      <p className={`mt-1.5 text-sm font-medium ${tier.featured ? "text-blue-2" : "text-blue"}`}>{t.priceNote}</p>
 
-      <div className={`mt-6 space-y-2 border-t pt-5 ${tier.featured ? "border-white/15" : "border-line"}`}>
-        {tier.prices.map((p) => (
-          <div key={p.label} className="flex items-center justify-between text-sm">
-            <span className={tier.featured ? "text-white/70" : "text-foreground/65"}>{p.label}</span>
-            <span className={`font-display font-semibold ${tier.featured ? "text-white" : "text-navy"}`}>
-              {p.price}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <ul className="mt-6 flex-1 space-y-3">
+      <ul className={`mt-6 flex-1 space-y-3 border-t pt-5 ${tier.featured ? "border-white/15" : "border-line"}`}>
         {tier.features.map((f) => (
           <li key={f} className="flex items-start gap-2.5 text-sm">
             <Check className={`mt-0.5 h-4 w-4 shrink-0 ${tier.featured ? "text-blue-2" : "text-blue"}`} />

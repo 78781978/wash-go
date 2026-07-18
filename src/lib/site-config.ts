@@ -2,13 +2,14 @@ export const site = {
   name: "Wash & Go",
   claim: "Ręczna myjnia samochodowa premium",
   city: "Goleniów",
-  address: "ul. Polna 8, 72-100 Goleniów",
+  address: "ul. Szczecińska 4b, 72-100 Goleniów",
   phone: "+48 600 100 200",
   phoneHref: "tel:+48600100200",
   email: "kontakt@washandgo.pl",
   nip: "PL 856 000 12 34",
-  hoursWeekdays: "8:00 – 21:00",
-  hoursWeekend: "9:00 – 20:00",
+  hoursWeekdays: "09:00 – 17:00",
+  hoursSaturday: "09:00 – 14:00",
+  hoursSunday: "Nieczynne",
   mapsUrl: "https://maps.google.com/?q=Wash%20%26%20Go%20Goleni%C3%B3w",
   social: {
     facebook: "https://facebook.com",
@@ -190,76 +191,19 @@ export const serviceCategories: {
 
 export type PricingTier = {
   name: string;
-  tagline: string;
   featured?: boolean;
-  prices: { label: string; price: string }[];
   features: string[];
 };
 
 export const pricingTiers: PricingTier[] = [
-  {
-    name: "Express",
-    tagline: "Szybkie odświeżenie na już",
-    prices: [
-      { label: "Auto osobowe", price: "59 zł" },
-      { label: "SUV / Kombi", price: "69 zł" },
-      { label: "Van / Bus", price: "89 zł" },
-    ],
-    features: [
-      "Mycie bezdotykowe wstępne",
-      "Aktywna piana",
-      "Mycie ręczne two-bucket",
-      "Płukanie osmozą",
-      "Suszenie ręcznikiem z mikrofibry",
-      "Czyszczenie felg",
-    ],
-  },
-  {
-    name: "Premium",
-    tagline: "Najczęściej wybierany pakiet",
-    featured: true,
-    prices: [
-      { label: "Auto osobowe", price: "129 zł" },
-      { label: "SUV / Kombi", price: "149 zł" },
-      { label: "Van / Bus", price: "179 zł" },
-    ],
-    features: [
-      "Wszystko z pakietu Express",
-      "Odkurzanie całego wnętrza",
-      "Czyszczenie tapicerki i plastików",
-      "Nabłyszczanie opon i plastików",
-      "Wosk ochronny na gorąco",
-      "Czyszczenie szyb wewnątrz i na zewnątrz",
-    ],
-  },
-  {
-    name: "Detailing",
-    tagline: "Pełna regeneracja auta",
-    prices: [
-      { label: "Auto osobowe", price: "od 349 zł" },
-      { label: "SUV / Kombi", price: "od 399 zł" },
-      { label: "Van / Bus", price: "od 449 zł" },
-    ],
-    features: [
-      "Wszystko z pakietu Premium",
-      "Pranie tapicerki ekstrakcyjne",
-      "Ozonowanie i dezynfekcja",
-      "Jednoetapowa korekta lakieru",
-      "Powłoka ceramiczna 3 miesiące",
-      "Czarnienie plastików zewnętrznych",
-    ],
-  },
-];
-
-export const addOns: { name: string; price: string }[] = [
-  { name: "Powłoka ceramiczna 12 mies.", price: "od 799 zł" },
-  { name: "Ozonowanie wnętrza", price: "79 zł" },
-  { name: "Pranie tapicerki (komplet)", price: "od 249 zł" },
-  { name: "Polerowanie reflektorów", price: "od 99 zł" },
-  { name: "Dezynfekcja klimatyzacji", price: "69 zł" },
-  { name: "Czarnienie opon", price: "19 zł" },
-  { name: "Pranie sufitu", price: "od 129 zł" },
-  { name: "Woskowanie na gorąco", price: "39 zł" },
+  { name: "Mycie zewnętrzne", features: ["Mycie zewnętrzne"] },
+  { name: "Komplet", featured: true, features: ["Mycie zewnętrzne", "Sprzątanie wnętrza"] },
+  { name: "Mycie zewnętrzne z woskowaniem", features: ["Mycie zewnętrzne", "Woskowanie"] },
+  { name: "Komplet z woskowaniem", features: ["Mycie zewnętrzne", "Sprzątanie wnętrza", "Woskowanie"] },
+  { name: "Sprzątanie wnętrza", features: ["Sprzątanie wnętrza"] },
+  { name: "Pranie wnętrza", features: ["Sprzątanie wnętrza", "Pranie tapicerki"] },
+  { name: "Płyn do spryskiwaczy", features: ["Płyn do spryskiwaczy"] },
+  { name: "Ozonowanie wnętrza", features: ["Ozonowanie wnętrza"] },
 ];
 
 export type FleetPlan = {
@@ -370,7 +314,7 @@ export const faqs = [
   },
   {
     q: "Jak długo trwa mycie ręczne?",
-    a: "Pakiet Express to około 20–25 minut, pakiet Premium 45–60 minut, a pełny detailing z korektą lakieru może zająć od 2 do kilku godzin w zależności od zakresu.",
+    a: "Samo mycie zewnętrzne to około 20–25 minut, pakiet z pełnym sprzątaniem wnętrza 45–60 minut, a usługi dodatkowe jak pranie tapicerki czy ozonowanie wydłużają czas w zależności od zakresu.",
   },
   {
     q: "Czy oferujecie strefę oczekiwania?",

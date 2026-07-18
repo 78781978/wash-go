@@ -14,7 +14,11 @@ const infoCards = [
   { icon: MapPin, label: "Adres", value: site.address },
   { icon: Phone, label: "Telefon", value: site.phone, href: site.phoneHref },
   { icon: Mail, label: "E-mail", value: site.email, href: `mailto:${site.email}` },
-  { icon: Clock, label: "Godziny otwarcia", value: `Pon–Pt: ${site.hoursWeekdays}\nSob–Nd: ${site.hoursWeekend}` },
+  {
+    icon: Clock,
+    label: "Godziny otwarcia",
+    value: `Pon–Pt: ${site.hoursWeekdays}\nSob: ${site.hoursSaturday}\nNiedz: ${site.hoursSunday}`,
+  },
 ];
 
 export default function KontaktPage() {
