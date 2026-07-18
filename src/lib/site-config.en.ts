@@ -35,7 +35,7 @@ export const serviceCategories: {
         title: "Touchless pre-wash",
         short: "Gentle pressure wash, zero scratch risk",
         description:
-          "High-pressure pre-rinse and wash with no contact on the paint — perfect for removing heavy dirt before the hand wash.",
+          "High-pressure pre-rinse and wash with no contact on the paint – perfect for removing heavy dirt before the hand wash.",
         bullets: ["Pressurised pre-rinse", "Bug and tar neutraliser", "Zero risk of micro-scratches"],
         duration: "10–15 min",
         icon: "spray",
@@ -65,8 +65,8 @@ export const serviceCategories: {
         title: "Gloss finish & osmosis rinse",
         short: "Final rinse with demineralised water",
         description:
-          "Final rinse with reverse-osmosis water — no limescale or water spots — plus a gloss enhancer for paint, trim and rubber.",
-        bullets: ["Demineralised water — no water spots", "Paint and trim gloss enhancer", "Dried by hand with microfibre towels"],
+          "Final rinse with reverse-osmosis water – no limescale or water spots – plus a gloss enhancer for paint, trim and rubber.",
+        bullets: ["Demineralised water – no water spots", "Paint and trim gloss enhancer", "Dried by hand with microfibre towels"],
         duration: "10 min",
         icon: "sparkle",
       },
@@ -137,7 +137,7 @@ export const serviceCategories: {
         title: "Hot protective wax",
         short: "Deep gloss and 4–6 weeks of protection",
         description:
-          "Wax applied hot right after washing — it works into the paint's micropores, boosting gloss and resistance to road grime.",
+          "Wax applied hot right after washing – it works into the paint's micropores, boosting gloss and resistance to road grime.",
         bullets: ["Deep, wet-look gloss", "Extra protection for 4–6 weeks", "Makes the next wash easier"],
         duration: "10 min",
         icon: "sparkle",
@@ -157,7 +157,7 @@ export const serviceCategories: {
         title: "Exterior trim restoration",
         short: "Refreshed bumpers and trim strips",
         description:
-          "Restores deep black to faded plastic body parts — bumpers, trim strips and side skirts.",
+          "Restores deep black to faded plastic body parts – bumpers, trim strips and side skirts.",
         bullets: ["Matte finish, not greasy", "UV protection", "Lasts several weeks"],
         duration: "15 min",
         icon: "drop",
@@ -218,7 +218,7 @@ export const stats = [
 ];
 
 export const processSteps = [
-  { title: "Book a visit", desc: "Call, message, or just drive in — no reservation needed." },
+  { title: "Book a visit", desc: "Call, message, or just drive in – no reservation needed." },
   { title: "Choose a package", desc: "We'll recommend the right scope for your car's condition and type." },
   { title: "Grab a coffee", desc: "Relax in our comfortable client lounge with coffee and Wi-Fi." },
   { title: "Pick up a spotless car", desc: "A quality check and quick walkthrough of the work done before we hand back the keys." },
@@ -240,13 +240,13 @@ export const testimonials: Testimonial[] = [
   {
     name: "TransLog Ltd.",
     car: "14-vehicle fleet",
-    text: "We've worked together for two years — consolidated invoicing, flexible hours, zero billing headaches.",
+    text: "We've worked together for two years – consolidated invoicing, flexible hours, zero billing headaches.",
     rating: 5,
   },
   {
     name: "Tomasz P.",
     car: "BMW X5",
-    text: "The interior ozone treatment saved my car after transporting my dog — the smell was completely gone.",
+    text: "The interior ozone treatment saved my car after transporting my dog – the smell was completely gone.",
     rating: 5,
   },
 ];
@@ -266,7 +266,7 @@ export const galleryItems = [
 export const values = [
   { title: "Precision", desc: "Every step is done by hand, with attention to the details you don't notice at first glance." },
   { title: "Safe products", desc: "pH-neutral car care products, safe for paint, PPF film and ceramic coatings." },
-  { title: "Transparency", desc: "A clear price list with no hidden fees — you know exactly what you're paying for." },
+  { title: "Transparency", desc: "A clear price list with no hidden fees – you know exactly what you're paying for." },
   { title: "Eco-friendly", desc: "Reclaimed and osmosis water, biodegradable chemistry, closed wastewater loop." },
 ];
 

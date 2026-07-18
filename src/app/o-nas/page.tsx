@@ -24,7 +24,7 @@ import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
   title: "O nas",
-  description: "Poznaj historię i wartości myjni Wash & Go — ręcznej myjni samochodowej premium.",
+  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium.",
 };
 
 const milestones = [
@@ -36,7 +36,7 @@ const milestones = [
 ];
 
 const facility = [
-  { icon: Droplet, title: "System osmozy", desc: "Woda demineralizowana do finalnego płukania — zero zacieków i osadu." },
+  { icon: Droplet, title: "System osmozy", desc: "Woda demineralizowana do finalnego płukania – zero zacieków i osadu." },
   { icon: Leaf, title: "Zamknięty obieg wody", desc: "Ścieki oczyszczane i częściowo odzyskiwane w procesie mycia wstępnego." },
   { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
   { icon: Award, title: "Certyfikowana chemia", desc: "Kosmetyki samochodowe renomowanych producentów, bezpieczne dla powłok." },
@@ -83,13 +83,13 @@ export default function ONasPage() {
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
-              Wash&amp;Go powstało z przekonania, że mycie samochodu może — i powinno — wyglądać jak
+              Wash&amp;Go powstało z przekonania, że mycie samochodu może – i powinno – wyglądać jak
               usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
               mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut oka.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilkadziesiąt
-              samochodów — od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
+              samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
           </MotionReveal>
 

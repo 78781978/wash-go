@@ -10,7 +10,7 @@ import { galleryItems, testimonials } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Nasze prace",
-  description: "Zobacz wybrane realizacje myjni Wash & Go — detailing, powłoki ceramiczne, mycie flotowe.",
+  description: "Zobacz wybrane realizacje myjni Wash & Go – detailing, powłoki ceramiczne, mycie flotowe.",
 };
 
 export default function NaszePracePage() {
@@ -20,7 +20,7 @@ export default function NaszePracePage() {
         eyebrow="Nasze prace"
         crumb="Nasze prace"
         title="Efekty, które mówią same za siebie"
-        description="Wybrane realizacje z ostatnich miesięcy — od korekty lakieru po pełne mycie flot firmowych."
+        description="Wybrane realizacje z ostatnich miesięcy – od korekty lakieru po pełne mycie flot firmowych."
       />
 
       <section className="bg-mist py-24">

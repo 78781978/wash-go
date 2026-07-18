@@ -47,20 +47,20 @@ const sections: LegalSection[] = [
         <p>Dane osobowe przetwarzane są w następujących celach:</p>
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
-            udzielenie odpowiedzi na zapytanie przesłane przez formularz kontaktowy — podstawa prawna: art. 6
+            udzielenie odpowiedzi na zapytanie przesłane przez formularz kontaktowy – podstawa prawna: art. 6
             ust. 1 lit. a i f RODO (zgoda oraz prawnie uzasadniony interes Administratora),
           </li>
           <li>
-            zawarcie i wykonanie umowy o świadczenie usług mycia i detailingu — art. 6 ust. 1 lit. b RODO,
+            zawarcie i wykonanie umowy o świadczenie usług mycia i detailingu – art. 6 ust. 1 lit. b RODO,
           </li>
           <li>
-            wystawianie faktur i spełnienie obowiązków podatkowo-księgowych — art. 6 ust. 1 lit. c RODO,
+            wystawianie faktur i spełnienie obowiązków podatkowo-księgowych – art. 6 ust. 1 lit. c RODO,
           </li>
           <li>
-            marketing bezpośredni własnych usług, w tym newsletter — art. 6 ust. 1 lit. a RODO (zgoda),
+            marketing bezpośredni własnych usług, w tym newsletter – art. 6 ust. 1 lit. a RODO (zgoda),
           </li>
           <li>
-            analiza ruchu na stronie i poprawa jej funkcjonalności — art. 6 ust. 1 lit. f RODO (prawnie
+            analiza ruchu na stronie i poprawa jej funkcjonalności – art. 6 ust. 1 lit. f RODO (prawnie
             uzasadniony interes Administratora).
           </li>
         </ul>
@@ -72,7 +72,7 @@ const sections: LegalSection[] = [
     title: "Okres przechowywania danych",
     content: (
       <p>
-        Dane przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane — w
+        Dane przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane – w
         szczególności przez czas trwania współpracy oraz okres przedawnienia roszczeń, a w przypadku
         dokumentów księgowych przez okres wymagany przepisami prawa podatkowego (co do zasady 5 lat). Dane
         przetwarzane na podstawie zgody przechowujemy do czasu jej wycofania.
@@ -131,16 +131,16 @@ const sections: LegalSection[] = [
       <>
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
-            <strong className="text-navy">Niezbędne</strong> — konieczne do prawidłowego funkcjonowania
+            <strong className="text-navy">Niezbędne</strong> – konieczne do prawidłowego funkcjonowania
             strony (np. zapamiętanie ustawień plików cookies). Nie wymagają zgody i nie można ich wyłączyć.
           </li>
           <li>
-            <strong className="text-navy">Analityczne</strong> — pozwalają zbierać zanonimizowane informacje
+            <strong className="text-navy">Analityczne</strong> – pozwalają zbierać zanonimizowane informacje
             o sposobie korzystania ze strony (np. odwiedzane podstrony, czas trwania wizyty). Wymagają zgody
             użytkownika.
           </li>
           <li>
-            <strong className="text-navy">Marketingowe</strong> — wykorzystywane do wyświetlania
+            <strong className="text-navy">Marketingowe</strong> – wykorzystywane do wyświetlania
             spersonalizowanych treści reklamowych. Wymagają zgody użytkownika.
           </li>
         </ul>
@@ -157,7 +157,7 @@ const sections: LegalSection[] = [
     content: (
       <p>
         Większość przeglądarek internetowych domyślnie akceptuje pliki cookies. Użytkownik może samodzielnie
-        zmienić ustawienia dotyczące cookies w swojej przeglądarce — w tym zablokować ich zapisywanie lub
+        zmienić ustawienia dotyczące cookies w swojej przeglądarce – w tym zablokować ich zapisywanie lub
         usunąć już zapisane pliki. Ograniczenie stosowania cookies może wpłynąć na niektóre funkcjonalności
         dostępne na stronie.
       </p>

@@ -7,7 +7,7 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Required Consents — Wash & Go",
+  title: "Required Consents – Wash & Go",
   description: "An overview of the consents required when using Wash & Go's forms and services.",
 };
 
@@ -18,7 +18,7 @@ const consents = [
     required: true,
     scope: "Name, email address, phone number, message content.",
     purpose: "Responding to an enquiry sent via the contact form on washandgo.pl.",
-    basis: "Art. 6(1)(a) GDPR — freely given consent.",
+    basis: "Art. 6(1)(a) GDPR – freely given consent.",
     withdraw: "Consent can be withdrawn at any time by writing to " + site.email + ".",
   },
   {

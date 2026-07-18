@@ -61,7 +61,7 @@ export default function Home() {
             </MotionReveal>
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
-                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali — bez pośpiechu, bez rys,
+                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali – bez pośpiechu, bez rys,
                 z kosmetykami premium.
               </p>
               <p className="mt-3 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
@@ -85,7 +85,7 @@ export default function Home() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["Bez rys — technologia two-bucket", "Kosmetyki pH neutralne", "Woda z odzysku"].map((f) => (
+              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Woda z odzysku"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -162,7 +162,7 @@ export default function Home() {
               Standard, który widać w każdym detalu
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-white/60">
-              Nie idziemy na skróty. Każdy etap — od wstępnego płukania po nabłyszczanie — wykonujemy
+              Nie idziemy na skróty. Każdy etap – od wstępnego płukania po nabłyszczanie – wykonujemy
               ręcznie, z użyciem sprawdzonych, bezpiecznych kosmetyków.
             </p>
             <Link
@@ -215,7 +215,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Cennik"
             title="Przejrzyste pakiety mycia"
-            description="Wybierz zakres mycia — dokładną wycenę potwierdzimy na miejscu."
+            description="Wybierz zakres mycia – dokładną wycenę potwierdzimy na miejscu."
             align="center"
           />
 
@@ -259,7 +259,7 @@ export default function Home() {
                 Rozliczaj mycie floty jedną fakturą miesięcznie
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/60">
-                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej — z rabatami,
+                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej – z rabatami,
                 priorytetową obsługą i dedykowanym opiekunem.
               </p>
               <Link

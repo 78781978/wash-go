@@ -23,8 +23,8 @@ import { stats, values } from "@/lib/site-config.en";
 import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
-  title: "About — Wash & Go",
-  description: "Learn about the story and values behind Wash & Go — a premium hand car wash.",
+  title: "About – Wash & Go",
+  description: "Learn about the story and values behind Wash & Go – a premium hand car wash.",
 };
 
 const milestones = [
@@ -36,7 +36,7 @@ const milestones = [
 ];
 
 const facility = [
-  { icon: Droplet, title: "Osmosis system", desc: "Demineralised water for the final rinse — zero water spots or residue." },
+  { icon: Droplet, title: "Osmosis system", desc: "Demineralised water for the final rinse – zero water spots or residue." },
   { icon: Leaf, title: "Closed water loop", desc: "Wastewater is treated and partly reclaimed for the pre-wash stage." },
   { icon: Wrench, title: "Professional equipment", desc: "Polishers, extractors and premium-class foam generators." },
   { icon: Award, title: "Certified chemistry", desc: "Car care products from trusted brands, safe for coatings." },
@@ -85,13 +85,13 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
-              Wash&amp;Go was built on the belief that washing a car can — and should — feel like a
+              Wash&amp;Go was built on the belief that washing a car can – and should – feel like a
               premium service, not a rushed drive through an automatic tunnel. From day one we&apos;ve focused
               on hand washing, safe products, and attention to the details you don&apos;t notice at first glance.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               Today our team is made up of experienced detailers who look after dozens of cars every
-              day — from city hatchbacks to collector cars and company fleets.
+              day – from city hatchbacks to collector cars and company fleets.
             </p>
           </MotionReveal>
 

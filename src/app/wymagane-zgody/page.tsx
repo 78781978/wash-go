@@ -18,7 +18,7 @@ const consents = [
     required: true,
     scope: "Imię i nazwisko, adres e-mail, numer telefonu, treść wiadomości.",
     purpose: "Udzielenie odpowiedzi na zapytanie przesłane przez formularz kontaktowy na stronie washandgo.pl.",
-    basis: "Art. 6 ust. 1 lit. a RODO — dobrowolnie wyrażona zgoda.",
+    basis: "Art. 6 ust. 1 lit. a RODO – dobrowolnie wyrażona zgoda.",
     withdraw: "Zgodę można wycofać w dowolnym momencie, pisząc na adres " + site.email + ".",
   },
   {

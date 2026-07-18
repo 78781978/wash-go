@@ -8,7 +8,7 @@ import { pricingTiers, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cennik",
-  description: "Cennik ręcznej myjni Wash & Go — pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
+  description: "Cennik ręcznej myjni Wash & Go – pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
 };
 
 export default function CennikPage() {
@@ -46,7 +46,7 @@ export default function CennikPage() {
               Flota firmowa? Mamy osobny cennik z rabatami
             </h2>
             <p className="max-w-xl text-base text-white/60">
-              Sprawdź warunki dla firm — rabaty do 18%, faktura zbiorcza i priorytetowa obsługa bez kolejki.
+              Sprawdź warunki dla firm – rabaty do 18%, faktura zbiorcza i priorytetowa obsługa bez kolejki.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
