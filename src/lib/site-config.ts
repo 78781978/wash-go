@@ -288,6 +288,8 @@ export const galleryItems = [
   { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const },
   { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const },
   { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const },
+  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const },
+  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const },
 ];
 
 export const values = [

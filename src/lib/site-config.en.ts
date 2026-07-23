@@ -250,6 +250,8 @@ export const galleryItems = [
   { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const },
   { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const },
   { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const },
+  { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const },
+  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const },
 ];
 
 export const values = [
