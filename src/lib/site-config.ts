@@ -294,7 +294,7 @@ export const galleryItems = [
   { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp" },
   { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const, image: "/gallery/porsche-macan.webp" },
   { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp" },
-  { title: "Mycie floty", category: "Flota", tone: "navy" as const },
+  { title: "Mycie floty", category: "Flota", tone: "navy" as const, image: "/gallery/mycie-floty.webp" },
   { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
   { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
   { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const },
