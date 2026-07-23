@@ -259,9 +259,9 @@ export const galleryItems = [
   { title: "Fleet wash", category: "Fleet", tone: "navy" as const, image: "/gallery/mycie-floty.webp" },
   { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
   { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
-  { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const },
+  { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp" },
   { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const },
-  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const },
+  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
   { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const },
   { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const },
 ];
