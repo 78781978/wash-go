@@ -259,24 +259,6 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    name: "Bartosz Wachowiak",
-    meta: "5 opinii · 2 tyg. temu",
-    text: "Rewelacyjna myjnia! Pełen profesjonalizm i dbałość o każdy szczegół! Muszę przyznać, że jestem pod ogromnym wrażeniem jakości usług tej myjni! Regularnie korzystam z ich usług i za każdym razem jestem pozytywnie zaskoczony efektem końcowym. Chłopaki podchodzą do każdego auta z ogromnym zaangażowaniem i dbałością o detale – zarówno przy myciu zewnętrznym, jak i przy czyszczeniu wnętrza – widać, że naprawdę zależy im na najwyższej jakości. Obsługa jest niezwykle miła i pomocna – zawsze można liczyć na fachowe doradztwo w kwestii pielęgnacji samochodu. Cena jak za jakość i profesjonalizm jest naprawdę uczciwa! Polecam każdemu, kto szuka solidnej i rzetelnej myjni – tutaj naprawdę dbają o samochody jak o swoje własne! 5/5 zasłużone!",
-    rating: 5,
-  },
-  {
-    name: "Kamil Górny",
-    meta: "Lokalny przewodnik · 60 opinii · 3 tyg. temu",
-    text: "Bardzo miła obsługa. Panowie zadbali o mój samochód w 100%. Na pewno skorzystam z usług tej myjni ponownie.",
-    rating: 5,
-  },
-  {
-    name: "Mirek St",
-    meta: "1 opinia · 2 mies. temu",
-    text: "Bardzo miła i fachowa obsługa. Auto lśni jak nowe! Serdecznie polecam.",
-    rating: 5,
-  },
-  {
     name: "Marta Kieryk",
     meta: "3 opinie · 6 mies. temu",
     text: "Usługa na najwyższym poziomie. Auto wygląda tak, jakby dopiero co opuściło linię produkcyjną, tyle że opuściło ją w 2007 roku! Efekt jest spektakularny. Szczególne uznanie za felgi, których nawet mój syn nie był w stanie doczyścić, a tutaj lśnią jak nowe. Szczera polecajka 👍",
