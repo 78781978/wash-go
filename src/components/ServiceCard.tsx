@@ -25,22 +25,24 @@ export function ServiceCard({
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-soft text-blue transition-colors duration-300 group-hover:bg-blue group-hover:text-white">
         <ServiceIcon icon={service.icon} className="h-6 w-6" />
       </div>
-      <h3 className="mt-5 font-display text-lg font-semibold text-navy">{service.title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-foreground/60">{service.short}</p>
+      <div className="flex-1">
+        <h3 className="mt-5 font-display text-lg font-semibold text-navy">{service.title}</h3>
+        <p className="mt-2 text-sm leading-relaxed text-foreground/60">{service.short}</p>
 
-      {detailed && (
-        <>
-          <p className="mt-4 text-sm leading-relaxed text-foreground/70">{service.description}</p>
-          <ul className="mt-4 space-y-2">
-            {service.bullets.map((b) => (
-              <li key={b} className="flex items-start gap-2 text-sm text-foreground/70">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue" />
-                {b}
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+        {detailed && (
+          <>
+            <p className="mt-4 text-sm leading-relaxed text-foreground/70">{service.description}</p>
+            <ul className="mt-4 space-y-2">
+              {service.bullets.map((b) => (
+                <li key={b} className="flex items-start gap-2 text-sm text-foreground/70">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue" />
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
 
       <div className="mt-5 flex items-center justify-between border-t border-line pt-4">
         <span className="text-xs font-medium uppercase tracking-wider text-foreground/40">{service.duration}</span>

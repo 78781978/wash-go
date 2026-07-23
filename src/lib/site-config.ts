@@ -238,7 +238,7 @@ export const fleetPlans: FleetPlan[] = [
 
 export const stats = [
   { value: 5000, suffix: "+", label: "umytych samochodów rocznie" },
-  { value: 4.9, suffix: "/5", label: "średnia ocena klientów", decimals: 1 },
+  { value: 4.7, suffix: "/5", label: "średnia ocena klientów", decimals: 1 },
   { value: 25, suffix: " lat", label: "doświadczenia na rynku" },
 ];
 
@@ -249,31 +249,49 @@ export const processSteps = [
   { title: "Odbierz lśniące auto", desc: "Kontrola jakości i krótki przegląd wykonanych usług przed wydaniem kluczyków." },
 ];
 
-export type Testimonial = { name: string; car: string; text: string; rating: number };
+export type Testimonial = { name: string; meta: string; text: string; rating: number };
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Michał K.",
-    car: "Audi A6",
-    text: "Poziom jak w salonie – dbałość o detale w wnękach kół i progach robi wrażenie. Wracam co dwa tygodnie.",
+    name: "Rafał Kałuża",
+    meta: "Lokalny przewodnik · 27 opinii · 9 mies. temu",
+    text: "Zdecydowanie polecam serdecznie tą firmę. Bardzo profesjonalnie podchodzą do każdego klienta obojętnie czy ktoś przyjedzie nowym autem czy starszym, każdym jednym bardzo troskliwie się zaopiekują dobierając taką metodę kosmetyki że to auto świeci się i pachnie jak nowe. Bardzo mili pracownicy którzy zawsze z uśmiechem podchodzą do każdego klienta, bezproblemowo można się umówić na dogodny termin a nawet często i od ręki można się załapać. Szczególnie polecam ręczne woskowanie auta – szczególnie tak jak w przypadku mojego auta, ten kolor nabiera pięknej głębi i brud nie trzyma się tak tego lakieru. Prałem też u nich tapicerkę w moich 3 poprzednich samochodach, w tym w aucie, w którym poprzedni właściciel palił papierosy, i ktoś mi powiedział, że tego smrodu już się nie pozbędę. Chłopaki wyprali mi go tak porządnie, że w życiu nikt by nie powiedział, że wcześniej to było auto po palaczu, dlatego teraz też do nich jeżdżę z moim nowym Oplem. Zdecydowanie najbardziej profesjonalna kosmetyka samochodowa w mieście, więc gorąco polecam!",
     rating: 5,
   },
   {
-    name: "Agnieszka W.",
-    car: "Škoda Kodiaq",
-    text: "Powłoka ceramiczna trzyma świetnie, auto brudzi się wyraźnie wolniej. Obsługa bardzo rzeczowa i miła.",
+    name: "Bartosz Wachowiak",
+    meta: "5 opinii · 2 tyg. temu",
+    text: "Rewelacyjna myjnia! Pełen profesjonalizm i dbałość o każdy szczegół! Muszę przyznać, że jestem pod ogromnym wrażeniem jakości usług tej myjni! Regularnie korzystam z ich usług i za każdym razem jestem pozytywnie zaskoczony efektem końcowym. Chłopaki podchodzą do każdego auta z ogromnym zaangażowaniem i dbałością o detale – zarówno przy myciu zewnętrznym, jak i przy czyszczeniu wnętrza – widać, że naprawdę zależy im na najwyższej jakości. Obsługa jest niezwykle miła i pomocna – zawsze można liczyć na fachowe doradztwo w kwestii pielęgnacji samochodu. Cena jak za jakość i profesjonalizm jest naprawdę uczciwa! Polecam każdemu, kto szuka solidnej i rzetelnej myjni – tutaj naprawdę dbają o samochody jak o swoje własne! 5/5 zasłużone!",
     rating: 5,
   },
   {
-    name: "Klient flotowy",
-    car: "Flota 14 pojazdów",
-    text: "Współpracujemy od dwóch lat – faktura zbiorcza, elastyczne godziny i zero problemów z rozliczeniami.",
+    name: "Kamil Górny",
+    meta: "Lokalny przewodnik · 60 opinii · 3 tyg. temu",
+    text: "Bardzo miła obsługa. Panowie zadbali o mój samochód w 100%. Na pewno skorzystam z usług tej myjni ponownie.",
     rating: 5,
   },
   {
-    name: "Tomasz P.",
-    car: "BMW X5",
-    text: "Ozonowanie wnętrza uratowało mi auto po transporcie psa – zapach zniknął całkowicie.",
+    name: "Mirek St",
+    meta: "1 opinia · 2 mies. temu",
+    text: "Bardzo miła i fachowa obsługa. Auto lśni jak nowe! Serdecznie polecam.",
+    rating: 5,
+  },
+  {
+    name: "Marta Kieryk",
+    meta: "3 opinie · 6 mies. temu",
+    text: "Usługa na najwyższym poziomie. Auto wygląda tak, jakby dopiero co opuściło linię produkcyjną, tyle że opuściło ją w 2007 roku! Efekt jest spektakularny. Szczególne uznanie za felgi, których nawet mój syn nie był w stanie doczyścić, a tutaj lśnią jak nowe. Szczera polecajka 👍",
+    rating: 5,
+  },
+  {
+    name: "Żaneta Borowska",
+    meta: "Lokalny przewodnik · 101 opinii · 9 mies. temu",
+    text: "Wszystko super. Auto pięknie wyczyszczone. Jest to nowy punkt na naszej mapie Goleniowa. Bardzo polecam to miejsce.",
+    rating: 5,
+  },
+  {
+    name: "Anna Kozłowska",
+    meta: "1 opinia · 8 mies. temu",
+    text: "Bardzo polecam tę myjnię. Wszystko jest perfekcyjnie wyczyszczone wewnątrz i na zewnątrz. Wszystko szybko i sprawnie.",
     rating: 5,
   },
 ];

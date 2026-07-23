@@ -86,6 +86,10 @@ export default function ONasPage() {
               Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
               auto możesz mieć bez odrywania się od codziennych obowiązków.
             </p>
+            <p className="mt-4 text-base leading-relaxed text-foreground/60">
+              Warto wiedzieć, że dotychczasowa myjnia Auto Lab Detailing Q zmieniła nazwę na Wash&amp;Go –
+              to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
+            </p>
           </MotionReveal>
         </div>
       </section>
