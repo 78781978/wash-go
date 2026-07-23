@@ -74,15 +74,15 @@ export default function ONasPage() {
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
               Wash&amp;Go powstało z przekonania, że mycie samochodu może – i powinno – wyglądać jak
               usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
-              mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut oka.
+              mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut{"\u00A0"}oka.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilkadziesiąt
+              Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilka
               samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Znajdziesz nas w Goleniowie, gdzie od 25 lat rozwijamy się razem z naszymi klientami – dziś to
-              ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy ufają nam swoje auta.
+              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami – dziś to
+              ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy powierzają nam swoje auta.
               Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
               auto możesz mieć bez odrywania się od codziennych obowiązków.
             </p>
