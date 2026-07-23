@@ -298,9 +298,9 @@ export const galleryItems = [
   { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
   { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
   { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp" },
-  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const },
+  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp" },
   { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
-  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const },
+  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const, image: "/gallery/bmw-3-series.webp" },
   { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp" },
 ];
 
