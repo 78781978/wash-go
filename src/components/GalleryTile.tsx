@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react";
 import { MotionItem } from "./MotionReveal";
+import { basePath } from "@/lib/base-path";
 
 const tones = {
   navy: "from-navy via-navy-2 to-blue",
@@ -12,11 +13,13 @@ export function GalleryTile({
   category,
   tone,
   large = false,
+  image,
 }: {
   title: string;
   category: string;
   tone: "navy" | "blue" | "graphite";
   large?: boolean;
+  image?: string;
 }) {
   return (
     <MotionItem
@@ -25,7 +28,17 @@ export function GalleryTile({
       <div
         className={`relative flex h-full min-h-[220px] flex-col justify-end overflow-hidden bg-gradient-to-br p-6 ${tones[tone]}`}
       >
-        <div className="absolute inset-0 bg-facet opacity-60 transition-transform duration-700 group-hover:scale-110" />
+        {image ? (
+          // eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually
+          <img
+            src={`${basePath}${image}`}
+            alt={title}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-facet opacity-60 transition-transform duration-700 group-hover:scale-110" />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/10 to-transparent" />
         <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-white/10 blur-2xl transition-transform duration-700 group-hover:scale-125" />
         <Sparkles className="absolute right-5 top-5 h-5 w-5 text-white/40" />
         <div className="relative">

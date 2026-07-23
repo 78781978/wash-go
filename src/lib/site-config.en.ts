@@ -253,12 +253,12 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const galleryItems = [
-  { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const },
-  { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const },
-  { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const },
+  { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp" },
+  { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const, image: "/gallery/porsche-macan.webp" },
+  { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp" },
   { title: "Fleet wash", category: "Fleet", tone: "navy" as const },
-  { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const },
-  { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const },
+  { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
+  { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
   { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const },
   { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const },
   { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const },

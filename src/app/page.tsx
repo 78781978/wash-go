@@ -204,7 +204,7 @@ export default function Home() {
 
           <MotionStagger className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {galleryItems.slice(0, 6).map((g) => (
-              <GalleryTile key={g.title} title={g.title} category={g.category} tone={g.tone} />
+              <GalleryTile key={g.title} title={g.title} category={g.category} tone={g.tone} image={g.image} />
             ))}
           </MotionStagger>
         </div>

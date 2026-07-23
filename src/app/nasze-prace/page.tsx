@@ -27,7 +27,7 @@ export default function NaszePracePage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <MotionStagger className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {galleryItems.map((g, i) => (
-              <GalleryTile key={g.title} title={g.title} category={g.category} tone={g.tone} large={i === 0} />
+              <GalleryTile key={g.title} title={g.title} category={g.category} tone={g.tone} large={i === 0} image={g.image} />
             ))}
           </MotionStagger>
         </div>
