@@ -7,12 +7,12 @@ import type { Locale } from "@/lib/i18n";
 const copy = {
   pl: {
     featured: "Najczęściej wybierany",
-    choose: (name: string) => `Zapytaj o ${name}`,
+    choose: "Zarezerwuj",
     contactHref: "/kontakt",
   },
   en: {
     featured: "Most popular",
-    choose: (name: string) => `Ask about ${name}`,
+    choose: "Book now",
     contactHref: "/en/contact",
   },
 };
@@ -57,7 +57,7 @@ export function PricingCard({ tier, locale = "pl" }: { tier: PricingTier; locale
             : "bg-navy text-white hover:bg-blue"
         }`}
       >
-        {t.choose(tier.name)}
+        {t.choose}
       </Link>
     </MotionItem>
   );
