@@ -246,7 +246,7 @@ export default function HomeEn() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <SectionHeading eyebrow="Customer reviews" title="Trusted by drivers and fleet managers" dark align="center" />
 
-          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <MotionStagger className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <TestimonialCard key={t.name} t={t} />
             ))}

@@ -294,6 +294,18 @@ export const testimonials: Testimonial[] = [
     text: "Bardzo polecam tę myjnię. Wszystko jest perfekcyjnie wyczyszczone wewnątrz i na zewnątrz. Wszystko szybko i sprawnie.",
     rating: 5,
   },
+  {
+    name: "Marta Próchnicka",
+    meta: "Lokalny przewodnik · 99 opinii · 7 mies. temu",
+    text: "Kolejny raz oddawałam firmowe auto do tej myjni. Polecam serdecznie tą myjnię. Bardzo fachowa i miła obsługa, perfekcja w każdym calu. Na pewno wrócę tam ze swoim prywatnym autem.",
+    rating: 5,
+  },
+  {
+    name: "Irmina Bartoszewicz",
+    meta: "3 opinie · 5 mies. temu",
+    text: "Bardzo polecam tę myjnię samochodową. Auto dokładnie umyte, a obsługa niezwykle miła. Szybko, sprawnie i w przyjemnej atmosferze – na pewno wrócę!",
+    rating: 5,
+  },
 ];
 
 export const galleryItems = [

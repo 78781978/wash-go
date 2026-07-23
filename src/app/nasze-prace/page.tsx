@@ -36,7 +36,7 @@ export default function NaszePracePage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionHeading eyebrow="Opinie" title="Co mówią o nas klienci" align="center" />
-          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <TestimonialCard key={t.name} t={t} />
             ))}
