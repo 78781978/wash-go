@@ -181,19 +181,20 @@ export const serviceCategories: {
 
 export type PricingTier = {
   name: string;
+  price: string;
   featured?: boolean;
   features: string[];
 };
 
 export const pricingTiers: PricingTier[] = [
-  { name: "Mycie zewnętrzne", features: ["Mycie zewnętrzne"] },
-  { name: "Komplet", featured: true, features: ["Mycie zewnętrzne", "Sprzątanie wnętrza"] },
-  { name: "Mycie zewnętrzne z woskowaniem", features: ["Mycie zewnętrzne", "Woskowanie"] },
-  { name: "Komplet z woskowaniem", features: ["Mycie zewnętrzne", "Sprzątanie wnętrza", "Woskowanie"] },
-  { name: "Sprzątanie wnętrza", features: ["Sprzątanie wnętrza"] },
-  { name: "Pranie wnętrza", features: ["Sprzątanie wnętrza", "Pranie tapicerki"] },
-  { name: "Płyn do spryskiwaczy", features: ["Płyn do spryskiwaczy"] },
-  { name: "Ozonowanie wnętrza", features: ["Ozonowanie wnętrza"] },
+  { name: "Mycie zewnętrzne", price: "od 80–150 zł", features: ["Mycie zewnętrzne"] },
+  { name: "Komplet", price: "od 180–300 zł", featured: true, features: ["Mycie zewnętrzne", "Sprzątanie wnętrza"] },
+  { name: "Mycie zewnętrzne z woskowaniem", price: "od 250–400 zł", features: ["Mycie zewnętrzne", "Woskowanie"] },
+  { name: "Komplet z woskowaniem", price: "od 350–500 zł", features: ["Mycie zewnętrzne", "Sprzątanie wnętrza", "Woskowanie"] },
+  { name: "Sprzątanie wnętrza", price: "od 150–250 zł", features: ["Sprzątanie wnętrza"] },
+  { name: "Pranie wnętrza", price: "od 450–600 zł", features: ["Sprzątanie wnętrza", "Pranie tapicerki"] },
+  { name: "Płyn do spryskiwaczy", price: "od 25 zł", features: ["Płyn do spryskiwaczy"] },
+  { name: "Ozonowanie wnętrza", price: "od 150 zł", features: ["Ozonowanie wnętrza"] },
 ];
 
 export type FleetPlan = {

@@ -25,14 +25,6 @@ export const metadata: Metadata = {
   description: "Learn about the story and values behind Wash & Go – a premium hand car wash.",
 };
 
-const milestones = [
-  { year: "2016", text: "We opened our first hand-wash bay in Goleniów." },
-  { year: "2019", text: "Expanded the facility with a detailing and paint correction area." },
-  { year: "2021", text: "Introduced vehicle pickup & delivery service." },
-  { year: "2023", text: "Launched a fleet package for business customers." },
-  { year: "2025", text: "New premium facility with 4 bays and a client lounge." },
-];
-
 const facility = [
   { icon: Wrench, title: "Professional equipment", desc: "Polishers, extractors and premium-class foam generators." },
   { icon: Award, title: "Certified chemistry", desc: "Car care products from trusted brands, safe for coatings." },
@@ -63,9 +55,9 @@ export default function AboutPage() {
       />
 
       <section className="bg-white py-24">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
           <MotionReveal>
-            <div className="flex items-center gap-5">
+            <div className="flex flex-col items-center gap-5">
               {/* eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually */}
               <img
                 src={`${basePath}/logo-badge.png`}
@@ -90,17 +82,6 @@ export default function AboutPage() {
               Today our team is made up of experienced detailers who look after dozens of cars every
               day – from city hatchbacks to collector cars and company fleets.
             </p>
-          </MotionReveal>
-
-          <MotionReveal delay={0.1} className="space-y-5">
-            {milestones.map((m) => (
-              <div key={m.year} className="flex gap-5 border-l-2 border-line pl-5">
-                <span className="-ml-[1.65rem] flex h-8 w-14 shrink-0 items-center justify-center rounded-full bg-navy font-display text-xs font-bold text-white">
-                  {m.year}
-                </span>
-                <p className="pt-1 text-sm leading-relaxed text-foreground/65">{m.text}</p>
-              </div>
-            ))}
           </MotionReveal>
         </div>
       </section>

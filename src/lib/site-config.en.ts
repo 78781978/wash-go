@@ -157,14 +157,14 @@ export const serviceCategories: {
 ];
 
 export const pricingTiers: PricingTier[] = [
-  { name: "Exterior wash", features: ["Exterior wash"] },
-  { name: "Full package", featured: true, features: ["Exterior wash", "Interior cleaning"] },
-  { name: "Exterior wash with waxing", features: ["Exterior wash", "Waxing"] },
-  { name: "Full package with waxing", features: ["Exterior wash", "Interior cleaning", "Waxing"] },
-  { name: "Interior cleaning", features: ["Interior cleaning"] },
-  { name: "Interior shampoo wash", features: ["Interior cleaning", "Upholstery shampoo wash"] },
-  { name: "Washer fluid top-up", features: ["Washer fluid top-up"] },
-  { name: "Interior ozone treatment", features: ["Interior ozone treatment"] },
+  { name: "Exterior wash", price: "from 80–150 zł", features: ["Exterior wash"] },
+  { name: "Full package", price: "from 180–300 zł", featured: true, features: ["Exterior wash", "Interior cleaning"] },
+  { name: "Exterior wash with waxing", price: "from 250–400 zł", features: ["Exterior wash", "Waxing"] },
+  { name: "Full package with waxing", price: "from 350–500 zł", features: ["Exterior wash", "Interior cleaning", "Waxing"] },
+  { name: "Interior cleaning", price: "from 150–250 zł", features: ["Interior cleaning"] },
+  { name: "Interior shampoo wash", price: "from 450–600 zł", features: ["Interior cleaning", "Upholstery shampoo wash"] },
+  { name: "Washer fluid top-up", price: "from 25 zł", features: ["Washer fluid top-up"] },
+  { name: "Interior ozone treatment", price: "from 150 zł", features: ["Interior ozone treatment"] },
 ];
 
 export const fleetPlans: FleetPlan[] = [

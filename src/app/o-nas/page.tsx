@@ -25,14 +25,6 @@ export const metadata: Metadata = {
   description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium.",
 };
 
-const milestones = [
-  { year: "2016", text: "Otwarcie pierwszego stanowiska ręcznego mycia w Goleniowie." },
-  { year: "2019", text: "Rozbudowa hali o strefę detailingu i korekty lakieru." },
-  { year: "2021", text: "Wprowadzenie usługi odbioru i dostawy auta." },
-  { year: "2023", text: "Uruchomienie oferty flotowej dla klientów biznesowych." },
-  { year: "2025", text: "Nowa hala premium z 4 stanowiskami i strefą klienta." },
-];
-
 const facility = [
   { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
   { icon: Award, title: "Certyfikowana chemia", desc: "Kosmetyki samochodowe renomowanych producentów, bezpieczne dla powłok." },
@@ -61,9 +53,9 @@ export default function ONasPage() {
       />
 
       <section className="bg-white py-24">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
           <MotionReveal>
-            <div className="flex items-center gap-5">
+            <div className="flex flex-col items-center gap-5">
               {/* eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually */}
               <img
                 src={`${basePath}/logo-badge.png`}
@@ -88,17 +80,6 @@ export default function ONasPage() {
               Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilkadziesiąt
               samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
-          </MotionReveal>
-
-          <MotionReveal delay={0.1} className="space-y-5">
-            {milestones.map((m) => (
-              <div key={m.year} className="flex gap-5 border-l-2 border-line pl-5">
-                <span className="-ml-[1.65rem] flex h-8 w-14 shrink-0 items-center justify-center rounded-full bg-navy font-display text-xs font-bold text-white">
-                  {m.year}
-                </span>
-                <p className="pt-1 text-sm leading-relaxed text-foreground/65">{m.text}</p>
-              </div>
-            ))}
           </MotionReveal>
         </div>
       </section>
