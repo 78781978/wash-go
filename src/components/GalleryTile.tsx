@@ -14,12 +14,14 @@ export function GalleryTile({
   tone,
   large = false,
   image,
+  alt,
 }: {
   title: string;
   category: string;
   tone: "navy" | "blue" | "graphite";
   large?: boolean;
   image?: string;
+  alt?: string;
 }) {
   return (
     <MotionItem
@@ -32,7 +34,9 @@ export function GalleryTile({
           // eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually
           <img
             src={`${basePath}${image}`}
-            alt={title}
+            alt={alt ?? title}
+            loading={large ? "eager" : "lazy"}
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
         ) : (

@@ -89,8 +89,11 @@ export default function AboutPage() {
               you can get a clean car without stepping away from your day.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Worth knowing: the car wash formerly known as Auto Lab Detailing Q has changed its name to
-              Wash&amp;Go – the same trusted team and quality of service, now under a new name.
+              <strong className="font-semibold text-navy">
+                Worth knowing: the car wash formerly known as Auto Lab Detailing Q has changed its name to
+                Wash&amp;Go
+              </strong>{" "}
+              – the same trusted team and quality of service, now under a new name.
             </p>
           </MotionReveal>
         </div>

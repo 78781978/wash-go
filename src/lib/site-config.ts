@@ -3,10 +3,12 @@ export const site = {
   claim: "Ręczna myjnia samochodowa premium",
   city: "Goleniów",
   address: "ul. Szczecińska 4b, 72-100 Goleniów",
+  legalName: 'P.H.U "Bobinex" Grzegorz Działkowski',
+  legalAddress: "ul. Szczecińska 1a, 72-100 Goleniów",
   phone: "+48 886 850 464",
   phoneHref: "tel:+48886850464",
   email: "kontakt@washandgo.pl",
-  nip: "PL 856 000 12 34",
+  nip: "856-109-60-07",
   hoursWeekdays: "09:00 – 17:00",
   hoursSaturday: "09:00 – 14:00",
   hoursSunday: "Nieczynne",
@@ -291,17 +293,17 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const galleryItems = [
-  { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp" },
-  { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const, image: "/gallery/porsche-macan.webp" },
-  { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp" },
-  { title: "Mycie floty", category: "Flota", tone: "navy" as const, image: "/gallery/mycie-floty.webp" },
-  { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
-  { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
-  { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp" },
-  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp" },
-  { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
-  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const, image: "/gallery/bmw-3-series.webp" },
-  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp" },
+  { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Maska Audi RS6 przed i po korekcie lakieru – usunięcie hologramów i rys." },
+  { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan przed i po nałożeniu powłoki ceramicznej – głęboki połysk lakieru." },
+  { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Fotele Volvo XC90 przed i po praniu tapicerki – usunięcie zabrudzeń ze skóry." },
+  { title: "Mycie floty", category: "Flota", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "Rząd firmowych busów przed i po myciu flotowym – odzyskany połysk karoserii." },
+  { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport przed i po permanentnym czarnieniu plastików zewnętrznych." },
+  { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes klasy E przed i po myciu z nabłyszczaniem lakieru." },
+  { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Felga Volkswagena Golfa GTI przed i po czyszczeniu – usunięcie osadu z hamulców." },
+  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Wnętrze Toyoty Land Cruiser podczas ozonowania i dezynfekcji kabiny." },
+  { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang przed i po nałożeniu syntetycznego wosku ochronnego." },
+  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW serii 3 przed i po myciu zewnętrznym – usunięcie zabrudzeń z karoserii." },
+  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Wnętrze Škody Octavii przed i po odkurzaniu – czysta tapicerka i dywaniki." },
 ];
 
 export const values = [

@@ -115,6 +115,7 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li className="text-sm text-white/70">{site.legalName}</li>
               <li className="text-sm text-white/70">NIP: {site.nip}</li>
             </ul>
           </div>

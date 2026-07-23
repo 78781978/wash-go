@@ -253,17 +253,17 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const galleryItems = [
-  { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp" },
-  { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const, image: "/gallery/porsche-macan.webp" },
-  { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp" },
-  { title: "Fleet wash", category: "Fleet", tone: "navy" as const, image: "/gallery/mycie-floty.webp" },
-  { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp" },
-  { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp" },
-  { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp" },
-  { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp" },
-  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
-  { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const, image: "/gallery/bmw-3-series.webp" },
-  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp" },
+  { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Audi RS6 bonnet before and after paint correction – swirl marks and scratches removed." },
+  { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan before and after ceramic coating – deep, glossy paint finish." },
+  { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Volvo XC90 front seats before and after upholstery cleaning – stains removed from the leather." },
+  { title: "Fleet wash", category: "Fleet", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "A row of company vans before and after a fleet wash – bodywork shine restored." },
+  { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport before and after permanent exterior trim restoration." },
+  { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes E-Class before and after a gloss wash – dust and grime removed from the paint." },
+  { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Volkswagen Golf GTI wheel before and after detailing – brake dust removed." },
+  { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Toyota Land Cruiser interior during ozone treatment and cabin disinfection." },
+  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang before and after protective wax application." },
+  { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW 3 Series before and after an exterior wash – dirt removed from the bodywork." },
+  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Škoda Octavia interior before and after vacuuming – clean upholstery and floor mats." },
 ];
 
 export const values = [

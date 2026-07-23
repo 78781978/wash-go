@@ -16,7 +16,7 @@ const sections: LegalSection[] = [
       <>
         <p>
           Administratorem danych osobowych zbieranych za pośrednictwem strony internetowej washandgo.pl
-          jest {site.name}, {site.address}, NIP: {site.nip} (dalej: „Administrator”).
+          jest {site.legalName}, {site.legalAddress}, NIP: {site.nip} (dalej: „Administrator”).
         </p>
         <p>
           Kontakt z Administratorem możliwy jest pod adresem e-mail: {site.email} lub telefonicznie:{" "}

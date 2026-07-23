@@ -15,7 +15,7 @@ const sections: LegalSection[] = [
     content: (
       <>
         <p>
-          The controller of personal data collected via the washandgo.pl website is {site.name}, {site.address},
+          The controller of personal data collected via the washandgo.pl website is {site.legalName}, {site.legalAddress},
           NIP (Tax ID): {site.nip} (hereinafter: the &quot;Controller&quot;).
         </p>
         <p>

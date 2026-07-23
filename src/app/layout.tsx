@@ -5,7 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
 import { PromoBadge } from "@/components/PromoBadge";
+import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site-config";
+import { siteUrl } from "@/lib/base-path";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     "mycie aut firmowych",
     "wash & go",
   ],
-  metadataBase: new URL("https://washandgo.pl"),
+  metadataBase: new URL(`${siteUrl}/`),
   openGraph: {
     title: `${site.name} – ${site.claim}`,
     description: "Ręczna myjnia samochodowa premium. Mycie, detailing, ochrona lakieru i oferta dla firm.",
@@ -50,7 +52,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${inter.variable} ${outfit.variable} h-full antialiased`}>
+      <head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; base-uri 'self'; object-src 'none'"
+        />
+      </head>
       <body className="flex min-h-full flex-col bg-white text-foreground">
+        <StructuredData />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
