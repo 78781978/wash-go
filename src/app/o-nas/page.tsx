@@ -80,6 +80,12 @@ export default function ONasPage() {
               Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilkadziesiąt
               samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
+            <p className="mt-4 text-base leading-relaxed text-foreground/60">
+              Znajdziesz nas w Goleniowie, gdzie od 25 lat rozwijamy się razem z naszymi klientami – dziś to
+              ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy ufają nam swoje auta.
+              Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
+              auto możesz mieć bez odrywania się od codziennych obowiązków.
+            </p>
           </MotionReveal>
         </div>
       </section>

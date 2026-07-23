@@ -82,6 +82,12 @@ export default function AboutPage() {
               Today our team is made up of experienced detailers who look after dozens of cars every
               day – from city hatchbacks to collector cars and company fleets.
             </p>
+            <p className="mt-4 text-base leading-relaxed text-foreground/60">
+              You&apos;ll find us in Goleniów, where we&apos;ve grown alongside our customers for 25 years – today
+              that means over 5,000 cars washed a year and a loyal group of regulars who trust us with
+              their cars. For those who value convenience, we also offer vehicle pickup &amp; delivery, so
+              you can get a clean car without stepping away from your day.
+            </p>
           </MotionReveal>
         </div>
       </section>
