@@ -301,7 +301,7 @@ export const galleryItems = [
   { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const },
   { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
   { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const },
-  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const },
+  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp" },
 ];
 
 export const values = [

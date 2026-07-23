@@ -263,7 +263,7 @@ export const galleryItems = [
   { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const },
   { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp" },
   { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const },
-  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const },
+  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp" },
 ];
 
 export const values = [
