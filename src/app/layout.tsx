@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
+import { PromoBadge } from "@/components/PromoBadge";
 import { site } from "@/lib/site-config";
 
 const inter = Inter({
@@ -53,6 +54,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <PromoBadge />
         <CookieConsent />
       </body>
     </html>

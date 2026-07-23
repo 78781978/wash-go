@@ -227,7 +227,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    name: "TransLog Ltd.",
+    name: "Fleet client",
     car: "14-vehicle fleet",
     text: "We've worked together for two years – consolidated invoicing, flexible hours, zero billing headaches.",
     rating: 5,
@@ -244,7 +244,7 @@ export const galleryItems = [
   { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const },
   { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const },
   { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const },
-  { title: "Fleet wash – TransLog Ltd.", category: "Fleet", tone: "navy" as const },
+  { title: "Fleet wash", category: "Fleet", tone: "navy" as const },
   { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const },
   { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const },
   { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const },

@@ -112,6 +112,24 @@ body {
   animation: marquee 104s linear infinite;
 }
 
+@keyframes badge-ring {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+
+.animate-badge-ring {
+  animation: badge-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes badge-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-badge-breathe {
+  animation: badge-breathe 2.2s ease-in-out infinite;
+}
+
 @keyframes drop-fall {
   0% { transform: translateY(-10px); opacity: 0; }
   30% { opacity: 1; }

@@ -265,7 +265,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    name: "Firma TransLog Sp. z o.o.",
+    name: "Klient flotowy",
     car: "Flota 14 pojazdów",
     text: "Współpracujemy od dwóch lat – faktura zbiorcza, elastyczne godziny i zero problemów z rozliczeniami.",
     rating: 5,
@@ -282,7 +282,7 @@ export const galleryItems = [
   { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const },
   { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const },
   { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const },
-  { title: "Mycie floty – TransLog Sp. z o.o.", category: "Flota", tone: "navy" as const },
+  { title: "Mycie floty", category: "Flota", tone: "navy" as const },
   { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const },
   { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const },
   { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const },
