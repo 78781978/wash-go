@@ -60,16 +60,6 @@ export const serviceCategories: {
         duration: "20–25 min",
         icon: "drop",
       },
-      {
-        slug: "gloss-osmosis-rinse",
-        title: "Gloss finish & osmosis rinse",
-        short: "Final rinse with demineralised water",
-        description:
-          "Final rinse with reverse-osmosis water – no limescale or water spots – plus a gloss enhancer for paint, trim and rubber.",
-        bullets: ["Demineralised water – no water spots", "Paint and trim gloss enhancer", "Dried by hand with microfibre towels"],
-        duration: "10 min",
-        icon: "sparkle",
-      },
     ],
   },
   {
@@ -134,10 +124,10 @@ export const serviceCategories: {
       },
       {
         slug: "hot-wax",
-        title: "Hot protective wax",
+        title: "Synthetic protective wax",
         short: "Deep gloss and 4–6 weeks of protection",
         description:
-          "Wax applied hot right after washing – it works into the paint's micropores, boosting gloss and resistance to road grime.",
+          "Synthetic protective wax applied by hand right after washing – boosts paint gloss and protects against road grime.",
         bullets: ["Deep, wet-look gloss", "Extra protection for 4–6 weeks", "Makes the next wash easier"],
         duration: "10 min",
         icon: "sparkle",
@@ -154,11 +144,11 @@ export const serviceCategories: {
       },
       {
         slug: "trim-restoration",
-        title: "Exterior trim restoration",
+        title: "Permanent plastic trim blackening",
         short: "Refreshed bumpers and trim strips",
         description:
-          "Restores deep black to faded plastic body parts – bumpers, trim strips and side skirts.",
-        bullets: ["Matte finish, not greasy", "UV protection", "Lasts several weeks"],
+          "Permanently restores deep black to faded plastic body parts – bumpers, trim strips and side skirts.",
+        bullets: ["Matte finish, not greasy", "UV protection"],
         duration: "15 min",
         icon: "drop",
       },
@@ -203,7 +193,7 @@ export const fleetPlans: FleetPlan[] = [
     desc: "For fleets over 20 vehicles and leasing companies",
     features: [
       "Custom discount and pricing",
-      "On-site washing available",
+      "Vehicle pickup & delivery",
       "Annual contract with priority service",
       "Account manager and B2B billing",
     ],
@@ -211,10 +201,9 @@ export const fleetPlans: FleetPlan[] = [
 ];
 
 export const stats = [
-  { value: 12000, suffix: "+", label: "cars washed every year" },
+  { value: 5000, suffix: "+", label: "cars washed every year" },
   { value: 4.9, suffix: "/5", label: "average customer rating", decimals: 1 },
-  { value: 8, suffix: " yrs", label: "of experience" },
-  { value: 100, suffix: "%", label: "reclaimed & osmosis water" },
+  { value: 25, suffix: " yrs", label: "of experience" },
 ];
 
 export const processSteps = [
@@ -260,14 +249,14 @@ export const galleryItems = [
   { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const },
   { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const },
   { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const },
-  { title: "Hot wax – Ford Mustang", category: "Finishing", tone: "blue" as const },
+  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const },
 ];
 
 export const values = [
   { title: "Precision", desc: "Every step is done by hand, with attention to the details you don't notice at first glance." },
   { title: "Safe products", desc: "pH-neutral car care products, safe for paint, PPF film and ceramic coatings." },
   { title: "Transparency", desc: "A clear price list with no hidden fees – you know exactly what you're paying for." },
-  { title: "Eco-friendly", desc: "Reclaimed and osmosis water, biodegradable chemistry, closed wastewater loop." },
+  { title: "Eco-friendly", desc: "Biodegradable, safe car care chemistry and responsible wastewater management." },
 ];
 
 export const faqs = [

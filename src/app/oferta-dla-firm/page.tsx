@@ -96,7 +96,7 @@ export default function OfertaDlaFirmPage() {
             </h2>
             <div className="mt-8 space-y-6">
               {[
-                { n: "01", t: "Rozmowa i wycena", d: "Analizujemy wielkość floty, lokalizację i częstotliwość mycia." },
+                { n: "01", t: "Rozmowa i wycena", d: "Analizujemy wielkość floty i częstotliwość mycia." },
                 { n: "02", t: "Umowa i harmonogram", d: "Ustalamy zakres usług, rabat i stałe terminy wizyt." },
                 { n: "03", t: "Start współpracy", d: "Otrzymujesz opiekuna klienta i pierwszą fakturę zbiorczą po miesiącu." },
               ].map((s) => (
@@ -117,8 +117,7 @@ export default function OfertaDlaFirmPage() {
               Porozmawiajmy o Twojej flocie
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Napisz do nas z liczbą pojazdów i preferowaną lokalizacją – przygotujemy indywidualną wycenę
-              w ciągu 24 godzin.
+              Napisz do nas z liczbą pojazdów – przygotujemy indywidualną wycenę w ciągu 24 godzin.
             </p>
             <div className="mt-7 flex flex-col gap-3">
               <Link

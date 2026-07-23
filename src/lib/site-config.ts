@@ -83,16 +83,6 @@ export const serviceCategories: {
         duration: "20–25 min",
         icon: "drop",
       },
-      {
-        slug: "nablyszczanie-osmoza",
-        title: "Nabłyszczanie i osmoza",
-        short: "Płukanie wodą demineralizowaną",
-        description:
-          "Ostatnie płukanie wodą po osmozie odwróconej – bez kamienia i zacieków, oraz nabłyszczacz na lakier, gumy i plastiki zewnętrzne.",
-        bullets: ["Woda demineralizowana – brak zacieków", "Nabłyszczacz lakieru i plastików", "Suszenie ręcznikiem z mikrofibry"],
-        duration: "10 min",
-        icon: "sparkle",
-      },
     ],
   },
   {
@@ -157,10 +147,10 @@ export const serviceCategories: {
       },
       {
         slug: "wosk-ochronny",
-        title: "Wosk ochronny na gorąco",
+        title: "Syntetyczny wosk ochronny",
         short: "Głęboki połysk i ochrona na 4–6 tyg.",
         description:
-          "Wosk nakładany na gorąco tuż po myciu – wnika w mikropory lakieru, wzmacniając połysk i odporność na warunki drogowe.",
+          "Syntetyczny wosk ochronny nakładany ręcznie tuż po myciu – wzmacnia połysk lakieru i chroni go przed warunkami drogowymi.",
         bullets: ["Głęboki, mokry połysk", "Dodatkowa ochrona na 4–6 tygodni", "Ułatwia kolejne mycie"],
         duration: "10 min",
         icon: "sparkle",
@@ -177,11 +167,11 @@ export const serviceCategories: {
       },
       {
         slug: "czarnienie-plastikow",
-        title: "Czarnienie plastików zewnętrznych",
+        title: "Permanentne czarnienie plastików",
         short: "Odświeżenie zderzaków i listew",
         description:
-          "Przywrócenie głębokiej czerni wypłowiałym plastikowym elementom nadwozia – zderzakom, listwom i progom.",
-        bullets: ["Efekt matowy, bez tłustego połysku", "Ochrona przed promieniowaniem UV", "Trwałość do kilku tygodni"],
+          "Permanentne przywrócenie głębokiej czerni wypłowiałym plastikowym elementom nadwozia – zderzakom, listwom i progom.",
+        bullets: ["Efekt matowy, bez tłustego połysku", "Ochrona przed promieniowaniem UV"],
         duration: "15 min",
         icon: "drop",
       },
@@ -238,7 +228,7 @@ export const fleetPlans: FleetPlan[] = [
     desc: "Dla flot powyżej 20 pojazdów i firm leasingowych",
     features: [
       "Indywidualny rabat i cennik",
-      "Możliwość mycia na terenie klienta",
+      "Odbiór i dostawa pojazdu",
       "Umowa roczna i priorytetowa obsługa",
       "Opiekun handlowy i rozliczenia B2B",
     ],
@@ -246,10 +236,9 @@ export const fleetPlans: FleetPlan[] = [
 ];
 
 export const stats = [
-  { value: 12000, suffix: "+", label: "umytych samochodów rocznie" },
+  { value: 5000, suffix: "+", label: "umytych samochodów rocznie" },
   { value: 4.9, suffix: "/5", label: "średnia ocena klientów", decimals: 1 },
-  { value: 8, suffix: " lat", label: "doświadczenia na rynku" },
-  { value: 100, suffix: "%", label: "wody z odzysku i osmozy" },
+  { value: 25, suffix: " lat", label: "doświadczenia na rynku" },
 ];
 
 export const processSteps = [
@@ -297,14 +286,14 @@ export const galleryItems = [
   { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const },
   { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const },
   { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const },
-  { title: "Wosk na gorąco – Ford Mustang", category: "Wykończenie", tone: "blue" as const },
+  { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const },
 ];
 
 export const values = [
   { title: "Precyzja", desc: "Każdy etap mycia wykonujemy ręcznie, z dbałością o detale, których nie widać na pierwszy rzut oka." },
   { title: "Bezpieczne środki", desc: "Kosmetyki samochodowe pH neutralne, bezpieczne dla lakieru, folii PPF i powłok ceramicznych." },
   { title: "Transparentność", desc: "Jasny cennik bez ukrytych opłat – wiesz dokładnie, za co płacisz." },
-  { title: "Ekologia", desc: "Woda z odzysku i systemu osmozy, biodegradowalna chemia, zamknięty obieg ścieków." },
+  { title: "Ekologia", desc: "Biodegradowalna, bezpieczna chemia samochodowa i odpowiedzialna gospodarka ściekami." },
 ];
 
 export const faqs = [

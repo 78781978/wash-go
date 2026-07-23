@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Car, SprayCan, Droplets, Sparkles } from "lucide-react";
+import { Car, SprayCan, Droplets, Truck } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 
 const copy = {
@@ -11,7 +11,7 @@ const copy = {
     chips: [
       { icon: SprayCan, label: "Mycie bezdotykowe" },
       { icon: Droplets, label: "Aktywna piana" },
-      { icon: Sparkles, label: "Nabłyszczanie i osmoza" },
+      { icon: Truck, label: "Odbiór i dostawa" },
     ],
   },
   en: {
@@ -20,7 +20,7 @@ const copy = {
     chips: [
       { icon: SprayCan, label: "Touchless pre-wash" },
       { icon: Droplets, label: "Active foam" },
-      { icon: Sparkles, label: "Gloss finish & osmosis" },
+      { icon: Truck, label: "Pickup & delivery" },
     ],
   },
 };

@@ -4,9 +4,7 @@ import {
   ArrowRight,
   Armchair,
   Award,
-  Droplet,
   Droplets,
-  Leaf,
   Ruler,
   Snowflake,
   Sparkles,
@@ -30,16 +28,15 @@ export const metadata: Metadata = {
 const milestones = [
   { year: "2016", text: "Otwarcie pierwszego stanowiska ręcznego mycia w Goleniowie." },
   { year: "2019", text: "Rozbudowa hali o strefę detailingu i korekty lakieru." },
-  { year: "2021", text: "Wdrożenie systemu osmozy i pełnego odzysku wody." },
+  { year: "2021", text: "Wprowadzenie usługi odbioru i dostawy auta." },
   { year: "2023", text: "Uruchomienie oferty flotowej dla klientów biznesowych." },
   { year: "2025", text: "Nowa hala premium z 4 stanowiskami i strefą klienta." },
 ];
 
 const facility = [
-  { icon: Droplet, title: "System osmozy", desc: "Woda demineralizowana do finalnego płukania – zero zacieków i osadu." },
-  { icon: Leaf, title: "Zamknięty obieg wody", desc: "Ścieki oczyszczane i częściowo odzyskiwane w procesie mycia wstępnego." },
   { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
   { icon: Award, title: "Certyfikowana chemia", desc: "Kosmetyki samochodowe renomowanych producentów, bezpieczne dla powłok." },
+  { icon: Truck, title: "Odbiór i dostawa auta", desc: "Odbieramy Twoje auto i dostarczamy je czyste pod wskazany adres." },
 ];
 
 const amenities = [
@@ -107,7 +104,7 @@ export default function ONasPage() {
       </section>
 
       <section className="bg-navy py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-5 sm:px-8 sm:grid-cols-3">
           {stats.map((s) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} decimals={s.decimals} label={s.label} />
           ))}
@@ -131,7 +128,7 @@ export default function ONasPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionHeading eyebrow="Nasza hala" title="Zaplecze klasy premium" description="Inwestujemy w sprzęt i technologię, które realnie wpływają na efekt końcowy." />
-          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {facility.map((f) => (
               <MotionItem key={f.title} className="rounded-2xl bg-graphite p-6 text-white">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue/20 text-blue-2">

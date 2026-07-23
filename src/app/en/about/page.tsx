@@ -4,9 +4,7 @@ import {
   ArrowRight,
   Armchair,
   Award,
-  Droplet,
   Droplets,
-  Leaf,
   Ruler,
   Snowflake,
   Sparkles,
@@ -30,16 +28,15 @@ export const metadata: Metadata = {
 const milestones = [
   { year: "2016", text: "We opened our first hand-wash bay in Goleniów." },
   { year: "2019", text: "Expanded the facility with a detailing and paint correction area." },
-  { year: "2021", text: "Introduced an osmosis system with full water reclamation." },
+  { year: "2021", text: "Introduced vehicle pickup & delivery service." },
   { year: "2023", text: "Launched a fleet package for business customers." },
   { year: "2025", text: "New premium facility with 4 bays and a client lounge." },
 ];
 
 const facility = [
-  { icon: Droplet, title: "Osmosis system", desc: "Demineralised water for the final rinse – zero water spots or residue." },
-  { icon: Leaf, title: "Closed water loop", desc: "Wastewater is treated and partly reclaimed for the pre-wash stage." },
   { icon: Wrench, title: "Professional equipment", desc: "Polishers, extractors and premium-class foam generators." },
   { icon: Award, title: "Certified chemistry", desc: "Car care products from trusted brands, safe for coatings." },
+  { icon: Truck, title: "Pickup & delivery", desc: "We pick up your car and deliver it back clean to your address." },
 ];
 
 const amenities = [
@@ -109,7 +106,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-navy py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-5 sm:px-8 sm:grid-cols-3">
           {stats.map((s) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} decimals={s.decimals} label={s.label} />
           ))}
@@ -133,7 +130,7 @@ export default function AboutPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionHeading eyebrow="Our facility" title="Premium-class equipment" description="We invest in the equipment and technology that genuinely improve the end result." />
-          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {facility.map((f) => (
               <MotionItem key={f.title} className="rounded-2xl bg-graphite p-6 text-white">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue/20 text-blue-2">

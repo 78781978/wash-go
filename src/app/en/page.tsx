@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const marqueeItems = [
   { icon: SprayCan, label: "Touchless pre-wash" },
   { icon: Droplets, label: "Active foam" },
-  { icon: Sparkles, label: "Gloss finish & osmosis" },
+  { icon: Sparkles, label: "Protective wax" },
   { icon: ShieldCheck, label: "Ceramic coatings" },
   { icon: Star, label: "Premium detailing" },
   { icon: Building2, label: "For business" },
@@ -44,7 +44,7 @@ const marqueeItems = [
 ));
 
 const featuredServices = serviceCategories.flatMap((c) => c.services).filter((s) =>
-  ["two-bucket-wash", "gloss-osmosis-rinse", "vacuum-upholstery", "ceramic-coating"].includes(s.slug)
+  ["two-bucket-wash", "hot-wax", "vacuum-upholstery", "ceramic-coating"].includes(s.slug)
 );
 
 export default function HomeEn() {
@@ -92,7 +92,7 @@ export default function HomeEn() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["No scratches – two-bucket method", "pH-neutral products", "Reclaimed water"].map((f) => (
+              {["No scratches – two-bucket method", "pH-neutral products", "Pickup & delivery"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -108,7 +108,7 @@ export default function HomeEn() {
       <Marquee items={marqueeItems} />
 
       <section className="bg-navy py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-5 sm:px-8 sm:grid-cols-3">
           {stats.map((s) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} decimals={s.decimals} label={s.label} />
           ))}

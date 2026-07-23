@@ -25,7 +25,7 @@ import {
 const marqueeItems = [
   { icon: SprayCan, label: "Mycie bezdotykowe" },
   { icon: Droplets, label: "Aktywna piana" },
-  { icon: Sparkles, label: "Nabłyszczanie i osmoza" },
+  { icon: Sparkles, label: "Wosk ochronny" },
   { icon: ShieldCheck, label: "Powłoki ceramiczne" },
   { icon: Star, label: "Detailing premium" },
   { icon: Building2, label: "Oferta dla firm" },
@@ -37,7 +37,7 @@ const marqueeItems = [
 ));
 
 const featuredServices = serviceCategories.flatMap((c) => c.services).filter((s) =>
-  ["mycie-reczne", "nablyszczanie-osmoza", "odkurzanie-tapicerki", "powloka-ceramiczna"].includes(s.slug)
+  ["mycie-reczne", "wosk-ochronny", "odkurzanie-tapicerki", "powloka-ceramiczna"].includes(s.slug)
 );
 
 export default function Home() {
@@ -85,7 +85,7 @@ export default function Home() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Woda z odzysku"].map((f) => (
+              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Odbiór i dostawa auta"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -101,7 +101,7 @@ export default function Home() {
       <Marquee items={marqueeItems} />
 
       <section className="bg-navy py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-5 sm:px-8 sm:grid-cols-3">
           {stats.map((s) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} decimals={s.decimals} label={s.label} />
           ))}

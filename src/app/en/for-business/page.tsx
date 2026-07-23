@@ -99,7 +99,7 @@ export default function ForBusinessPage() {
             </h2>
             <div className="mt-8 space-y-6">
               {[
-                { n: "01", t: "Call and quote", d: "We look at your fleet size, location and wash frequency." },
+                { n: "01", t: "Call and quote", d: "We look at your fleet size and wash frequency." },
                 { n: "02", t: "Agreement and schedule", d: "We agree the service scope, discount and fixed visit times." },
                 { n: "03", t: "Start of service", d: "You get an account manager and your first consolidated invoice after a month." },
               ].map((s) => (
@@ -120,8 +120,7 @@ export default function ForBusinessPage() {
               Let&apos;s talk about your fleet
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Send us your vehicle count and preferred location – we&apos;ll prepare a custom quote within
-              24 hours.
+              Send us your vehicle count – we&apos;ll prepare a custom quote within 24 hours.
             </p>
             <div className="mt-7 flex flex-col gap-3">
               <Link
