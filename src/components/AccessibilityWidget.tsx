@@ -79,8 +79,40 @@ const copy = {
 export function AccessibilityWidget() {
   const [open, setOpen] = useState(false);
   const [prefs, setPrefs] = useState<Prefs>(defaultPrefs);
+  const [cookieBannerVisible, setCookieBannerVisible] = useState(false);
+  const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
   const pathname = usePathname();
   const t = copy[localeFromPathname(pathname)];
+
+  useEffect(() => {
+    const onBannerChange = (e: Event) => {
+      setCookieBannerVisible((e as CustomEvent<{ visible: boolean }>).detail.visible);
+    };
+    window.addEventListener("washandgo:cookie-banner", onBannerChange);
+    return () => window.removeEventListener("washandgo:cookie-banner", onBannerChange);
+  }, []);
+
+  useEffect(() => {
+    if (!cookieBannerVisible) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- resets offset once the banner (an external DOM element) unmounts
+      setCookieBannerHeight(0);
+      return;
+    }
+    const el = document.getElementById("washandgo-cookie-banner");
+    if (!el) return;
+    const update = () => {
+      // Above sm breakpoint the banner sits bottom-right, clear of the widget.
+      setCookieBannerHeight(window.innerWidth >= 640 ? 0 : el.getBoundingClientRect().height);
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    window.addEventListener("resize", update);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", update);
+    };
+  }, [cookieBannerVisible]);
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
@@ -119,7 +151,10 @@ export function AccessibilityWidget() {
   ];
 
   return (
-    <div className="fixed left-3 top-1/2 z-40 -translate-y-1/2">
+    <div
+      className="fixed left-3 bottom-3 z-40 sm:bottom-5"
+      style={cookieBannerHeight ? { bottom: `calc(${cookieBannerHeight}px + 1.5rem)` } : undefined}
+    >
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -136,11 +171,11 @@ export function AccessibilityWidget() {
             role="dialog"
             aria-modal="false"
             aria-label={t.title}
-            initial={{ opacity: 0, x: -12, scale: 0.96 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -12, scale: 0.96 }}
+            initial={{ opacity: 0, y: 12, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 12, scale: 0.96 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute left-full top-1/2 ml-3 max-h-[80vh] w-72 max-w-[calc(100vw-4.5rem)] -translate-y-1/2 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-2xl"
+            className="absolute bottom-full left-0 mb-3 max-h-[70vh] w-72 max-w-[calc(100vw-2.5rem)] overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-2xl"
           >
             <div className="flex items-center justify-between">
               <p className="font-display text-sm font-semibold text-navy">{t.title}</p>

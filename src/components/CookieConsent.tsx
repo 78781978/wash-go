@@ -82,10 +82,15 @@ export function CookieConsent() {
   const acceptAll = () => save({ necessary: true, analytics: true, marketing: true });
   const rejectOptional = () => save({ necessary: true, analytics: false, marketing: false });
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("washandgo:cookie-banner", { detail: { visible } }));
+  }, [visible]);
+
   return (
     <AnimatePresence>
       {visible && (
         <motion.div
+          id="washandgo-cookie-banner"
           initial={{ y: 120, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 120, opacity: 0 }}
