@@ -148,14 +148,14 @@ export function AccessibilityWidget() {
                 type="button"
                 onClick={() => setOpen(false)}
                 aria-label={t.close}
-                className="flex h-7 w-7 items-center justify-center rounded-full text-foreground/40 hover:bg-mist hover:text-navy"
+                className="flex h-7 w-7 items-center justify-center rounded-full text-foreground/65 hover:bg-mist hover:text-navy"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
 
             <div className="mt-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/45">{t.textSize}</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/65">{t.textSize}</p>
               <div className="mt-2 flex items-center gap-2">
                 <button
                   type="button"

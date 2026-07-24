@@ -66,23 +66,23 @@ export default function RequiredConsentsPage() {
 
                 <dl className="mt-6 grid grid-cols-1 gap-5 border-t border-line pt-5 sm:grid-cols-2">
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       Data scope
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.scope}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">Purpose</dt>
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">Purpose</dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.purpose}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       Legal basis
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.basis}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       How to withdraw
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.withdraw}</dd>

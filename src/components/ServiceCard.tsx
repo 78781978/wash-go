@@ -45,7 +45,7 @@ export function ServiceCard({
       </div>
 
       <div className="mt-5 flex items-center justify-between border-t border-line pt-4">
-        <span className="text-xs font-medium uppercase tracking-wider text-foreground/40">{service.duration}</span>
+        <span className="text-xs font-medium uppercase tracking-wider text-foreground/65">{service.duration}</span>
         <Link
           href={t.pricingHref}
           className="flex items-center gap-1 text-xs font-semibold text-blue transition-colors hover:text-navy"

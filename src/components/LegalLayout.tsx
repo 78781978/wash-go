@@ -23,7 +23,7 @@ export function LegalLayout({
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[260px_1fr]">
           <aside className="hidden lg:block">
             <div className="sticky top-28">
-              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/40">{tocLabel}</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/65">{tocLabel}</p>
               <nav className="mt-4 space-y-1">
                 {sections.map((s) => (
                   <a
@@ -35,7 +35,7 @@ export function LegalLayout({
                   </a>
                 ))}
               </nav>
-              <p className="mt-6 border-t border-line pt-4 text-xs text-foreground/40">
+              <p className="mt-6 border-t border-line pt-4 text-xs text-foreground/65">
                 {updatedLabel}: {updated}
               </p>
             </div>

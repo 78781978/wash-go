@@ -56,16 +56,12 @@ export default function HomeEn() {
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-5 pb-20 pt-16 sm:px-8 sm:pb-28 sm:pt-20 lg:grid-cols-2 lg:gap-10">
           <div>
-            <MotionReveal>
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-2">
-                Premium hand car wash
-              </span>
-            </MotionReveal>
-            <MotionReveal delay={0.08}>
-              <h1 className="mt-6 max-w-xl font-display text-4xl font-semibold leading-[1.08] text-white text-balance sm:text-5xl lg:text-[3.4rem]">
-                Your car deserves more than a wash.
-              </h1>
-            </MotionReveal>
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-2">
+              Premium hand car wash
+            </span>
+            <h1 className="mt-6 max-w-xl font-display text-4xl font-semibold leading-[1.08] text-white text-balance sm:text-5xl lg:text-[3.4rem]">
+              Your car deserves more than a wash.
+            </h1>
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
                 Wash&amp;Go is hand care for your paint, interior and every detail – unhurried, scratch-free,
@@ -232,7 +228,7 @@ export default function HomeEn() {
             ))}
           </MotionStagger>
 
-          <p className="mt-10 text-center text-sm text-foreground/55">
+          <p className="mt-10 text-center text-sm text-foreground/70">
             Need the full price list with add-on services?{" "}
             <Link href="/en/pricing" className="font-semibold text-blue hover:text-navy">
               See the full price list →

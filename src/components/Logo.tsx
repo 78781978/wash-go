@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { basePath } from "@/lib/base-path";
+import Image from "next/image";
 
-export function LogoMark({ className = "" }: { className?: string }) {
+export function LogoMark({ className = "", priority = false }: { className?: string; priority?: boolean }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually
-    <img
-      src={`${basePath}/logo-mark.png`}
+    <Image
+      src="/logo-mark.png"
       alt="Wash & Go"
-      width={420}
-      height={420}
+      width={162}
+      height={162}
+      priority={priority}
       className={`${className} rounded-full object-contain`}
     />
   );
@@ -20,16 +20,21 @@ export function Logo({
   textClassName = "text-xl",
   gapClassName = "gap-3",
   dark = false,
+  priority = false,
 }: {
   className?: string;
   markClassName?: string;
   textClassName?: string;
   gapClassName?: string;
   dark?: boolean;
+  priority?: boolean;
 }) {
   return (
     <Link href="/" className={`group flex items-center ${gapClassName} ${className}`}>
-      <LogoMark className={`${markClassName} shrink-0 transition-transform duration-300 group-hover:rotate-6`} />
+      <LogoMark
+        className={`${markClassName} shrink-0 transition-transform duration-300 group-hover:rotate-6`}
+        priority={priority}
+      />
       <span className={`font-display font-extrabold uppercase tracking-wide ${textClassName}`}>
         <span className={dark ? "text-white" : "text-navy"}>wash&amp;</span>
         <span className="text-blue-2">go</span>

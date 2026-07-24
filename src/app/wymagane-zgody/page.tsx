@@ -64,23 +64,23 @@ export default function WymaganeZgodyPage() {
 
                 <dl className="mt-6 grid grid-cols-1 gap-5 border-t border-line pt-5 sm:grid-cols-2">
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       Zakres danych
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.scope}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">Cel</dt>
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">Cel</dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.purpose}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       Podstawa prawna
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.basis}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/40">
+                    <dt className="text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       Jak wycofać zgodę
                     </dt>
                     <dd className="mt-1.5 text-sm text-foreground/70">{c.withdraw}</dd>

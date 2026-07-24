@@ -41,7 +41,7 @@ export default function KontaktPage() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-soft text-blue">
                       <c.icon className="h-5 w-5" />
                     </div>
-                    <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-foreground/45">
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       {c.label}
                     </p>
                     {c.href ? (

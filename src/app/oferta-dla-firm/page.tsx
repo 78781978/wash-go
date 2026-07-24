@@ -64,7 +64,7 @@ export default function OfertaDlaFirmPage() {
                 <h3 className={`font-display text-xl font-semibold ${i === 1 ? "text-white" : "text-navy"}`}>
                   {plan.name}
                 </h3>
-                <p className={`mt-1.5 text-sm ${i === 1 ? "text-white/60" : "text-foreground/55"}`}>{plan.desc}</p>
+                <p className={`mt-1.5 text-sm ${i === 1 ? "text-white/60" : "text-foreground/70"}`}>{plan.desc}</p>
                 <ul className="mt-6 flex-1 space-y-3">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-sm">

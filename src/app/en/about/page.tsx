@@ -13,12 +13,12 @@ import {
   Wind,
   Wrench,
 } from "lucide-react";
+import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StatCounter } from "@/components/StatCounter";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
 import { stats, values } from "@/lib/site-config.en";
-import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
   title: "About – Wash & Go",
@@ -58,9 +58,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
           <MotionReveal>
             <div className="flex flex-col items-center gap-5">
-              {/* eslint-disable-next-line @next/next/no-img-element -- static export; basePath must be applied manually */}
-              <img
-                src={`${basePath}/logo-badge.png`}
+              <Image
+                src="/logo-badge.png"
                 alt="Wash & Go"
                 width={112}
                 height={112}

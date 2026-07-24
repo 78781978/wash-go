@@ -77,7 +77,7 @@ export function RequiredConsentsModal({
                 type="button"
                 onClick={onClose}
                 aria-label={t.close}
-                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-foreground/40 transition-colors hover:bg-mist hover:text-navy"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-foreground/65 transition-colors hover:bg-mist hover:text-navy"
               >
                 <X className="h-4.5 w-4.5" />
               </button>

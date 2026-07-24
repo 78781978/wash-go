@@ -42,6 +42,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         <Logo
           dark
+          priority
           markClassName="h-10 w-10 sm:h-16 sm:w-16 lg:h-[162px] lg:w-[162px]"
           textClassName="text-xl sm:text-2xl"
           gapClassName="gap-2"

@@ -13,7 +13,7 @@ export function TestimonialCard({ t }: { t: Testimonial }) {
       <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/75">&ldquo;{t.text}&rdquo;</p>
       <div className="mt-5 border-t border-line pt-4">
         <p className="font-display text-sm font-semibold text-navy">{t.name}</p>
-        <p className="text-xs text-foreground/50">{t.meta}</p>
+        <p className="text-xs text-foreground/70">{t.meta}</p>
       </div>
     </MotionItem>
   );
