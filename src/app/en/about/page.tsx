@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const facility = [
   { icon: Wrench, title: "Professional equipment", desc: "Polishers, extractors and premium-class foam generators." },
   { icon: Award, title: "Certified chemistry", desc: "Car care products from trusted brands, safe for coatings." },
-  { icon: Truck, title: "Pickup & delivery", desc: "We pick up your car and deliver it back clean to your address." },
+  { icon: Truck, title: "Pickup & delivery", desc: "We offer a pickup and delivery service for an additional fee." },
 ];
 
 const amenities = [
