@@ -1,7 +1,10 @@
 export const repoName = "wash-go";
-export const basePath = `/${repoName}`;
 
-// TODO: once washandgo.pl is connected as the custom domain, update this
-// (and drop basePath) to match — everything reading siteUrl picks it up automatically.
-export const siteOrigin = "https://78781978.github.io";
-export const siteUrl = `${siteOrigin}${basePath}`;
+// Hosted on Vercel under the custom domain — no GitHub Pages subpath needed.
+export const basePath = "";
+
+// ASCII-compatible (punycode) form of myjniaręcznagoleniów.pl — used for
+// canonical URLs, sitemap.xml, robots.txt and structured data, since those
+// are machine-facing contexts where the ACE form is the safer choice.
+export const siteOrigin = "https://xn--myjniarcznagoleniw-61b36e.pl";
+export const siteUrl = siteOrigin;
