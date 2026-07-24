@@ -3,12 +3,51 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { Accessibility, Minus, Plus, Contrast, RotateCcw, X } from "lucide-react";
+import {
+  Accessibility,
+  Minus,
+  Plus,
+  Contrast,
+  Palette,
+  Underline,
+  Type,
+  PauseCircle,
+  RotateCcw,
+  X,
+} from "lucide-react";
 import { localeFromPathname } from "@/lib/i18n";
 
 type TextSize = "normal" | "lg" | "xl";
 
+type Toggle = "contrast" | "grayscale" | "underline" | "readableFont" | "reduceMotion";
+
+type Prefs = {
+  textSize: TextSize;
+  contrast: boolean;
+  grayscale: boolean;
+  underline: boolean;
+  readableFont: boolean;
+  reduceMotion: boolean;
+};
+
+const defaultPrefs: Prefs = {
+  textSize: "normal",
+  contrast: false,
+  grayscale: false,
+  underline: false,
+  readableFont: false,
+  reduceMotion: false,
+};
+
 const STORAGE_KEY = "washandgo-a11y-prefs";
+
+const classMap: Record<Toggle, string> = {
+  contrast: "a11y-contrast",
+  grayscale: "a11y-grayscale",
+  underline: "a11y-underline",
+  readableFont: "a11y-readable-font",
+  reduceMotion: "a11y-reduce-motion",
+};
 
 const copy = {
   pl: {
@@ -16,6 +55,10 @@ const copy = {
     title: "Dostępność",
     textSize: "Rozmiar tekstu",
     contrast: "Wysoki kontrast",
+    grayscale: "Skala szarości",
+    underline: "Podkreśl linki",
+    readableFont: "Czcionka bezszeryfowa",
+    reduceMotion: "Ogranicz animacje",
     reset: "Przywróć domyślne",
     close: "Zamknij",
   },
@@ -24,6 +67,10 @@ const copy = {
     title: "Accessibility",
     textSize: "Text size",
     contrast: "High contrast",
+    grayscale: "Grayscale",
+    underline: "Underline links",
+    readableFont: "Sans-serif font",
+    reduceMotion: "Reduce animations",
     reset: "Reset to default",
     close: "Close",
   },
@@ -31,8 +78,7 @@ const copy = {
 
 export function AccessibilityWidget() {
   const [open, setOpen] = useState(false);
-  const [textSize, setTextSize] = useState<TextSize>("normal");
-  const [contrast, setContrast] = useState(false);
+  const [prefs, setPrefs] = useState<Prefs>(defaultPrefs);
   const pathname = usePathname();
   const t = copy[localeFromPathname(pathname)];
 
@@ -40,10 +86,9 @@ export function AccessibilityWidget() {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (!stored) return;
     try {
-      const parsed = JSON.parse(stored) as { textSize?: TextSize; contrast?: boolean };
+      const parsed = JSON.parse(stored) as Partial<Prefs>;
       // eslint-disable-next-line react-hooks/set-state-in-effect -- localStorage is only readable client-side, after mount
-      if (parsed.textSize) setTextSize(parsed.textSize);
-      if (parsed.contrast) setContrast(parsed.contrast);
+      setPrefs((p) => ({ ...p, ...parsed }));
     } catch {
       // ignore malformed stored preferences
     }
@@ -52,18 +97,26 @@ export function AccessibilityWidget() {
   useEffect(() => {
     const root = document.documentElement;
     root.classList.remove("a11y-text-lg", "a11y-text-xl");
-    if (textSize === "lg") root.classList.add("a11y-text-lg");
-    if (textSize === "xl") root.classList.add("a11y-text-xl");
-    root.classList.toggle("a11y-contrast", contrast);
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ textSize, contrast }));
-  }, [textSize, contrast]);
+    if (prefs.textSize === "lg") root.classList.add("a11y-text-lg");
+    if (prefs.textSize === "xl") root.classList.add("a11y-text-xl");
+    for (const toggle of Object.keys(classMap) as Toggle[]) {
+      root.classList.toggle(classMap[toggle], prefs[toggle]);
+    }
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
+  }, [prefs]);
 
-  const smaller = () => setTextSize((s) => (s === "xl" ? "lg" : "normal"));
-  const larger = () => setTextSize((s) => (s === "normal" ? "lg" : "xl"));
-  const reset = () => {
-    setTextSize("normal");
-    setContrast(false);
-  };
+  const smaller = () => setPrefs((p) => ({ ...p, textSize: p.textSize === "xl" ? "lg" : "normal" }));
+  const larger = () => setPrefs((p) => ({ ...p, textSize: p.textSize === "normal" ? "lg" : "xl" }));
+  const toggle = (key: Toggle) => setPrefs((p) => ({ ...p, [key]: !p[key] }));
+  const reset = () => setPrefs(defaultPrefs);
+
+  const toggles: { key: Toggle; label: string; icon: typeof Contrast }[] = [
+    { key: "contrast", label: t.contrast, icon: Contrast },
+    { key: "grayscale", label: t.grayscale, icon: Palette },
+    { key: "underline", label: t.underline, icon: Underline },
+    { key: "readableFont", label: t.readableFont, icon: Type },
+    { key: "reduceMotion", label: t.reduceMotion, icon: PauseCircle },
+  ];
 
   return (
     <>
@@ -87,7 +140,7 @@ export function AccessibilityWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.96 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-20 left-5 z-40 w-64 rounded-2xl border border-line bg-white p-5 shadow-2xl"
+            className="fixed bottom-20 left-5 z-40 max-h-[calc(100vh-7rem)] w-72 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-2xl"
           >
             <div className="flex items-center justify-between">
               <p className="font-display text-sm font-semibold text-navy">{t.title}</p>
@@ -107,19 +160,19 @@ export function AccessibilityWidget() {
                 <button
                   type="button"
                   onClick={smaller}
-                  disabled={textSize === "normal"}
+                  disabled={prefs.textSize === "normal"}
                   aria-label="A-"
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-navy transition-colors hover:bg-mist disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   <Minus className="h-4 w-4" />
                 </button>
                 <span className="flex-1 text-center text-xs font-medium text-foreground/60">
-                  {textSize === "normal" ? "100%" : textSize === "lg" ? "112%" : "125%"}
+                  {prefs.textSize === "normal" ? "100%" : prefs.textSize === "lg" ? "112%" : "125%"}
                 </span>
                 <button
                   type="button"
                   onClick={larger}
-                  disabled={textSize === "xl"}
+                  disabled={prefs.textSize === "xl"}
                   aria-label="A+"
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-navy transition-colors hover:bg-mist disabled:cursor-not-allowed disabled:opacity-40"
                 >
@@ -128,18 +181,22 @@ export function AccessibilityWidget() {
               </div>
             </div>
 
-            <label className="mt-4 flex items-center justify-between gap-3 text-sm text-navy">
-              <span className="flex items-center gap-2">
-                <Contrast className="h-4 w-4 text-blue" />
-                {t.contrast}
-              </span>
-              <input
-                type="checkbox"
-                checked={contrast}
-                onChange={(e) => setContrast(e.target.checked)}
-                className="h-4 w-4 accent-blue"
-              />
-            </label>
+            <div className="mt-4 space-y-3 border-t border-line pt-4">
+              {toggles.map(({ key, label, icon: Icon }) => (
+                <label key={key} className="flex items-center justify-between gap-3 text-sm text-navy">
+                  <span className="flex items-center gap-2">
+                    <Icon className="h-4 w-4 shrink-0 text-blue" />
+                    {label}
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked={prefs[key]}
+                    onChange={() => toggle(key)}
+                    className="h-4 w-4 shrink-0 accent-blue"
+                  />
+                </label>
+              ))}
+            </div>
 
             <button
               type="button"

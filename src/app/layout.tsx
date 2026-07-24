@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
 import { PromoBadge } from "@/components/PromoBadge";
 import { AccessibilityWidget } from "@/components/AccessibilityWidget";
+import { SkipLink } from "@/components/SkipLink";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site-config";
 import { siteUrl } from "@/lib/base-path";
@@ -60,9 +61,12 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-full flex-col bg-white text-foreground">
+        <SkipLink />
         <StructuredData />
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <Footer />
         <PromoBadge />
         <AccessibilityWidget />
