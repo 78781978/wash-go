@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
 import { PromoBadge } from "@/components/PromoBadge";
+import { AccessibilityWidget } from "@/components/AccessibilityWidget";
 import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site-config";
 import { siteUrl } from "@/lib/base-path";
@@ -64,6 +65,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <PromoBadge />
+        <AccessibilityWidget />
         <CookieConsent />
       </body>
     </html>

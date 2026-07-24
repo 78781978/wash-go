@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/site-config";
 import type { Locale } from "@/lib/i18n";
+import { RequiredConsentsModal } from "./RequiredConsentsModal";
 
 const copy = {
   pl: {
@@ -65,6 +66,7 @@ const copy = {
 export function ContactForm({ locale = "pl" }: { locale?: Locale }) {
   const [sent, setSent] = useState(false);
   const [consent, setConsent] = useState(false);
+  const [consentsModalOpen, setConsentsModalOpen] = useState(false);
   const t = copy[locale];
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -175,12 +177,22 @@ export function ContactForm({ locale = "pl" }: { locale?: Locale }) {
                   {t.privacyLink}
                 </Link>{" "}
                 {t.consentAnd}{" "}
-                <Link href={t.consentsHref} className="font-medium text-blue underline underline-offset-2">
+                <button
+                  type="button"
+                  onClick={() => setConsentsModalOpen(true)}
+                  className="font-medium text-blue underline underline-offset-2"
+                >
                   {t.consentsLink}
-                </Link>
+                </button>
                 .
               </span>
             </label>
+
+            <RequiredConsentsModal
+              open={consentsModalOpen}
+              onClose={() => setConsentsModalOpen(false)}
+              locale={locale}
+            />
 
             <button
               type="submit"

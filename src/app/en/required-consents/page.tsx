@@ -1,54 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MessageSquare, Mail, Megaphone, Cookie, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
+import { consentsEn as consents } from "@/lib/consents-data";
 
 export const metadata: Metadata = {
   title: "Required Consents – Wash & Go",
   description: "An overview of the consents required when using Wash & Go's forms and services.",
 };
-
-const consents = [
-  {
-    icon: MessageSquare,
-    title: "Consent to contact you about the form",
-    required: true,
-    scope: "Name, email address, phone number, message content.",
-    purpose: "Responding to an enquiry sent via the contact form on washandgo.pl.",
-    basis: "Art. 6(1)(a) GDPR – freely given consent.",
-    withdraw: "Consent can be withdrawn at any time by writing to " + site.email + ".",
-  },
-  {
-    icon: Mail,
-    title: "Newsletter consent",
-    required: false,
-    scope: "Email address.",
-    purpose: "Sending information about promotions, new services and Wash & Go events by email.",
-    basis: "Art. 6(1)(a) GDPR and Art. 10 of the Act on the Provision of Electronic Services.",
-    withdraw: "Unsubscribe with one click in the footer of any email, or by contacting us directly.",
-  },
-  {
-    icon: Megaphone,
-    title: "Marketing consent (phone)",
-    required: false,
-    scope: "Phone number.",
-    purpose: "Presenting offers and commercial information by phone, including SMS.",
-    basis: "Art. 6(1)(a) GDPR and Art. 172 of the Telecommunications Law.",
-    withdraw: "Consent can be withdrawn by phone, email or in writing at any time.",
-  },
-  {
-    icon: Cookie,
-    title: "Consent to analytics and marketing cookies",
-    required: false,
-    scope: "Technical data and identifiers stored in cookies.",
-    purpose: "Analysing site traffic, improving functionality, and personalising advertising content.",
-    basis: "Art. 6(1)(a) GDPR and Art. 173 of the Telecommunications Law.",
-    withdraw: "Cookie settings can be changed at any time in the consent banner or your browser settings.",
-  },
-];
 
 export default function RequiredConsentsPage() {
   return (

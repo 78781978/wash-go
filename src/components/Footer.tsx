@@ -162,7 +162,7 @@ export function Footer() {
               href="https://verostudio.pl"
               target="_blank"
               rel="noreferrer"
-              className="group relative inline-block overflow-hidden align-baseline font-semibold text-white/80 transition-colors hover:text-white"
+              className="group relative inline-flex overflow-hidden font-semibold text-white/80 transition-colors hover:text-white"
             >
               VERO STUDIO
               <span className="pointer-events-none absolute inset-y-0 left-0 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shine" />

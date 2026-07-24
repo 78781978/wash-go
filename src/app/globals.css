@@ -144,3 +144,23 @@ body {
   text-wrap: balance;
 }
 
+html.a11y-text-lg {
+  font-size: 112.5%;
+}
+
+html.a11y-text-xl {
+  font-size: 125%;
+}
+
+/* Scoped to main (not html/body) so the filter doesn't create a new
+   containing block for the site's fixed-position widgets (promo badge,
+   cookie banner, this widget itself). */
+html.a11y-contrast main {
+  filter: contrast(1.15) brightness(1.05);
+}
+
+html.a11y-contrast a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+

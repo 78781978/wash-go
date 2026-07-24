@@ -1,54 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MessageSquare, Mail, Megaphone, Cookie, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
+import { consentsPl as consents } from "@/lib/consents-data";
 
 export const metadata: Metadata = {
   title: "Wymagane zgody",
   description: "Zestawienie zgód wymaganych przy korzystaniu z formularzy i usług Wash & Go.",
 };
-
-const consents = [
-  {
-    icon: MessageSquare,
-    title: "Zgoda na kontakt w sprawie formularza",
-    required: true,
-    scope: "Imię i nazwisko, adres e-mail, numer telefonu, treść wiadomości.",
-    purpose: "Udzielenie odpowiedzi na zapytanie przesłane przez formularz kontaktowy na stronie washandgo.pl.",
-    basis: "Art. 6 ust. 1 lit. a RODO – dobrowolnie wyrażona zgoda.",
-    withdraw: "Zgodę można wycofać w dowolnym momencie, pisząc na adres " + site.email + ".",
-  },
-  {
-    icon: Mail,
-    title: "Zgoda na newsletter",
-    required: false,
-    scope: "Adres e-mail.",
-    purpose: "Przesyłanie informacji o promocjach, nowych usługach i wydarzeniach Wash & Go drogą elektroniczną.",
-    basis: "Art. 6 ust. 1 lit. a RODO oraz art. 10 ustawy o świadczeniu usług drogą elektroniczną.",
-    withdraw: "Rezygnacja możliwa jednym kliknięciem w stopce każdej wiadomości lub poprzez kontakt e-mailowy.",
-  },
-  {
-    icon: Megaphone,
-    title: "Zgoda marketingowa (telefon)",
-    required: false,
-    scope: "Numer telefonu.",
-    purpose: "Przedstawianie ofert i informacji handlowych drogą telefoniczną, w tym SMS.",
-    basis: "Art. 6 ust. 1 lit. a RODO oraz art. 172 ustawy Prawo telekomunikacyjne.",
-    withdraw: "Zgodę można wycofać telefonicznie, e-mailowo lub pisemnie w dowolnym momencie.",
-  },
-  {
-    icon: Cookie,
-    title: "Zgoda na cookies analityczne i marketingowe",
-    required: false,
-    scope: "Dane techniczne i identyfikatory przechowywane w plikach cookies.",
-    purpose: "Analiza ruchu na stronie, poprawa jej funkcjonalności oraz personalizacja treści reklamowych.",
-    basis: "Art. 6 ust. 1 lit. a RODO oraz art. 173 ustawy Prawo telekomunikacyjne.",
-    withdraw: "Ustawienia cookies można zmienić w każdej chwili w banerze zgody lub w ustawieniach przeglądarki.",
-  },
-];
 
 export default function WymaganeZgodyPage() {
   return (
