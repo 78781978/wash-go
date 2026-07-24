@@ -8,9 +8,9 @@ import { MotionStagger } from "@/components/MotionReveal";
 import { serviceCategories } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Usługi",
+  title: "Usługi – myjnia Goleniów",
   description:
-    "Pełna oferta usług myjni ręcznej Wash & Go: mycie zewnętrzne, detailing wnętrza, powłoki ceramiczne i polerowanie lakieru.",
+    "Pełna oferta usług myjni ręcznej Wash & Go w Goleniowie: mycie zewnętrzne, detailing wnętrza, powłoki ceramiczne i polerowanie lakieru.",
 };
 
 export default function UslugiPage() {

@@ -6,8 +6,8 @@ import { MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
-  description: "Skontaktuj się z myjnią Wash & Go – adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
+  title: "Kontakt – myjnia Goleniów",
+  description: "Skontaktuj się z myjnią Wash & Go w Goleniowie – adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
 };
 
 const infoCards = [

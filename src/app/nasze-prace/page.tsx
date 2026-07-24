@@ -9,8 +9,8 @@ import { MotionStagger } from "@/components/MotionReveal";
 import { galleryItems, testimonials } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Nasze prace",
-  description: "Zobacz wybrane realizacje myjni Wash & Go – detailing, powłoki ceramiczne, mycie flotowe.",
+  title: "Nasze prace – myjnia Goleniów",
+  description: "Zobacz wybrane realizacje myjni Wash & Go w Goleniowie – detailing, powłoki ceramiczne, mycie flotowe.",
 };
 
 export default function NaszePracePage() {

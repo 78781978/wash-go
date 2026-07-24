@@ -7,8 +7,8 @@ import { MotionStagger, MotionReveal } from "@/components/MotionReveal";
 import { pricingTiers, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Cennik",
-  description: "Cennik ręcznej myjni Wash & Go – pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
+  title: "Cennik – myjnia Goleniów",
+  description: "Cennik ręcznej myjni Wash & Go w Goleniowie – pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
 };
 
 export default function CennikPage() {

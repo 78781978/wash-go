@@ -7,8 +7,8 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { fleetPlans, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Oferta dla firm",
-  description: "Mycie floty samochodowej Wash & Go – rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
+  title: "Oferta dla firm – myjnia Goleniów",
+  description: "Mycie floty samochodowej Wash & Go w Goleniowie – rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
 };
 
 const benefits = [

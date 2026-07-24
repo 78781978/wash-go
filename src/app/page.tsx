@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, SprayCan, Sparkles, Droplets, Star, Building2 } from "lucide-react";
 import { MotionReveal, MotionStagger, MotionItem } from "@/components/MotionReveal";
@@ -21,6 +22,12 @@ import {
   testimonials,
   values,
 } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Myjnia Goleniów – Wash & Go",
+  description:
+    "Wash & Go – ręczna myjnia samochodowa w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i mycie flot firmowych. Bez rezerwacji – zadzwoń lub wjedź.",
+};
 
 const marqueeItems = [
   { icon: SprayCan, label: "Mycie bezdotykowe" },
@@ -51,7 +58,7 @@ export default function Home() {
           <div>
             <MotionReveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-2">
-                Ręczna myjnia samochodowa premium
+                Ręczna myjnia samochodowa premium w Goleniowie
               </span>
             </MotionReveal>
             <MotionReveal delay={0.08}>

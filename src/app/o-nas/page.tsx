@@ -21,8 +21,8 @@ import { stats, values } from "@/lib/site-config";
 import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
-  title: "O nas",
-  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium.",
+  title: "O nas – myjnia Goleniów",
+  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium w Goleniowie.",
 };
 
 const facility = [
