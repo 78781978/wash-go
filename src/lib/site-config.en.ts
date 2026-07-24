@@ -217,37 +217,37 @@ export const testimonials: Testimonial[] = [
   {
     name: "Rafał Kałuża",
     meta: "Local Guide · 27 reviews · 9 months ago",
-    text: "Zdecydowanie polecam serdecznie tą firmę. Bardzo profesjonalnie podchodzą do każdego klienta obojętnie czy ktoś przyjedzie nowym autem czy starszym, każdym jednym bardzo troskliwie się zaopiekują dobierając taką metodę kosmetyki że to auto świeci się i pachnie jak nowe. Bardzo mili pracownicy którzy zawsze z uśmiechem podchodzą do każdego klienta, bezproblemowo można się umówić na dogodny termin a nawet często i od ręki można się załapać. Szczególnie polecam ręczne woskowanie auta – szczególnie tak jak w przypadku mojego auta, ten kolor nabiera pięknej głębi i brud nie trzyma się tak tego lakieru. Prałem też u nich tapicerkę w moich 3 poprzednich samochodach, w tym w aucie, w którym poprzedni właściciel palił papierosy, i ktoś mi powiedział, że tego smrodu już się nie pozbędę. Chłopaki wyprali mi go tak porządnie, że w życiu nikt by nie powiedział, że wcześniej to było auto po palaczu, dlatego teraz też do nich jeżdżę z moim nowym Oplem. Zdecydowanie najbardziej profesjonalna kosmetyka samochodowa w mieście, więc gorąco polecam!",
+    text: "I definitely and warmly recommend this company. They treat every customer very professionally, whether you show up in a brand-new car or an older one – each one is looked after with real care, choosing the right products so the car ends up shining and smelling like new. Very friendly staff who always greet every customer with a smile, and it's easy to book a convenient slot – you can often even get in on the spot. I especially recommend the hand waxing – in the case of my car, the colour gained a beautiful depth and dirt doesn't stick to the paint as easily anymore. I've also had the upholstery cleaned there in my 3 previous cars, including one whose previous owner used to smoke in it, and I was told I'd never get rid of that smell. The guys cleaned it so thoroughly that nobody would ever have guessed a smoker used to own that car – that's why I still bring my new Opel to them now. Definitely the most professional car detailing in town, so I highly recommend it!",
     rating: 5,
   },
   {
     name: "Marta Kieryk",
     meta: "3 reviews · 6 months ago",
-    text: "Usługa na najwyższym poziomie. Auto wygląda tak, jakby dopiero co opuściło linię produkcyjną, tyle że opuściło ją w 2007 roku! Efekt jest spektakularny. Szczególne uznanie za felgi, których nawet mój syn nie był w stanie doczyścić, a tutaj lśnią jak nowe. Szczera polecajka 👍",
+    text: "Top-notch service. The car looks like it just rolled off the production line – except it actually rolled off it in 2007! The result is spectacular. Special credit for the wheels, which even my son couldn't get fully clean, and here they came out shining like new. A genuine recommendation 👍",
     rating: 5,
   },
   {
     name: "Żaneta Borowska",
     meta: "Local Guide · 101 reviews · 9 months ago",
-    text: "Wszystko super. Auto pięknie wyczyszczone. Jest to nowy punkt na naszej mapie Goleniowa. Bardzo polecam to miejsce.",
+    text: "Everything was great. The car was beautifully cleaned. This is a new spot on our map of Goleniów. I highly recommend this place.",
     rating: 5,
   },
   {
     name: "Anna Kozłowska",
     meta: "1 review · 8 months ago",
-    text: "Bardzo polecam tę myjnię. Wszystko jest perfekcyjnie wyczyszczone wewnątrz i na zewnątrz. Wszystko szybko i sprawnie.",
+    text: "I highly recommend this car wash. Everything is perfectly cleaned, inside and out. Fast and efficient service.",
     rating: 5,
   },
   {
     name: "Marta Próchnicka",
     meta: "Local Guide · 99 reviews · 7 months ago",
-    text: "Kolejny raz oddawałam firmowe auto do tej myjni. Polecam serdecznie tą myjnię. Bardzo fachowa i miła obsługa, perfekcja w każdym calu. Na pewno wrócę tam ze swoim prywatnym autem.",
+    text: "I brought our company car to this car wash once again. I warmly recommend this place. Very professional and friendly service, perfection in every detail. I'll definitely come back with my own private car too.",
     rating: 5,
   },
   {
     name: "Irmina Bartoszewicz",
     meta: "3 reviews · 5 months ago",
-    text: "Bardzo polecam tę myjnię samochodową. Auto dokładnie umyte, a obsługa niezwykle miła. Szybko, sprawnie i w przyjemnej atmosferze – na pewno wrócę!",
+    text: "I highly recommend this car wash. The car was thoroughly cleaned, and the staff were incredibly friendly. Fast, efficient, and in a pleasant atmosphere – I'll definitely be back!",
     rating: 5,
   },
 ];
