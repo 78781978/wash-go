@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const facility = [
   { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
   { icon: Award, title: "Certyfikowana chemia", desc: "Kosmetyki samochodowe renomowanych producentów, bezpieczne dla powłok." },
-  { icon: Truck, title: "Odbiór i dostawa auta", desc: "Oferujemy usługę odbierania i dostarczania za dodatkową opłatą." },
+  { icon: Truck, title: "Odbiór i dostawa auta", desc: "Oferujemy usługę odbierania i dostarczania czystego auta za dodatkową opłatą." },
 ];
 
 const amenities = [
