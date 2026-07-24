@@ -29,15 +29,13 @@ Dane firmowe (adres, telefon, godziny, ceny, usługi, treści marketingowe) znaj
 
 ## Build produkcyjny
 
-Strona jest budowana jako statyczny eksport (`output: "export"` w `next.config.ts`) i publikowana na GitHub Pages pod adresem:
+Strona jest hostowana na Vercel pod domeną:
 
-**https://78781978.github.io/wash-go/**
+**https://myjniaręcznagoleniów.pl**
 
-Deployment uruchamia się automatycznie (GitHub Actions, `.github/workflows/deploy.yml`) po każdym push do tego brancha. Aby zbudować i podejrzeć statyczną wersję lokalnie:
+Deployment uruchamia się automatycznie po każdym push do brancha `main` (integracja Vercel ↔ GitHub). Aby zbudować i uruchomić produkcyjną wersję lokalnie:
 
 ```bash
 npm run build
-npx serve out
+npm run start
 ```
-
-Ważne: ponieważ strona jest hostowana pod ścieżką `/wash-go/`, `basePath`/`assetPrefix` w `next.config.ts` muszą zgadzać się z nazwą repozytorium.
