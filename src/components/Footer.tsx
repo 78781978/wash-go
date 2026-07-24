@@ -159,7 +159,7 @@ export function Footer() {
           <span>
             {t.credit}{" "}
             <a
-              href="https://verostudio.pl"
+              href="https://www.facebook.com/profile.php?id=61591915780293"
               target="_blank"
               rel="noreferrer"
               className="group relative inline-flex overflow-hidden font-semibold text-white/80 transition-colors hover:text-white"
