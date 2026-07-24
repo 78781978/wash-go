@@ -37,6 +37,7 @@ const copy = {
     hoursSunday: "Niedz",
     rights: "Wszelkie prawa zastrzeżone.",
     strapline: "Ręczna myjnia samochodowa premium",
+    credit: "Projekt i realizacja:",
   },
   en: {
     tagline: "A hand car wash in Goleniów. We take care of your car with the precision you'd expect from a showroom.",
@@ -48,6 +49,7 @@ const copy = {
     hoursSunday: "Sun",
     rights: "All rights reserved.",
     strapline: "Premium hand car wash",
+    credit: "Design & development:",
   },
 };
 
@@ -152,7 +154,22 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/45 sm:flex-row">
-          <p>© {new Date().getFullYear()} {site.name}. {t.rights}</p>
+          <p className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center sm:justify-start sm:text-left">
+            <span>© {new Date().getFullYear()} {site.name}. {t.rights}</span>
+            <span className="hidden text-white/20 sm:inline">·</span>
+            <span>
+              {t.credit}{" "}
+              <a
+                href="https://verostudio.pl"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative inline-block overflow-hidden font-semibold text-white/80 transition-colors hover:text-white"
+              >
+                VERO STUDIO
+                <span className="pointer-events-none absolute inset-y-0 left-0 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shine" />
+              </a>
+            </span>
+          </p>
           <p>{t.strapline} · {site.city}</p>
         </div>
       </div>
