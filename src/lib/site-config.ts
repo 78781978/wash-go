@@ -7,7 +7,7 @@ export const site = {
   legalAddress: "ul. Szczecińska 1a, 72-100 Goleniów",
   phone: "+48 886 850 464",
   phoneHref: "tel:+48886850464",
-  email: "info@myjniaręcznagoleniów.pl",
+  email: "info@myjniarecznagoleniow.pl",
   nip: "856-109-60-07",
   hoursWeekdays: "09:00 – 17:00",
   hoursSaturday: "09:00 – 14:00",

@@ -31,7 +31,9 @@ Dane firmowe (adres, telefon, godziny, ceny, usługi, treści marketingowe) znaj
 
 Strona jest hostowana na Vercel pod domeną:
 
-**https://myjniaręcznagoleniów.pl**
+**https://myjniarecznagoleniow.pl**
+
+(domena z polskimi znakami, myjniaręcznagoleniów.pl, przekierowuje na powyższą)
 
 Deployment uruchamia się automatycznie po każdym push do brancha `main` (integracja Vercel ↔ GitHub). Aby zbudować i uruchomić produkcyjną wersję lokalnie:
 
