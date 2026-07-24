@@ -23,7 +23,7 @@ const copy = {
         Wykorzystujemy cookies niezbędne do działania strony oraz – za Twoją zgodą – analityczne i
         marketingowe. Szczegóły znajdziesz w{" "}
         <Link href="/polityka-prywatnosci" className="text-blue-2 underline underline-offset-2">
-          polityce prywatności i cookies
+          polityce prywatności i cookies
         </Link>
         .
       </>

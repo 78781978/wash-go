@@ -20,7 +20,7 @@ export default function NaszePracePage() {
         eyebrow="Nasze prace"
         crumb="Nasze prace"
         title="Efekty, które mówią same za siebie"
-        description="Wybrane realizacje z ostatnich miesięcy – od korekty lakieru po pełne mycie flot firmowych."
+        description="Wybrane realizacje z ostatnich miesięcy – od korekty lakieru po pełne mycie flot firmowych."
       />
 
       <section className="bg-mist py-24">
@@ -35,7 +35,7 @@ export default function NaszePracePage() {
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionHeading eyebrow="Opinie" title="Co mówią o nas klienci" align="center" />
+          <SectionHeading eyebrow="Opinie" title="Co mówią o nas klienci" align="center" />
           <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <TestimonialCard key={t.name} t={t} />
@@ -48,7 +48,7 @@ export default function NaszePracePage() {
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
         <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-6 px-5 text-center sm:px-8">
           <h2 className="font-display text-3xl font-semibold text-white text-balance sm:text-4xl">
-            Twoje auto może być kolejne w tej galerii
+            Twoje auto może być kolejne w tej galerii
           </h2>
           <Link
             href="/kontakt"

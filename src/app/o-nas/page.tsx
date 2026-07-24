@@ -21,14 +21,14 @@ import { stats, values } from "@/lib/site-config";
 import { basePath } from "@/lib/base-path";
 
 export const metadata: Metadata = {
-  title: "O nas",
-  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium.",
+  title: "O nas",
+  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium.",
 };
 
 const facility = [
-  { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
+  { icon: Wrench, title: "Profesjonalny sprzęt", desc: "Polerki, ekstraktory i generatory piany klasy premium." },
   { icon: Award, title: "Certyfikowana chemia", desc: "Kosmetyki samochodowe renomowanych producentów, bezpieczne dla powłok." },
-  { icon: Truck, title: "Odbiór i dostawa auta", desc: "Oferujemy usługę odbierania i dostarczania czystego auta za dodatkową opłatą." },
+  { icon: Truck, title: "Odbiór i dostawa auta", desc: "Oferujemy usługę odbierania i dostarczania czystego auta za dodatkową opłatą." },
 ];
 
 const amenities = [
@@ -46,10 +46,10 @@ export default function ONasPage() {
   return (
     <>
       <PageHero
-        eyebrow="O nas"
-        crumb="O nas"
+        eyebrow="O nas"
+        crumb="O nas"
         title="Pasja do detali od 2016 roku"
-        description="Wash & Go zaczynało jako jedno stanowisko mycia ręcznego. Dziś to premium hala z zespołem detailerów, dla których jakość jest nie do negocjacji."
+        description="Wash & Go zaczynało jako jedno stanowisko mycia ręcznego. Dziś to premium hala z zespołem detailerów, dla których jakość jest nie do negocjacji."
       />
 
       <section className="bg-white py-24">
@@ -72,25 +72,25 @@ export default function ONasPage() {
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
-              Wash&amp;Go powstało z przekonania, że mycie samochodu może – i powinno – wyglądać jak
-              usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
-              mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut{"\u00A0"}oka.
+              Wash&amp;Go powstało z przekonania, że mycie samochodu może – i powinno – wyglądać jak
+              usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
+              mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut{"\u00A0"}oka.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilka
-              samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
+              Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilka
+              samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami – dziś to
-              ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy powierzają nam swoje auta.
-              Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
+              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami – dziś to
+              ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy powierzają nam swoje auta.
+              Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
               auto możesz mieć bez odrywania się od codziennych obowiązków.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               <strong className="font-semibold text-navy">
                 Warto wiedzieć, że dotychczasowa myjnia Auto Lab Detailing Q zmieniła nazwę na Wash&amp;Go
               </strong>{" "}
-              – to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
+              – to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
             </p>
           </MotionReveal>
         </div>
@@ -120,7 +120,7 @@ export default function ONasPage() {
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionHeading eyebrow="Nasza hala" title="Zaplecze klasy premium" description="Inwestujemy w sprzęt i technologię, które realnie wpływają na efekt końcowy." />
+          <SectionHeading eyebrow="Nasza hala" title="Zaplecze klasy premium" description="Inwestujemy w sprzęt i technologię, które realnie wpływają na efekt końcowy." />
           <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {facility.map((f) => (
               <MotionItem key={f.title} className="rounded-2xl bg-graphite p-6 text-white">
@@ -164,14 +164,14 @@ export default function ONasPage() {
             Przekonaj się osobiście
           </h2>
           <p className="max-w-xl text-base text-white/60">
-            Wpadnij do naszej hali, zobacz stanowiska i porozmawiaj z zespołem o najlepszym pakiecie dla
-            Twojego auta.
+            Wpadnij do naszej hali, zobacz stanowiska i porozmawiaj z zespołem o{"\u00A0"}najlepszym pakiecie
+            dla Twojego auta.
           </p>
           <Link
             href="/kontakt"
             className="flex items-center gap-2 rounded-full bg-blue px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2"
           >
-            Zobacz dojazd i kontakt
+            Zobacz dojazd i kontakt
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

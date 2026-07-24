@@ -61,8 +61,8 @@ export default function Home() {
             </MotionReveal>
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
-                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali – bez pośpiechu, bez rys,
-                z kosmetykami premium.
+                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali – bez pośpiechu, bez rys,
+                z kosmetykami premium.
               </p>
               <p className="mt-3 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
                 Efekt, który utrzymuje się tygodniami.
@@ -85,7 +85,7 @@ export default function Home() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Odbiór i dostawa auta"].map((f) => (
+              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Odbiór i dostawa auta"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -114,7 +114,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Usługi"
               title="Pełna pielęgnacja od lakieru po wnętrze"
-              description="Cztery kategorie zabiegów łączymy w pakiety dopasowane do stanu i przeznaczenia Twojego samochodu."
+              description="Cztery kategorie zabiegów łączymy w pakiety dopasowane do stanu i przeznaczenia Twojego samochodu."
             />
             <Link
               href="/uslugi"
@@ -141,7 +141,7 @@ export default function Home() {
             {processSteps.map((step, i) => (
               <MotionItem key={step.title} className="relative">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy font-display text-xl font-bold text-white">
-                  {String(i + 1).padStart(2, "0")}
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold text-navy">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-foreground/60">{step.desc}</p>
@@ -159,11 +159,11 @@ export default function Home() {
           <MotionReveal>
             <p className="text-xs font-semibold uppercase tracking-wider text-blue-2">Dlaczego Wash&amp;Go</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-white text-balance sm:text-4xl">
-              Standard, który widać w każdym detalu
+              Standard, który widać w każdym detalu
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-white/60">
               Nie idziemy na skróty. Każdy etap – od wstępnego płukania po nabłyszczanie – wykonujemy
-              ręcznie, z użyciem sprawdzonych, bezpiecznych kosmetyków.
+              ręcznie, z użyciem sprawdzonych, bezpiecznych kosmetyków.
             </p>
             <Link
               href="/o-nas"
@@ -191,7 +191,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Nasze prace"
               title="Zobacz efekty naszej pracy"
-              description="Wybrane realizacje detailingowe i mycia flotowe."
+              description="Wybrane realizacje detailingowe i mycia flotowe."
             />
             <Link
               href="/nasze-prace"
@@ -226,7 +226,7 @@ export default function Home() {
           </MotionStagger>
 
           <p className="mt-10 text-center text-sm text-foreground/55">
-            Potrzebujesz pełnego cennika z usługami dodatkowymi?{" "}
+            Potrzebujesz pełnego cennika z usługami dodatkowymi?{" "}
             <Link href="/cennik" className="font-semibold text-blue hover:text-navy">
               Zobacz cały cennik →
             </Link>
@@ -237,7 +237,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-navy py-24">
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionHeading eyebrow="Opinie klientów" title="Zaufali nam kierowcy i firmy flotowe" dark align="center" />
+          <SectionHeading eyebrow="Opinie klientów" title="Zaufali nam kierowcy i firmy flotowe" dark align="center" />
 
           <MotionStagger className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
@@ -253,14 +253,14 @@ export default function Home() {
             <MotionReveal>
               <span className="inline-flex items-center gap-2 rounded-full bg-blue-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue">
                 <Building2 className="h-3.5 w-3.5" />
-                Dla firm i flot
+                Dla firm i flot
               </span>
               <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-navy text-balance">
                 Rozliczaj mycie floty jedną fakturą miesięcznie
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/60">
-                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej – z rabatami,
-                priorytetową obsługą i dedykowanym opiekunem.
+                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej – z rabatami,
+                priorytetową obsługą i dedykowanym opiekunem.
               </p>
               <Link
                 href="/oferta-dla-firm"
@@ -299,7 +299,7 @@ export default function Home() {
               Umów swoje auto na dziś
             </h2>
             <p className="mt-4 text-base text-white/60">
-              Zadzwoń - czekamy na Ciebie w Goleniowie.
+              Zadzwoń - czekamy na Ciebie w Goleniowie.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link

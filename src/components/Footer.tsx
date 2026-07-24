@@ -28,7 +28,7 @@ function InstagramIcon({ className }: { className?: string }) {
 
 const copy = {
   pl: {
-    tagline: "Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.",
+    tagline: "Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.",
     nav: "Nawigacja",
     legal: "Informacje prawne",
     contact: "Kontakt",
@@ -37,10 +37,10 @@ const copy = {
     hoursSunday: "Niedz",
     rights: "Wszelkie prawa zastrzeżone.",
     strapline: "Ręczna myjnia samochodowa premium",
-    credit: "Projekt i realizacja:",
+    credit: "Projekt i realizacja:",
   },
   en: {
-    tagline: "A hand car wash in Goleniów. We take care of your car with the precision you'd expect from a showroom.",
+    tagline: "A hand car wash in Goleniów. We take care of your car with the precision you'd expect from a showroom.",
     nav: "Navigation",
     legal: "Legal",
     contact: "Contact",

@@ -11,7 +11,7 @@ import { navLinks as navLinksPl, site } from "@/lib/site-config";
 import { navLinks as navLinksEn } from "@/lib/site-config.en";
 import { localeFromPathname } from "@/lib/i18n";
 
-const cta = { pl: "Umów wizytę", en: "Book a visit" };
+const cta = { pl: "Umów wizytę", en: "Book a visit" };
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

@@ -11,7 +11,7 @@ const copy = {
     chips: [
       { icon: SprayCan, label: "Mycie bezdotykowe" },
       { icon: Droplets, label: "Aktywna piana" },
-      { icon: Truck, label: "Odbiór i dostawa" },
+      { icon: Truck, label: "Odbiór i dostawa" },
     ],
   },
   en: {
@@ -58,7 +58,7 @@ export function HeroVisual({ locale = "pl" }: { locale?: Locale }) {
           {[0, 0.4, 0.8].map((delay, i) => (
             <span
               key={i}
-              style={{ left: `${38 + i * 10}%`, animationDelay: `${delay}s` }}
+              style={{ left: `${38 + i * 10}%`, animationDelay: `${delay}s` }}
               className="animate-drop absolute top-2 h-2.5 w-2 rounded-full bg-blue-2/80"
             />
           ))}

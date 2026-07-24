@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: `%s – ${site.name}`,
   },
   description:
-    "Wash & Go to ręczna myjnia samochodowa premium w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
+    "Wash & Go to ręczna myjnia samochodowa premium w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
   keywords: [
     "myjnia ręczna",
     "myjnia samochodowa",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
   openGraph: {
     title: `${site.name} – ${site.claim}`,
-    description: "Ręczna myjnia samochodowa premium. Mycie, detailing, ochrona lakieru i oferta dla firm.",
+    description: "Ręczna myjnia samochodowa premium. Mycie, detailing, ochrona lakieru i oferta dla firm.",
     locale: "pl_PL",
     type: "website",
     siteName: site.name,

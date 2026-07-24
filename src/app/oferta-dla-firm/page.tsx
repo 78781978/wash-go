@@ -8,24 +8,24 @@ import { fleetPlans, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Oferta dla firm",
-  description: "Mycie floty samochodowej Wash & Go – rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
+  description: "Mycie floty samochodowej Wash & Go – rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
 };
 
 const benefits = [
   { icon: Building2, title: "Dla każdej wielkości floty", desc: "Od kilku aut służbowych po floty transportowe liczące setki pojazdów." },
-  { icon: FileText, title: "Rozliczenia B2B", desc: "Faktura VAT, rozliczenie zbiorcze raz w miesiącu, elastyczne terminy płatności." },
+  { icon: FileText, title: "Rozliczenia B2B", desc: "Faktura VAT, rozliczenie zbiorcze raz w miesiącu, elastyczne terminy płatności." },
   { icon: CalendarClock, title: "Mycie poza godzinami szczytu", desc: "Harmonogram dopasowany do pracy Twojej firmy – bez przestojów floty." },
-  { icon: Users, title: "Dedykowany opiekun", desc: "Jedna osoba kontaktowa odpowiedzialna za jakość i terminowość usług." },
+  { icon: Users, title: "Dedykowany opiekun", desc: "Jedna osoba kontaktowa odpowiedzialna za jakość i terminowość usług." },
 ];
 
 export default function OfertaDlaFirmPage() {
   return (
     <>
       <PageHero
-        eyebrow="Dla firm i flot"
+        eyebrow="Dla firm i flot"
         crumb="Oferta dla firm"
         title="Flota, która zawsze wygląda profesjonalnie"
-        description="Zaprojektowaliśmy proces mycia flotowego tak, aby nie zaburzał pracy Twojej firmy – z rabatami, fakturą zbiorczą i stałym opiekunem klienta."
+        description="Zaprojektowaliśmy proces mycia flotowego tak, aby nie zaburzał pracy Twojej firmy – z rabatami, fakturą zbiorczą i stałym opiekunem klienta."
       />
 
       <section className="bg-white py-24">
@@ -50,7 +50,7 @@ export default function OfertaDlaFirmPage() {
           <SectionHeading
             eyebrow="Pakiety flotowe"
             title="Wybierz plan dopasowany do wielkości floty"
-            description="Wszystkie plany obejmują pełny zakres mycia ręcznego – różnią się rabatem, elastycznością terminów i modelem rozliczeń."
+            description="Wszystkie plany obejmują pełny zakres mycia ręcznego – różnią się rabatem, elastycznością terminów i modelem rozliczeń."
           />
 
           <MotionStagger className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -79,7 +79,7 @@ export default function OfertaDlaFirmPage() {
                     i === 1 ? "bg-blue text-white hover:bg-blue-2" : "bg-navy text-white hover:bg-blue"
                   }`}
                 >
-                  Zapytaj o warunki
+                  Zapytaj o warunki
                 </Link>
               </MotionItem>
             ))}
@@ -92,13 +92,13 @@ export default function OfertaDlaFirmPage() {
           <MotionReveal>
             <p className="text-xs font-semibold uppercase tracking-wider text-blue">Jak zaczynamy</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-navy text-balance">
-              Wdrożenie w 3 krokach
+              Wdrożenie w 3 krokach
             </h2>
             <div className="mt-8 space-y-6">
               {[
-                { n: "01", t: "Rozmowa i wycena", d: "Analizujemy wielkość floty i częstotliwość mycia." },
-                { n: "02", t: "Umowa i harmonogram", d: "Ustalamy zakres usług, rabat i stałe terminy wizyt." },
-                { n: "03", t: "Start współpracy", d: "Otrzymujesz opiekuna klienta i pierwszą fakturę zbiorczą po miesiącu." },
+                { n: "01", t: "Rozmowa i wycena", d: "Analizujemy wielkość floty i częstotliwość mycia." },
+                { n: "02", t: "Umowa i harmonogram", d: "Ustalamy zakres usług, rabat i stałe terminy wizyt." },
+                { n: "03", t: "Start współpracy", d: "Otrzymujesz opiekuna klienta i pierwszą fakturę zbiorczą po miesiącu." },
               ].map((s) => (
                 <div key={s.n} className="flex gap-4">
                   <span className="font-display text-2xl font-bold text-blue">{s.n}</span>
@@ -114,10 +114,10 @@ export default function OfertaDlaFirmPage() {
           <MotionReveal delay={0.1} className="rounded-3xl bg-navy p-8 text-white sm:p-10">
             <Building2 className="h-9 w-9 text-blue-2" />
             <h3 className="mt-5 font-display text-2xl font-semibold text-balance">
-              Porozmawiajmy o Twojej flocie
+              Porozmawiajmy o Twojej flocie
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Napisz do nas z liczbą pojazdów – przygotujemy indywidualną wycenę w ciągu 24 godzin.
+              Napisz do nas z liczbą pojazdów – przygotujemy indywidualną wycenę w ciągu 24 godzin.
             </p>
             <div className="mt-7 flex flex-col gap-3">
               <Link

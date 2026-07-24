@@ -7,7 +7,7 @@ import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description: "Skontaktuj się z myjnią Wash & Go – adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
+  description: "Skontaktuj się z myjnią Wash & Go – adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
 };
 
 const infoCards = [
@@ -27,7 +27,7 @@ export default function KontaktPage() {
       <PageHero
         eyebrow="Kontakt"
         crumb="Kontakt"
-        title="Porozmawiajmy o Twoim aucie"
+        title="Porozmawiajmy o Twoim aucie"
         description="Zadzwoń, napisz lub wjedź bez rezerwacji – chętnie doradzimy najlepszy zakres usług."
       />
 
@@ -69,7 +69,7 @@ export default function KontaktPage() {
                     className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
                   >
                     <Navigation className="h-4 w-4" />
-                    Wyznacz trasę w Google Maps
+                    Wyznacz trasę w Google Maps
                   </a>
                 </div>
               </MotionReveal>

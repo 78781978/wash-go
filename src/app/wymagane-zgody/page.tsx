@@ -8,7 +8,7 @@ import { consentsPl as consents } from "@/lib/consents-data";
 
 export const metadata: Metadata = {
   title: "Wymagane zgody",
-  description: "Zestawienie zgód wymaganych przy korzystaniu z formularzy i usług Wash & Go.",
+  description: "Zestawienie zgód wymaganych przy korzystaniu z formularzy i usług Wash & Go.",
 };
 
 export default function WymaganeZgodyPage() {
@@ -18,7 +18,7 @@ export default function WymaganeZgodyPage() {
         eyebrow="Dokument prawny"
         crumb="Wymagane zgody"
         title="Wymagane zgody"
-        description="Poniżej wyjaśniamy, o jakie zgody możemy prosić korzystając ze strony washandgo.pl, w jakim celu je zbieramy i jak można je wycofać."
+        description="Poniżej wyjaśniamy, o jakie zgody możemy prosić korzystając ze strony washandgo.pl, w jakim celu je zbieramy i jak można je wycofać."
       />
 
       <section className="bg-white py-20">
@@ -29,10 +29,10 @@ export default function WymaganeZgodyPage() {
               <p className="text-sm leading-relaxed text-foreground/65">
                 Zgody oznaczone jako <strong className="text-navy">wymagane</strong> są niezbędne do
                 zrealizowania danej funkcji strony (np. odpowiedzi na formularz kontaktowy). Pozostałe zgody
-                są dobrowolne i nie wpływają na możliwość skorzystania z podstawowych usług Wash&amp;Go.
+                są dobrowolne i nie wpływają na możliwość skorzystania z podstawowych usług Wash&amp;Go.
                 Szczegóły przetwarzania danych opisujemy w{" "}
                 <Link href="/polityka-prywatnosci" className="font-medium text-blue underline underline-offset-2">
-                  polityce prywatności i cookies
+                  polityce prywatności i cookies
                 </Link>
                 .
               </p>

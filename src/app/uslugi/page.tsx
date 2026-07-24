@@ -10,7 +10,7 @@ import { serviceCategories } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Usługi",
   description:
-    "Pełna oferta usług myjni ręcznej Wash & Go: mycie zewnętrzne, detailing wnętrza, powłoki ceramiczne i polerowanie lakieru.",
+    "Pełna oferta usług myjni ręcznej Wash & Go: mycie zewnętrzne, detailing wnętrza, powłoki ceramiczne i polerowanie lakieru.",
 };
 
 export default function UslugiPage() {
@@ -19,14 +19,14 @@ export default function UslugiPage() {
       <PageHero
         eyebrow="Usługi"
         crumb="Usługi"
-        title="Każdy zabieg wykonujemy ręcznie, z dbałością o detal"
-        description="Od szybkiego odświeżenia po pełną regenerację lakieru – dobierz zakres usług dopasowany do stanu i potrzeb Twojego samochodu."
+        title="Każdy zabieg wykonujemy ręcznie, z dbałością o detal"
+        description="Od szybkiego odświeżenia po pełną regenerację lakieru – dobierz zakres usług dopasowany do stanu i potrzeb Twojego samochodu."
       />
 
       {serviceCategories.map((category, i) => (
-        <section key={category.title} className={i % 2 === 0 ? "bg-mist py-24" : "bg-white py-24"}>
+        <section key={category.title} className={i % 2 === 0 ? "bg-mist py-24" : "bg-white py-24"}>
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <SectionHeading eyebrow={`0${i + 1}`} title={category.title} description={category.intro} />
+            <SectionHeading eyebrow={`0${i + 1}`} title={category.title} description={category.intro} />
             <MotionStagger className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {category.services.map((s) => (
                 <ServiceCard key={s.slug} service={s} detailed />
@@ -44,7 +44,7 @@ export default function UslugiPage() {
           </h2>
           <p className="max-w-xl text-base text-white/60">
             Zadzwoń do nas lub wjedź na stanowisko – doradzimy pakiet dopasowany do stanu lakieru
-            i przeznaczenia Twojego auta.
+            i przeznaczenia Twojego auta.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
