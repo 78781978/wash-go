@@ -4,7 +4,6 @@ import { ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
-import { site } from "@/lib/site-config";
 import { consentsEn as consents } from "@/lib/consents-data";
 
 export const metadata: Metadata = {
@@ -92,21 +91,6 @@ export default function RequiredConsentsPage() {
               </MotionItem>
             ))}
           </MotionStagger>
-
-          <MotionReveal delay={0.1} className="mt-14 rounded-2xl bg-navy p-8 text-white sm:p-10">
-            <h3 className="font-display text-xl font-semibold">Questions about your data?</h3>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/60">
-              Contact us at{" "}
-              <a href={`mailto:${site.email}`} className="font-medium text-blue-2 underline underline-offset-2">
-                {site.email}
-              </a>{" "}
-              or by phone at{" "}
-              <a href={site.phoneHref} className="font-medium text-blue-2 underline underline-offset-2">
-                {site.phone}
-              </a>
-              . We&apos;ll answer any question about the processing of your personal data.
-            </p>
-          </MotionReveal>
         </div>
       </section>
     </>
