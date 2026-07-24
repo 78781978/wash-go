@@ -20,7 +20,7 @@ const copy = {
     title: "Ta strona używa plików cookie",
     body: (
       <>
-        Wykorzystujemy cookies niezbędne do działania strony oraz – za Twoją zgodą – analityczne i
+        Wykorzystujemy cookies niezbędne do działania strony oraz, za Twoją zgodą, analityczne i
         marketingowe. Szczegóły znajdziesz w{" "}
         <Link href="/polityka-prywatnosci" className="text-blue-2 underline underline-offset-2">
           polityce prywatności i cookies
@@ -41,7 +41,7 @@ const copy = {
     title: "This site uses cookies",
     body: (
       <>
-        We use cookies necessary for the site to function, plus – with your consent – analytics and
+        We use cookies necessary for the site to function, plus, with your consent, analytics and
         marketing cookies. See details in our{" "}
         <Link href="/en/privacy-policy" className="text-blue-2 underline underline-offset-2">
           privacy &amp; cookie policy

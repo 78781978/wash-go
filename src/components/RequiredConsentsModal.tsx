@@ -11,7 +11,7 @@ const copy = {
   pl: {
     title: "Wymagane zgody",
     intro:
-      "Zestawienie zgód, o które możemy prosić na naszej stronie – w jakim celu je zbieramy i jak można je wycofać.",
+      "Zestawienie zgód, o które możemy prosić na naszej stronie, w jakim celu je zbieramy i jak można je wycofać.",
     required: "Wymagana",
     voluntary: "Dobrowolna",
     fullPage: "Zobacz pełny dokument",
@@ -20,7 +20,7 @@ const copy = {
   },
   en: {
     title: "Required consents",
-    intro: "An overview of the consents we may ask for on our site – why we collect them and how to withdraw them.",
+    intro: "An overview of the consents we may ask for on our site, why we collect them and how to withdraw them.",
     required: "Required",
     voluntary: "Voluntary",
     fullPage: "View the full document",

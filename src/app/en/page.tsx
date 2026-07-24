@@ -24,7 +24,7 @@ import {
 } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Wash & Go – Premium hand car wash",
+  title: "Wash & Go, Premium hand car wash",
   description:
     "Wash & Go is a premium hand car wash in Goleniów. Hand washing, detailing, ceramic coatings, and fleet packages for businesses.",
 };
@@ -64,7 +64,7 @@ export default function HomeEn() {
             </h1>
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
-                Wash&amp;Go is hand care for your paint, interior and every detail – unhurried, scratch-free,
+                Wash&amp;Go is hand care for your paint, interior and every detail, unhurried, scratch-free,
                 with premium products.
               </p>
               <p className="mt-3 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
@@ -88,7 +88,7 @@ export default function HomeEn() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["No scratches – two-bucket method", "pH-neutral products", "Pickup & delivery"].map((f) => (
+              {["No scratches, two-bucket method", "pH-neutral products", "Pickup & delivery"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -165,7 +165,7 @@ export default function HomeEn() {
               A standard you can see in every detail
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-white/60">
-              We don&apos;t cut corners. Every step – from the pre-rinse to the final gloss – is done by hand,
+              We don&apos;t cut corners. Every step, from the pre-rinse to the final gloss, is done by hand,
               with trusted, safe products.
             </p>
             <Link
@@ -218,7 +218,7 @@ export default function HomeEn() {
           <SectionHeading
             eyebrow="Pricing"
             title="Clear wash packages"
-            description="Choose your wash scope – we'll confirm the exact price on-site."
+            description="Choose your wash scope, we'll confirm the exact price on-site."
             align="center"
           />
 
@@ -262,7 +262,7 @@ export default function HomeEn() {
                 One monthly invoice for your whole fleet
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/60">
-                Flexible packages for leasing companies, transport fleets and company cars – with discounts,
+                Flexible packages for leasing companies, transport fleets and company cars, with discounts,
                 priority service and a dedicated account manager.
               </p>
               <Link
@@ -274,7 +274,7 @@ export default function HomeEn() {
               </Link>
             </MotionReveal>
             <MotionReveal delay={0.1} className="grid grid-cols-2 gap-4">
-              {["10–20%", "Consolidated invoice", "No queueing", "Account manager"].map((f) => (
+              {["10-20%", "Consolidated invoice", "No queueing", "Account manager"].map((f) => (
                 <div key={f} className="rounded-2xl bg-mist p-5 text-center">
                   <p className="font-display text-lg font-bold text-navy">{f}</p>
                 </div>
@@ -302,7 +302,7 @@ export default function HomeEn() {
               Book your car in today
             </h2>
             <p className="mt-4 text-base text-white/60">
-              Call, message, or just drive in – we&apos;re waiting for you in {site.city}.
+              Call, message, or just drive in, we&apos;re waiting for you in {site.city}.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link

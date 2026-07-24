@@ -7,14 +7,14 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { fleetPlans, site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Oferta dla firm – myjnia Goleniów",
-  description: "Mycie floty samochodowej Wash & Go w Goleniowie – rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
+  title: "Oferta dla firm - myjnia Goleniów",
+  description: "Mycie floty samochodowej Wash & Go w Goleniowie, rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
 };
 
 const benefits = [
   { icon: Building2, title: "Dla każdej wielkości floty", desc: "Od kilku aut służbowych po floty transportowe liczące setki pojazdów." },
   { icon: FileText, title: "Rozliczenia B2B", desc: "Faktura VAT, rozliczenie zbiorcze raz w miesiącu, elastyczne terminy płatności." },
-  { icon: CalendarClock, title: "Mycie poza godzinami szczytu", desc: "Harmonogram dopasowany do pracy Twojej firmy – bez przestojów floty." },
+  { icon: CalendarClock, title: "Mycie poza godzinami szczytu", desc: "Harmonogram dopasowany do pracy Twojej firmy, bez przestojów floty." },
   { icon: Users, title: "Dedykowany opiekun", desc: "Jedna osoba kontaktowa odpowiedzialna za jakość i terminowość usług." },
 ];
 
@@ -25,7 +25,7 @@ export default function OfertaDlaFirmPage() {
         eyebrow="Dla firm i flot"
         crumb="Oferta dla firm"
         title="Flota, która zawsze wygląda profesjonalnie"
-        description="Zaprojektowaliśmy proces mycia flotowego tak, aby nie zaburzał pracy Twojej firmy – z rabatami, fakturą zbiorczą i stałym opiekunem klienta."
+        description="Zaprojektowaliśmy proces mycia flotowego tak, aby nie zaburzał pracy Twojej firmy, z rabatami, fakturą zbiorczą i stałym opiekunem klienta."
       />
 
       <section className="bg-white py-24">
@@ -50,7 +50,7 @@ export default function OfertaDlaFirmPage() {
           <SectionHeading
             eyebrow="Pakiety flotowe"
             title="Wybierz plan dopasowany do wielkości floty"
-            description="Wszystkie plany obejmują pełny zakres mycia ręcznego – różnią się rabatem, elastycznością terminów i modelem rozliczeń."
+            description="Wszystkie plany obejmują pełny zakres mycia ręcznego, różnią się rabatem, elastycznością terminów i modelem rozliczeń."
           />
 
           <MotionStagger className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -117,7 +117,7 @@ export default function OfertaDlaFirmPage() {
               Porozmawiajmy o Twojej flocie
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Napisz do nas z liczbą pojazdów – przygotujemy indywidualną wycenę w ciągu 24 godzin.
+              Napisz do nas z liczbą pojazdów, przygotujemy indywidualną wycenę w ciągu 24 godzin.
             </p>
             <div className="mt-7 flex flex-col gap-3">
               <Link

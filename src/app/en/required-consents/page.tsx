@@ -7,7 +7,7 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { consentsEn as consents } from "@/lib/consents-data";
 
 export const metadata: Metadata = {
-  title: "Required Consents – Wash & Go",
+  title: "Required Consents - Wash & Go",
   description: "An overview of the consents required when using Wash & Go's forms and services.",
 };
 

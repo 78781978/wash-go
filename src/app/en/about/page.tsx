@@ -21,8 +21,8 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { stats, values } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "About – Wash & Go",
-  description: "Learn about the story and values behind Wash & Go – a premium hand car wash.",
+  title: "About - Wash & Go",
+  description: "Learn about the story and values behind Wash & Go, a premium hand car wash.",
 };
 
 const facility = [
@@ -73,17 +73,16 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
-              Wash&amp;Go was built on the belief that washing a car can – and should – feel like a
+              Wash&amp;Go was built on the belief that washing a car can, and should, feel like a
               premium service, not a rushed drive through an automatic tunnel. From day one we&apos;ve focused
               on hand washing, safe products, and attention to the details you don&apos;t notice at first{"\u00A0"}glance.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               Today our team is made up of experienced detailers who look after a few cars every
-              day – from city hatchbacks to collector cars and company fleets.
+              day, from city hatchbacks to collector cars and company fleets.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              You&apos;ll find us in Goleniów, where we&apos;ve grown alongside our customers for over a year –
-              today that means over 5,000 cars washed a year and a loyal group of regulars who entrust
+              You&apos;ll find us in Goleniów, where we&apos;ve grown alongside our customers for over a year,               today that means over 5,000 cars washed a year and a loyal group of regulars who entrust
               their cars to us. For those who value convenience, we also offer vehicle pickup &amp; delivery, so
               you can get a clean car without stepping away from your day.
             </p>
@@ -91,8 +90,8 @@ export default function AboutPage() {
               <strong className="font-semibold text-navy">
                 Worth knowing: the car wash formerly known as Auto Lab Detailing Q has changed its name to
                 Wash&amp;Go
-              </strong>{" "}
-              – the same trusted team and quality of service, now under a new name.
+              </strong>
+              , the same trusted team and quality of service, now under a new name.
             </p>
           </MotionReveal>
         </div>

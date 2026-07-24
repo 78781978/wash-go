@@ -6,8 +6,8 @@ import { MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Contact – Wash & Go",
-  description: "Get in touch with Wash & Go – address, phone, email, opening hours and contact form.",
+  title: "Contact - Wash & Go",
+  description: "Get in touch with Wash & Go, address, phone, email, opening hours and contact form.",
 };
 
 const infoCards = [
@@ -17,7 +17,7 @@ const infoCards = [
   {
     icon: Clock,
     label: "Opening hours",
-    value: `Mon–Fri: ${site.hoursWeekdays}\nSat: ${site.hoursSaturday}\nSun: ${site.hoursSunday}`,
+    value: `Mon-Fri: ${site.hoursWeekdays}\nSat: ${site.hoursSaturday}\nSun: ${site.hoursSunday}`,
   },
 ];
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
         title="Let's talk about your car"
         homeHref="/en"
         homeLabel="Home"
-        description="Call, message, or drive in without a booking – we're happy to recommend the best service for you."
+        description="Call, message, or drive in without a booking, we're happy to recommend the best service for you."
       />
 
       <section className="bg-white py-24">
@@ -85,7 +85,7 @@ export default function ContactPage() {
           <MotionReveal delay={0.2} className="mt-8">
             <div className="overflow-hidden rounded-2xl border border-line">
               <iframe
-                title="Directions map – Wash & Go"
+                title="Directions map - Wash & Go"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
                 className="h-[420px] w-full grayscale-[15%]"
                 loading="lazy"

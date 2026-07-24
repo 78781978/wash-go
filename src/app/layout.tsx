@@ -24,8 +24,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: `Myjnia Goleniów – ${site.name}`,
-    template: `%s – ${site.name}`,
+    default: `Myjnia Goleniów - ${site.name}`,
+    template: `%s - ${site.name}`,
   },
   description:
     "Wash & Go to ręczna myjnia samochodowa premium w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(`${siteUrl}/`),
   openGraph: {
-    title: `Myjnia Goleniów – ${site.name}`,
+    title: `Myjnia Goleniów - ${site.name}`,
     description: "Ręczna myjnia samochodowa premium w Goleniowie. Mycie, detailing, ochrona lakieru i oferta dla firm.",
     locale: "pl_PL",
     type: "website",

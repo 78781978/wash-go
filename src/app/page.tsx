@@ -24,9 +24,9 @@ import {
 } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Myjnia Goleniów – Wash & Go",
+  title: "Myjnia Goleniów - Wash & Go",
   description:
-    "Wash & Go – ręczna myjnia samochodowa w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i mycie flot firmowych. Bez rezerwacji – zadzwoń lub wjedź.",
+    "Wash & Go, ręczna myjnia samochodowa w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i mycie flot firmowych. Bez rezerwacji, zadzwoń lub wjedź.",
 };
 
 const marqueeItems = [
@@ -64,7 +64,7 @@ export default function Home() {
             </h1>
             <MotionReveal delay={0.16}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
-                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali – bez pośpiechu, bez rys,
+                Wash&amp;Go to ręczna pielęgnacja lakieru, wnętrza i detali, bez pośpiechu, bez rys,
                 z kosmetykami premium.
               </p>
               <p className="mt-3 max-w-lg text-base leading-relaxed text-white/65 sm:text-lg">
@@ -88,7 +88,7 @@ export default function Home() {
             </MotionReveal>
 
             <MotionReveal delay={0.32} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-              {["Bez rys – technologia two-bucket", "Kosmetyki pH neutralne", "Odbiór i dostawa auta"].map((f) => (
+              {["Bez rys, technologia two-bucket", "Kosmetyki pH neutralne", "Odbiór i dostawa auta"].map((f) => (
                 <span key={f} className="flex items-center gap-2 text-xs font-medium text-white/55">
                   <ShieldCheck className="h-4 w-4 text-blue-2" />
                   {f}
@@ -165,7 +165,7 @@ export default function Home() {
               Standard, który widać w każdym detalu
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-white/60">
-              Nie idziemy na skróty. Każdy etap – od wstępnego płukania po nabłyszczanie – wykonujemy
+              Nie idziemy na skróty. Każdy etap, od wstępnego płukania po nabłyszczanie, wykonujemy
               ręcznie, z użyciem sprawdzonych, bezpiecznych kosmetyków.
             </p>
             <Link
@@ -218,7 +218,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Cennik"
             title="Przejrzyste pakiety mycia"
-            description="Wybierz zakres mycia – dokładną wycenę potwierdzimy na miejscu."
+            description="Wybierz zakres mycia, dokładną wycenę potwierdzimy na miejscu."
             align="center"
           />
 
@@ -262,7 +262,7 @@ export default function Home() {
                 Rozliczaj mycie floty jedną fakturą miesięcznie
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-foreground/60">
-                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej – z rabatami,
+                Elastyczne pakiety dla firm leasingowych, flot transportowych i floty służbowej, z rabatami,
                 priorytetową obsługą i dedykowanym opiekunem.
               </p>
               <Link
@@ -274,7 +274,7 @@ export default function Home() {
               </Link>
             </MotionReveal>
             <MotionReveal delay={0.1} className="grid grid-cols-2 gap-4">
-              {["10–20%", "Faktura zbiorcza", "Bez kolejki", "Opiekun klienta"].map((f) => (
+              {["10-20%", "Faktura zbiorcza", "Bez kolejki", "Opiekun klienta"].map((f) => (
                 <div key={f} className="rounded-2xl bg-mist p-5 text-center">
                   <p className="font-display text-lg font-bold text-navy">{f}</p>
                 </div>

@@ -8,14 +8,14 @@ import { site } from "@/lib/site-config";
 import { fleetPlans } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "For Business – Wash & Go",
-  description: "Fleet car washing at Wash & Go – discounts, consolidated invoicing and priority service for companies and lessors.",
+  title: "For Business - Wash & Go",
+  description: "Fleet car washing at Wash & Go, discounts, consolidated invoicing and priority service for companies and lessors.",
 };
 
 const benefits = [
   { icon: Building2, title: "For any fleet size", desc: "From a handful of company cars to transport fleets numbering hundreds of vehicles." },
   { icon: FileText, title: "B2B billing", desc: "VAT invoices, consolidated monthly billing, flexible payment terms." },
-  { icon: CalendarClock, title: "Off-peak washing", desc: "A schedule that fits your business – no downtime for your fleet." },
+  { icon: CalendarClock, title: "Off-peak washing", desc: "A schedule that fits your business, no downtime for your fleet." },
   { icon: Users, title: "Dedicated account manager", desc: "One point of contact responsible for quality and on-time service." },
 ];
 
@@ -28,7 +28,7 @@ export default function ForBusinessPage() {
         title="A fleet that always looks professional"
         homeHref="/en"
         homeLabel="Home"
-        description="We designed our fleet-washing process so it never disrupts your business – with discounts, consolidated invoicing and a dedicated account manager."
+        description="We designed our fleet-washing process so it never disrupts your business, with discounts, consolidated invoicing and a dedicated account manager."
       />
 
       <section className="bg-white py-24">
@@ -53,7 +53,7 @@ export default function ForBusinessPage() {
           <SectionHeading
             eyebrow="Fleet packages"
             title="Choose a plan that fits your fleet size"
-            description="All plans include the full hand-wash scope – they differ in discount, scheduling flexibility and billing model."
+            description="All plans include the full hand-wash scope, they differ in discount, scheduling flexibility and billing model."
           />
 
           <MotionStagger className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -120,7 +120,7 @@ export default function ForBusinessPage() {
               Let&apos;s talk about your fleet
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/60">
-              Send us your vehicle count – we&apos;ll prepare a custom quote within 24 hours.
+              Send us your vehicle count, we&apos;ll prepare a custom quote within 24 hours.
             </p>
             <div className="mt-7 flex flex-col gap-3">
               <Link

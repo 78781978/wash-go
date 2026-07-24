@@ -35,9 +35,9 @@ export const serviceCategories: {
         title: "Touchless pre-wash",
         short: "Gentle pressure wash, zero scratch risk",
         description:
-          "High-pressure pre-rinse and wash with no contact on the paint – perfect for removing heavy dirt before the hand wash.",
+          "High-pressure pre-rinse and wash with no contact on the paint, perfect for removing heavy dirt before the hand wash.",
         bullets: ["Pressurised pre-rinse", "Bug and tar neutraliser", "Zero risk of micro-scratches"],
-        duration: "10–15 min",
+        duration: "10-15 min",
         icon: "spray",
       },
       {
@@ -47,7 +47,7 @@ export const serviceCategories: {
         description:
           "A thick layer of active foam dissolves dirt and shields the paint during the hand wash, minimising friction.",
         bullets: ["pH-neutral for coatings and PPF", "Deep-cleans micro gaps", "Fresh, pleasant scent"],
-        duration: "5–10 min",
+        duration: "5-10 min",
         icon: "foam",
       },
       {
@@ -57,7 +57,7 @@ export const serviceCategories: {
         description:
           "Hand wash with a microfibre mitt using the two-bucket method; wheels and sills cleaned with dedicated products.",
         bullets: ["Separate products for wheels and sills", "Two-bucket method limits swirl marks", "Wheel arches cleaned"],
-        duration: "20–25 min",
+        duration: "20-25 min",
         icon: "drop",
       },
     ],
@@ -73,7 +73,7 @@ export const serviceCategories: {
         description:
           "Thorough vacuuming of the whole cabin, cleaning of fabric or leather upholstery, and floor mats.",
         bullets: ["Seats, boot and gaps vacuumed", "Extraction upholstery cleaning", "Leather conditioning"],
-        duration: "30–45 min",
+        duration: "30-45 min",
         icon: "interior",
       },
       {
@@ -83,7 +83,7 @@ export const serviceCategories: {
         description:
           "Cleaning and conditioning of the dashboard, centre console, trim strips and interior plastic parts.",
         bullets: ["Disinfection of touch surfaces", "Matte finish, no greasy look", "Screens and interior glass cleaned"],
-        duration: "15–20 min",
+        duration: "15-20 min",
         icon: "shield",
       },
       {
@@ -125,10 +125,10 @@ export const serviceCategories: {
       {
         slug: "hot-wax",
         title: "Synthetic protective wax",
-        short: "Deep gloss and 4–6 weeks of protection",
+        short: "Deep gloss and 4-6 weeks of protection",
         description:
-          "Synthetic protective wax applied by hand right after washing – boosts paint gloss and protects against road grime.",
-        bullets: ["Deep, wet-look gloss", "Extra protection for 4–6 weeks", "Makes the next wash easier"],
+          "Synthetic protective wax applied by hand right after washing, boosts paint gloss and protects against road grime.",
+        bullets: ["Deep, wet-look gloss", "Extra protection for 4-6 weeks", "Makes the next wash easier"],
         duration: "10 min",
         icon: "sparkle",
       },
@@ -147,7 +147,7 @@ export const serviceCategories: {
         title: "Permanent plastic trim blackening",
         short: "Refreshed bumpers and trim strips",
         description:
-          "Permanently restores deep black to faded plastic body parts – bumpers, trim strips and side skirts.",
+          "Permanently restores deep black to faded plastic body parts, bumpers, trim strips and side skirts.",
         bullets: ["Matte finish, not greasy", "UV protection"],
         duration: "15 min",
         icon: "drop",
@@ -157,12 +157,12 @@ export const serviceCategories: {
 ];
 
 export const pricingTiers: PricingTier[] = [
-  { name: "Exterior wash", price: "from 80–150 zł", features: ["Exterior wash"] },
-  { name: "Full package", price: "from 180–300 zł", featured: true, features: ["Exterior wash", "Interior cleaning"] },
-  { name: "Exterior wash with waxing", price: "from 250–400 zł", features: ["Exterior wash", "Waxing"] },
-  { name: "Full package with waxing", price: "from 350–500 zł", features: ["Exterior wash", "Interior cleaning", "Waxing"] },
-  { name: "Interior cleaning", price: "from 150–250 zł", features: ["Interior cleaning"] },
-  { name: "Interior shampoo wash", price: "from 450–600 zł", features: ["Interior cleaning", "Upholstery shampoo wash"] },
+  { name: "Exterior wash", price: "from 80-150 zł", features: ["Exterior wash"] },
+  { name: "Full package", price: "from 180-300 zł", featured: true, features: ["Exterior wash", "Interior cleaning"] },
+  { name: "Exterior wash with waxing", price: "from 250-400 zł", features: ["Exterior wash", "Waxing"] },
+  { name: "Full package with waxing", price: "from 350-500 zł", features: ["Exterior wash", "Interior cleaning", "Waxing"] },
+  { name: "Interior cleaning", price: "from 150-250 zł", features: ["Interior cleaning"] },
+  { name: "Interior shampoo wash", price: "from 450-600 zł", features: ["Interior cleaning", "Upholstery shampoo wash"] },
   { name: "Washer fluid top-up", price: "from 25 zł", features: ["Washer fluid top-up"] },
   { name: "Interior ozone treatment", price: "from 150 zł", features: ["Interior ozone treatment"] },
 ];
@@ -180,7 +180,7 @@ export const fleetPlans: FleetPlan[] = [
   },
   {
     name: "Fleet Business",
-    desc: "For companies with 6–20 vehicles",
+    desc: "For companies with 6-20 vehicles",
     features: [
       "18% discount on all services",
       "Dedicated wash schedule",
@@ -207,7 +207,7 @@ export const stats = [
 ];
 
 export const processSteps = [
-  { title: "Book a visit", desc: "Call, message, or just drive in – no reservation needed." },
+  { title: "Book a visit", desc: "Call, message, or just drive in, no reservation needed." },
   { title: "Choose a package", desc: "We'll recommend the right scope for your car's condition and type." },
   { title: "Grab a coffee", desc: "Relax in our comfortable client lounge with coffee and Wi-Fi." },
   { title: "Pick up a spotless car", desc: "A quality check and quick walkthrough of the work done before we hand back the keys." },
@@ -253,23 +253,23 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const galleryItems = [
-  { title: "Paint correction – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Audi RS6 bonnet before and after paint correction – swirl marks and scratches removed." },
-  { title: "Ceramic coating – Porsche Macan", category: "Paint protection", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan before and after ceramic coating – deep, glossy paint finish." },
-  { title: "Upholstery cleaning – Volvo XC90", category: "Interior", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Volvo XC90 front seats before and after upholstery cleaning – stains removed from the leather." },
-  { title: "Fleet wash", category: "Fleet", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "A row of company vans before and after a fleet wash – bodywork shine restored." },
-  { title: "Trim restoration – Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport before and after permanent exterior trim restoration." },
-  { title: "Gloss finish – Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes E-Class before and after a gloss wash – dust and grime removed from the paint." },
-  { title: "Wheel detailing – Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Volkswagen Golf GTI wheel before and after detailing – brake dust removed." },
-  { title: "Ozone treatment – Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Toyota Land Cruiser interior during ozone treatment and cabin disinfection." },
-  { title: "Protective wax – Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang before and after protective wax application." },
-  { title: "Exterior wash – BMW 3 Series", category: "Exterior wash", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW 3 Series before and after an exterior wash – dirt removed from the bodywork." },
-  { title: "Vacuuming – Škoda Octavia", category: "Interior", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Škoda Octavia interior before and after vacuuming – clean upholstery and floor mats." },
+  { title: "Paint correction - Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Audi RS6 bonnet before and after paint correction, swirl marks and scratches removed." },
+  { title: "Ceramic coating - Porsche Macan", category: "Paint protection", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan before and after ceramic coating, deep, glossy paint finish." },
+  { title: "Upholstery cleaning - Volvo XC90", category: "Interior", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Volvo XC90 front seats before and after upholstery cleaning, stains removed from the leather." },
+  { title: "Fleet wash", category: "Fleet", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "A row of company vans before and after a fleet wash, bodywork shine restored." },
+  { title: "Trim restoration - Range Rover", category: "Finishing", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport before and after permanent exterior trim restoration." },
+  { title: "Gloss finish - Mercedes E-Class", category: "Premium wash", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes E-Class before and after a gloss wash, dust and grime removed from the paint." },
+  { title: "Wheel detailing - Volkswagen Golf GTI", category: "Wheel detailing", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Volkswagen Golf GTI wheel before and after detailing, brake dust removed." },
+  { title: "Ozone treatment - Toyota Land Cruiser", category: "Disinfection", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Toyota Land Cruiser interior during ozone treatment and cabin disinfection." },
+  { title: "Protective wax - Ford Mustang", category: "Finishing", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang before and after protective wax application." },
+  { title: "Exterior wash - BMW 3 Series", category: "Exterior wash", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW 3 Series before and after an exterior wash, dirt removed from the bodywork." },
+  { title: "Vacuuming - Škoda Octavia", category: "Interior", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Škoda Octavia interior before and after vacuuming, clean upholstery and floor mats." },
 ];
 
 export const values = [
   { title: "Precision", desc: "Every step is done by hand, with attention to the details you don't notice at first glance." },
   { title: "Safe products", desc: "pH-neutral car care products, safe for paint, PPF film and ceramic coatings." },
-  { title: "Transparency", desc: "A clear price list with no hidden fees – you know exactly what you're paying for." },
+  { title: "Transparency", desc: "A clear price list with no hidden fees, you know exactly what you're paying for." },
   { title: "Eco-friendly", desc: "Biodegradable, safe car care chemistry and responsible wastewater management." },
 ];
 
@@ -280,7 +280,7 @@ export const faqs = [
   },
   {
     q: "How long does a hand wash take?",
-    a: "An exterior wash alone takes about 20–25 minutes, a full package with interior cleaning 45–60 minutes, and add-ons like upholstery shampooing or ozone treatment extend the time depending on scope.",
+    a: "An exterior wash alone takes about 20-25 minutes, a full package with interior cleaning 45-60 minutes, and add-ons like upholstery shampooing or ozone treatment extend the time depending on scope.",
   },
   {
     q: "Do you have a waiting area?",

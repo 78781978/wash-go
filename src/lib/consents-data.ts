@@ -18,7 +18,7 @@ export const consentsPl: ConsentItem[] = [
     required: true,
     scope: "Imię i nazwisko, adres e-mail, numer telefonu, treść wiadomości.",
     purpose: "Udzielenie odpowiedzi na zapytanie przesłane przez formularz kontaktowy na stronie washandgo.pl.",
-    basis: "Art. 6 ust. 1 lit. a RODO – dobrowolnie wyrażona zgoda.",
+    basis: "Art. 6 ust. 1 lit. a RODO, dobrowolnie wyrażona zgoda.",
     withdraw: "Zgodę można wycofać w dowolnym momencie, pisząc na adres " + site.email + ".",
   },
   {
@@ -57,7 +57,7 @@ export const consentsEn: ConsentItem[] = [
     required: true,
     scope: "Name, email address, phone number, message content.",
     purpose: "Responding to an enquiry sent via the contact form on washandgo.pl.",
-    basis: "Art. 6(1)(a) GDPR – freely given consent.",
+    basis: "Art. 6(1)(a) GDPR, freely given consent.",
     withdraw: "Consent can be withdrawn at any time by writing to " + site.email + ".",
   },
   {

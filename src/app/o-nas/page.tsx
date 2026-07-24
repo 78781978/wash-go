@@ -21,8 +21,8 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { stats, values } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "O nas – myjnia Goleniów",
-  description: "Poznaj historię i wartości myjni Wash & Go – ręcznej myjni samochodowej premium w Goleniowie.",
+  title: "O nas - myjnia Goleniów",
+  description: "Poznaj historię i wartości myjni Wash & Go, ręcznej myjni samochodowej premium w Goleniowie.",
 };
 
 const facility = [
@@ -71,16 +71,16 @@ export default function ONasPage() {
               </div>
             </div>
             <p className="mt-6 text-base leading-relaxed text-foreground/60">
-              Wash&amp;Go powstało z przekonania, że mycie samochodu może – i powinno – wyglądać jak
+              Wash&amp;Go powstało z przekonania, że mycie samochodu może, i powinno, wyglądać jak
               usługa premium, a nie pospieszny przejazd przez automat. Od pierwszego dnia stawiamy na
               mycie ręczne, bezpieczne kosmetyki i dbałość o detale, których nie widać na pierwszy rzut{"\u00A0"}oka.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               Dziś nasz zespół to doświadczeni detailerzy, którzy każdego dnia dbają o kilka
-              samochodów – od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
+              samochodów, od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami – dziś to
+              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami, dziś to
               ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy powierzają nam swoje auta.
               Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
               auto możesz mieć bez odrywania się od codziennych obowiązków.
@@ -88,8 +88,8 @@ export default function ONasPage() {
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
               <strong className="font-semibold text-navy">
                 Warto wiedzieć, że dotychczasowa myjnia Auto Lab Detailing Q zmieniła nazwę na Wash&amp;Go
-              </strong>{" "}
-              – to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
+              </strong>
+              , to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
             </p>
           </MotionReveal>
         </div>

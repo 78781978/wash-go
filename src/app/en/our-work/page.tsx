@@ -9,8 +9,8 @@ import { MotionStagger } from "@/components/MotionReveal";
 import { galleryItems, testimonials } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Our Work – Wash & Go",
-  description: "See selected work from Wash & Go – detailing, ceramic coatings, fleet washing.",
+  title: "Our Work - Wash & Go",
+  description: "See selected work from Wash & Go, detailing, ceramic coatings, fleet washing.",
 };
 
 export default function OurWorkPage() {
@@ -22,7 +22,7 @@ export default function OurWorkPage() {
         title="Results that speak for themselves"
         homeHref="/en"
         homeLabel="Home"
-        description="Selected projects from recent months – from paint correction to full fleet washing."
+        description="Selected projects from recent months, from paint correction to full fleet washing."
       />
 
       <section className="bg-mist py-24">

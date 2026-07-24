@@ -6,8 +6,8 @@ import { MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Kontakt – myjnia Goleniów",
-  description: "Skontaktuj się z myjnią Wash & Go w Goleniowie – adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
+  title: "Kontakt - myjnia Goleniów",
+  description: "Skontaktuj się z myjnią Wash & Go w Goleniowie, adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
 };
 
 const infoCards = [
@@ -17,7 +17,7 @@ const infoCards = [
   {
     icon: Clock,
     label: "Godziny otwarcia",
-    value: `Pon–Pt: ${site.hoursWeekdays}\nSob: ${site.hoursSaturday}\nNiedz: ${site.hoursSunday}`,
+    value: `Pon-Pt: ${site.hoursWeekdays}\nSob: ${site.hoursSaturday}\nNiedz: ${site.hoursSunday}`,
   },
 ];
 
@@ -28,7 +28,7 @@ export default function KontaktPage() {
         eyebrow="Kontakt"
         crumb="Kontakt"
         title="Porozmawiajmy o Twoim aucie"
-        description="Zadzwoń, napisz lub wjedź bez rezerwacji – chętnie doradzimy najlepszy zakres usług."
+        description="Zadzwoń, napisz lub wjedź bez rezerwacji, chętnie doradzimy najlepszy zakres usług."
       />
 
       <section className="bg-white py-24">
@@ -83,7 +83,7 @@ export default function KontaktPage() {
           <MotionReveal delay={0.2} className="mt-8">
             <div className="overflow-hidden rounded-2xl border border-line">
               <iframe
-                title="Mapa dojazdu – Wash & Go"
+                title="Mapa dojazdu - Wash & Go"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
                 className="h-[420px] w-full grayscale-[15%]"
                 loading="lazy"

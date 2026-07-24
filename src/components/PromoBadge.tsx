@@ -10,14 +10,14 @@ const copy = {
     line2: "MYCIE",
     line3: "GRATIS!",
     href: "/kontakt",
-    aria: "Promocja: co dziesiąte mycie gratis – przejdź do kontaktu",
+    aria: "Promocja: co dziesiąte mycie gratis, przejdź do kontaktu",
   },
   en: {
     line1: "10th",
     line2: "WASH",
     line3: "FREE!",
     href: "/en/contact",
-    aria: "Promotion: every 10th wash free – go to contact",
+    aria: "Promotion: every 10th wash free, go to contact",
   },
 };
 

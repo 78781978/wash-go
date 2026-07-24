@@ -8,8 +8,8 @@ import { site } from "@/lib/site-config";
 import { pricingTiers } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Pricing – Wash & Go",
-  description: "Pricing for Wash & Go hand car wash – the full list of exterior wash, interior cleaning and add-on services.",
+  title: "Pricing - Wash & Go",
+  description: "Pricing for Wash & Go hand car wash, the full list of exterior wash, interior cleaning and add-on services.",
 };
 
 export default function PricingPage() {
@@ -49,7 +49,7 @@ export default function PricingPage() {
               Got a company fleet? We have separate discounted pricing
             </h2>
             <p className="max-w-xl text-base text-white/60">
-              Check our business terms – discounts up to 18%, consolidated invoicing and priority
+              Check our business terms, discounts up to 18%, consolidated invoicing and priority
               no-queue service.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">

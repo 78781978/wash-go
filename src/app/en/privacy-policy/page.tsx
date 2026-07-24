@@ -4,7 +4,7 @@ import { LegalLayout, type LegalSection } from "@/components/LegalLayout";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Privacy & Cookie Policy – Wash & Go",
+  title: "Privacy & Cookie Policy - Wash & Go",
   description: "Privacy and cookie policy for the washandgo.pl website.",
 };
 
@@ -46,20 +46,20 @@ const sections: LegalSection[] = [
         <p>Personal data is processed for the following purposes:</p>
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
-            responding to enquiries sent via the contact form – legal basis: Art. 6(1)(a) and (f) GDPR
+            responding to enquiries sent via the contact form, legal basis: Art. 6(1)(a) and (f) GDPR
             (consent and the Controller&apos;s legitimate interest),
           </li>
           <li>
-            entering into and performing a contract for washing and detailing services – Art. 6(1)(b) GDPR,
+            entering into and performing a contract for washing and detailing services, Art. 6(1)(b) GDPR,
           </li>
           <li>
-            issuing invoices and meeting tax/accounting obligations – Art. 6(1)(c) GDPR,
+            issuing invoices and meeting tax/accounting obligations, Art. 6(1)(c) GDPR,
           </li>
           <li>
-            direct marketing of our own services, including newsletters – Art. 6(1)(a) GDPR (consent),
+            direct marketing of our own services, including newsletters, Art. 6(1)(a) GDPR (consent),
           </li>
           <li>
-            analysing site traffic and improving functionality – Art. 6(1)(f) GDPR (the Controller&apos;s
+            analysing site traffic and improving functionality, Art. 6(1)(f) GDPR (the Controller&apos;s
             legitimate interest).
           </li>
         </ul>
@@ -71,7 +71,7 @@ const sections: LegalSection[] = [
     title: "Data retention period",
     content: (
       <p>
-        We store data for as long as necessary to achieve the purposes for which it was collected – in
+        We store data for as long as necessary to achieve the purposes for which it was collected, in
         particular for the duration of our business relationship and the limitation period for claims, and
         for accounting documents for the period required by tax law (generally 5 years). Data processed on
         the basis of consent is stored until that consent is withdrawn.
@@ -130,15 +130,15 @@ const sections: LegalSection[] = [
       <>
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
-            <strong className="text-navy">Necessary</strong> – required for the site to function correctly
+            <strong className="text-navy">Necessary</strong>, required for the site to function correctly
             (e.g. remembering your cookie settings). They don&apos;t require consent and can&apos;t be disabled.
           </li>
           <li>
-            <strong className="text-navy">Analytics</strong> – let us collect anonymised information about
+            <strong className="text-navy">Analytics</strong>, let us collect anonymised information about
             how the site is used (e.g. pages visited, time spent). They require user consent.
           </li>
           <li>
-            <strong className="text-navy">Marketing</strong> – used to display personalised advertising
+            <strong className="text-navy">Marketing</strong>, used to display personalised advertising
             content. They require user consent.
           </li>
         </ul>
@@ -155,7 +155,7 @@ const sections: LegalSection[] = [
     content: (
       <p>
         Most web browsers accept cookies by default. You can change your cookie settings in your browser
-        at any time – including blocking cookies or deleting ones already stored. Restricting cookies may
+        at any time, including blocking cookies or deleting ones already stored. Restricting cookies may
         affect some of the site&apos;s functionality.
       </p>
     ),

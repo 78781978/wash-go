@@ -9,8 +9,8 @@ export const site = {
   phoneHref: "tel:+48886850464",
   email: "info@myjniarecznagoleniow.pl",
   nip: "856-109-60-07",
-  hoursWeekdays: "09:00 – 17:00",
-  hoursSaturday: "09:00 – 14:00",
+  hoursWeekdays: "09:00-17:00",
+  hoursSaturday: "09:00-14:00",
   hoursSunday: "Nieczynne",
   mapsUrl: "https://maps.google.com/?q=Wash%20%26%20Go%20Goleni%C3%B3w",
   social: {
@@ -60,9 +60,9 @@ export const serviceCategories: {
         title: "Mycie bezdotykowe",
         short: "Delikatne mycie ciśnieniowe bez ryzyka rys",
         description:
-          "Wstępne płukanie i mycie wysokociśnieniowe bez kontaktu z lakierem – idealne do usuwania grubego brudu przed myciem ręcznym.",
+          "Wstępne płukanie i mycie wysokociśnieniowe bez kontaktu z lakierem, idealne do usuwania grubego brudu przed myciem ręcznym.",
         bullets: ["Płukanie wstępne pod ciśnieniem", "Neutralizacja owadów i smoły", "Zero ryzyka mikrorys"],
-        duration: "10–15 min",
+        duration: "10-15 min",
         icon: "spray",
       },
       {
@@ -72,7 +72,7 @@ export const serviceCategories: {
         description:
           "Gruba warstwa aktywnej piany rozpuszcza brud i zabezpiecza lakier na czas mycia ręcznego, minimalizując tarcie.",
         bullets: ["pH neutralne dla powłok i folii PPF", "Głębokie oczyszczenie mikroszczelin", "Przyjemny, świeży zapach"],
-        duration: "5–10 min",
+        duration: "5-10 min",
         icon: "foam",
       },
       {
@@ -82,7 +82,7 @@ export const serviceCategories: {
         description:
           "Mycie ręczne rękawicą z mikrofibry metodą dwóch wiader, felgi i progi czyszczone osobnymi środkami.",
         bullets: ["Osobne środki do felg i progów", "Metoda two-bucket ograniczająca rysy", "Czyszczenie wnęk kół"],
-        duration: "20–25 min",
+        duration: "20-25 min",
         icon: "drop",
       },
     ],
@@ -98,7 +98,7 @@ export const serviceCategories: {
         description:
           "Dokładne odkurzenie całej kabiny, czyszczenie tapicerki materiałowej lub skórzanej oraz mat podłogowych.",
         bullets: ["Odkurzanie foteli, bagażnika i szczelin", "Pranie tapicerki ekstrakcyjne", "Pielęgnacja skóry"],
-        duration: "30–45 min",
+        duration: "30-45 min",
         icon: "interior",
       },
       {
@@ -108,7 +108,7 @@ export const serviceCategories: {
         description:
           "Czyszczenie i pielęgnacja deski rozdzielczej, konsoli środkowej, listew i plastikowych elementów wnętrza.",
         bullets: ["Dezynfekcja powierzchni dotykowych", "Matowa pielęgnacja bez efektu plastiku", "Czyszczenie ekranów i szyb wewnętrznych"],
-        duration: "15–20 min",
+        duration: "15-20 min",
         icon: "shield",
       },
       {
@@ -150,10 +150,10 @@ export const serviceCategories: {
       {
         slug: "wosk-ochronny",
         title: "Syntetyczny wosk ochronny",
-        short: "Głęboki połysk i ochrona na 4–6 tyg.",
+        short: "Głęboki połysk i ochrona na 4-6 tyg.",
         description:
-          "Syntetyczny wosk ochronny nakładany ręcznie tuż po myciu – wzmacnia połysk lakieru i chroni go przed warunkami drogowymi.",
-        bullets: ["Głęboki, mokry połysk", "Dodatkowa ochrona na 4–6 tygodni", "Ułatwia kolejne mycie"],
+          "Syntetyczny wosk ochronny nakładany ręcznie tuż po myciu, wzmacnia połysk lakieru i chroni go przed warunkami drogowymi.",
+        bullets: ["Głęboki, mokry połysk", "Dodatkowa ochrona na 4-6 tygodni", "Ułatwia kolejne mycie"],
         duration: "10 min",
         icon: "sparkle",
       },
@@ -172,7 +172,7 @@ export const serviceCategories: {
         title: "Permanentne czarnienie plastików",
         short: "Odświeżenie zderzaków i listew",
         description:
-          "Permanentne przywrócenie głębokiej czerni wypłowiałym plastikowym elementom nadwozia – zderzakom, listwom i progom.",
+          "Permanentne przywrócenie głębokiej czerni wypłowiałym plastikowym elementom nadwozia, zderzakom, listwom i progom.",
         bullets: ["Efekt matowy, bez tłustego połysku", "Ochrona przed promieniowaniem UV"],
         duration: "15 min",
         icon: "drop",
@@ -189,12 +189,12 @@ export type PricingTier = {
 };
 
 export const pricingTiers: PricingTier[] = [
-  { name: "Mycie zewnętrzne", price: "od 80–150 zł", features: ["Mycie zewnętrzne"] },
-  { name: "Komplet", price: "od 180–300 zł", featured: true, features: ["Mycie zewnętrzne", "Sprzątanie wnętrza"] },
-  { name: "Mycie zewnętrzne z woskowaniem", price: "od 250–400 zł", features: ["Mycie zewnętrzne", "Woskowanie"] },
-  { name: "Komplet z woskowaniem", price: "od 350–500 zł", features: ["Mycie zewnętrzne", "Sprzątanie wnętrza", "Woskowanie"] },
-  { name: "Sprzątanie wnętrza", price: "od 150–250 zł", features: ["Sprzątanie wnętrza"] },
-  { name: "Pranie wnętrza", price: "od 450–600 zł", features: ["Sprzątanie wnętrza", "Pranie tapicerki"] },
+  { name: "Mycie zewnętrzne", price: "od 80-150 zł", features: ["Mycie zewnętrzne"] },
+  { name: "Komplet", price: "od 180-300 zł", featured: true, features: ["Mycie zewnętrzne", "Sprzątanie wnętrza"] },
+  { name: "Mycie zewnętrzne z woskowaniem", price: "od 250-400 zł", features: ["Mycie zewnętrzne", "Woskowanie"] },
+  { name: "Komplet z woskowaniem", price: "od 350-500 zł", features: ["Mycie zewnętrzne", "Sprzątanie wnętrza", "Woskowanie"] },
+  { name: "Sprzątanie wnętrza", price: "od 150-250 zł", features: ["Sprzątanie wnętrza"] },
+  { name: "Pranie wnętrza", price: "od 450-600 zł", features: ["Sprzątanie wnętrza", "Pranie tapicerki"] },
   { name: "Płyn do spryskiwaczy", price: "od 25 zł", features: ["Płyn do spryskiwaczy"] },
   { name: "Ozonowanie wnętrza", price: "od 150 zł", features: ["Ozonowanie wnętrza"] },
 ];
@@ -218,7 +218,7 @@ export const fleetPlans: FleetPlan[] = [
   },
   {
     name: "Flota Business",
-    desc: "Dla firm z 6–20 pojazdami",
+    desc: "Dla firm z 6-20 pojazdami",
     features: [
       "Rabat 18% na wszystkie usługi",
       "Dedykowany harmonogram mycia",
@@ -245,7 +245,7 @@ export const stats = [
 ];
 
 export const processSteps = [
-  { title: "Umów wizytę", desc: "Zadzwoń, napisz lub po prostu wjedź – bez wcześniejszej rezerwacji." },
+  { title: "Umów wizytę", desc: "Zadzwoń, napisz lub po prostu wjedź, bez wcześniejszej rezerwacji." },
   { title: "Wybierz pakiet", desc: "Doradzimy zakres mycia dopasowany do stanu i typu Twojego auta." },
   { title: "Odbierz kawę", desc: "Poczekaj w komfortowej strefie klienta z kawą i Wi-Fi." },
   { title: "Odbierz lśniące auto", desc: "Kontrola jakości i krótki przegląd wykonanych usług przed wydaniem kluczyków." },
@@ -293,23 +293,23 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const galleryItems = [
-  { title: "Korekta lakieru – Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Maska Audi RS6 przed i po korekcie lakieru – usunięcie hologramów i rys." },
-  { title: "Powłoka ceramiczna – Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan przed i po nałożeniu powłoki ceramicznej – głęboki połysk lakieru." },
-  { title: "Pranie tapicerki – Volvo XC90", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Fotele Volvo XC90 przed i po praniu tapicerki – usunięcie zabrudzeń ze skóry." },
-  { title: "Mycie floty", category: "Flota", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "Rząd firmowych busów przed i po myciu flotowym – odzyskany połysk karoserii." },
-  { title: "Czarnienie plastików – Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport przed i po permanentnym czarnieniu plastików zewnętrznych." },
-  { title: "Nabłyszczanie – Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes klasy E przed i po myciu z nabłyszczaniem lakieru." },
-  { title: "Czyszczenie felg – Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Felga Volkswagena Golfa GTI przed i po czyszczeniu – usunięcie osadu z hamulców." },
-  { title: "Ozonowanie – Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Wnętrze Toyoty Land Cruiser podczas ozonowania i dezynfekcji kabiny." },
-  { title: "Wosk ochronny – Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang przed i po nałożeniu syntetycznego wosku ochronnego." },
-  { title: "Mycie zewnętrzne – BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW serii 3 przed i po myciu zewnętrznym – usunięcie zabrudzeń z karoserii." },
-  { title: "Odkurzanie – Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Wnętrze Škody Octavii przed i po odkurzaniu – czysta tapicerka i dywaniki." },
+  { title: "Korekta lakieru - Audi RS6", category: "Detailing", tone: "navy" as const, image: "/gallery/audi-rs6.webp", alt: "Maska Audi RS6 przed i po korekcie lakieru, usunięcie hologramów i rys." },
+  { title: "Powłoka ceramiczna - Porsche Macan", category: "Ochrona lakieru", tone: "blue" as const, image: "/gallery/porsche-macan.webp", alt: "Porsche Macan przed i po nałożeniu powłoki ceramicznej, głęboki połysk lakieru." },
+  { title: "Pranie tapicerki - Volvo XC90", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/volvo-xc90-wnetrze.webp", alt: "Fotele Volvo XC90 przed i po praniu tapicerki, usunięcie zabrudzeń ze skóry." },
+  { title: "Mycie floty", category: "Flota", tone: "navy" as const, image: "/gallery/mycie-floty.webp", alt: "Rząd firmowych busów przed i po myciu flotowym, odzyskany połysk karoserii." },
+  { title: "Czarnienie plastików - Range Rover", category: "Wykończenie", tone: "graphite" as const, image: "/gallery/range-rover-sport.webp", alt: "Range Rover Sport przed i po permanentnym czarnieniu plastików zewnętrznych." },
+  { title: "Nabłyszczanie - Mercedes klasy E", category: "Mycie premium", tone: "blue" as const, image: "/gallery/mercedes-e-class.webp", alt: "Mercedes klasy E przed i po myciu z nabłyszczaniem lakieru." },
+  { title: "Czyszczenie felg - Volkswagen Golf GTI", category: "Detailing kół", tone: "navy" as const, image: "/gallery/vw-golf-gti.webp", alt: "Felga Volkswagena Golfa GTI przed i po czyszczeniu, usunięcie osadu z hamulców." },
+  { title: "Ozonowanie - Toyota Land Cruiser", category: "Dezynfekcja", tone: "graphite" as const, image: "/gallery/toyota-land-cruiser.webp", alt: "Wnętrze Toyoty Land Cruiser podczas ozonowania i dezynfekcji kabiny." },
+  { title: "Wosk ochronny - Ford Mustang", category: "Wykończenie", tone: "blue" as const, image: "/gallery/ford-mustang.webp", alt: "Ford Mustang przed i po nałożeniu syntetycznego wosku ochronnego." },
+  { title: "Mycie zewnętrzne - BMW serii 3", category: "Mycie zewnętrzne", tone: "blue" as const, image: "/gallery/bmw-3-series.webp", alt: "BMW serii 3 przed i po myciu zewnętrznym, usunięcie zabrudzeń z karoserii." },
+  { title: "Odkurzanie - Škoda Octavia", category: "Wnętrze", tone: "graphite" as const, image: "/gallery/skoda-octavia.webp", alt: "Wnętrze Škody Octavii przed i po odkurzaniu, czysta tapicerka i dywaniki." },
 ];
 
 export const values = [
   { title: "Precyzja", desc: "Każdy etap mycia wykonujemy ręcznie, z dbałością o detale, których nie widać na pierwszy rzut oka." },
   { title: "Bezpieczne środki", desc: "Kosmetyki samochodowe pH neutralne, bezpieczne dla lakieru, folii PPF i powłok ceramicznych." },
-  { title: "Transparentność", desc: "Jasny cennik bez ukrytych opłat – wiesz dokładnie, za co płacisz." },
+  { title: "Transparentność", desc: "Jasny cennik bez ukrytych opłat, wiesz dokładnie, za co płacisz." },
   { title: "Ekologia", desc: "Biodegradowalna, bezpieczna chemia samochodowa i odpowiedzialna gospodarka ściekami." },
 ];
 
@@ -320,7 +320,7 @@ export const faqs = [
   },
   {
     q: "Jak długo trwa mycie ręczne?",
-    a: "Samo mycie zewnętrzne to około 20–25 minut, pakiet z pełnym sprzątaniem wnętrza 45–60 minut, a usługi dodatkowe jak pranie tapicerki czy ozonowanie wydłużają czas w zależności od zakresu.",
+    a: "Samo mycie zewnętrzne to około 20-25 minut, pakiet z pełnym sprzątaniem wnętrza 45-60 minut, a usługi dodatkowe jak pranie tapicerki czy ozonowanie wydłużają czas w zależności od zakresu.",
   },
   {
     q: "Czy oferujecie strefę oczekiwania?",

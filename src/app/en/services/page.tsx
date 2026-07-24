@@ -8,7 +8,7 @@ import { MotionStagger } from "@/components/MotionReveal";
 import { serviceCategories } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Services – Wash & Go",
+  title: "Services - Wash & Go",
   description:
     "The full service range at Wash & Go hand car wash: exterior wash, interior detailing, ceramic coatings and paint polishing.",
 };
@@ -22,7 +22,7 @@ export default function ServicesPage() {
         title="Every treatment done by hand, with attention to detail"
         homeHref="/en"
         homeLabel="Home"
-        description="From a quick refresh to a full paint restoration – choose the scope that matches your car's condition and needs."
+        description="From a quick refresh to a full paint restoration, choose the scope that matches your car's condition and needs."
       />
 
       {serviceCategories.map((category, i) => (
@@ -45,7 +45,7 @@ export default function ServicesPage() {
             Not sure which package to choose?
           </h2>
           <p className="max-w-xl text-base text-white/60">
-            Call us or drive in – we&apos;ll recommend a package matched to your paint&apos;s condition and how you
+            Call us or drive in, we&apos;ll recommend a package matched to your paint&apos;s condition and how you
             use your car.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">

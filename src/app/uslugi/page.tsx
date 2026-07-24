@@ -8,7 +8,7 @@ import { MotionStagger } from "@/components/MotionReveal";
 import { serviceCategories } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Usługi – myjnia Goleniów",
+  title: "Usługi - myjnia Goleniów",
   description:
     "Pełna oferta usług myjni ręcznej Wash & Go w Goleniowie: mycie zewnętrzne, detailing wnętrza, powłoki ceramiczne i polerowanie lakieru.",
 };
@@ -20,7 +20,7 @@ export default function UslugiPage() {
         eyebrow="Usługi"
         crumb="Usługi"
         title="Każdy zabieg wykonujemy ręcznie, z dbałością o detal"
-        description="Od szybkiego odświeżenia po pełną regenerację lakieru – dobierz zakres usług dopasowany do stanu i potrzeb Twojego samochodu."
+        description="Od szybkiego odświeżenia po pełną regenerację lakieru, dobierz zakres usług dopasowany do stanu i potrzeb Twojego samochodu."
       />
 
       {serviceCategories.map((category, i) => (
@@ -43,7 +43,7 @@ export default function UslugiPage() {
             Nie wiesz, który zakres wybrać?
           </h2>
           <p className="max-w-xl text-base text-white/60">
-            Zadzwoń do nas lub wjedź na stanowisko – doradzimy pakiet dopasowany do stanu lakieru
+            Zadzwoń do nas lub wjedź na stanowisko, doradzimy pakiet dopasowany do stanu lakieru
             i przeznaczenia Twojego auta.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
