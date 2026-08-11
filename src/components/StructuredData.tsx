@@ -15,7 +15,7 @@ export function StructuredData() {
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "ul. Szczecińska 4b",
+      streetAddress: "ul. Szczecińska 4b/1",
       addressLocality: site.city,
       postalCode: "72-100",
       addressCountry: "PL",

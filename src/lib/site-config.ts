@@ -2,7 +2,7 @@ export const site = {
   name: "Wash & Go",
   claim: "Ręczna myjnia samochodowa premium",
   city: "Goleniów",
-  address: "ul. Szczecińska 4b, 72-100 Goleniów",
+  address: "ul. Szczecińska 4b/1, 72-100 Goleniów",
   legalName: 'P.H.U "Bobinex" Grzegorz Działkowski',
   legalAddress: "ul. Szczecińska 1a, 72-100 Goleniów",
   phone: "+48 886 850 464",
