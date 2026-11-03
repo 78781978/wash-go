@@ -4,14 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { LanguageSwitch } from "./LanguageSwitch";
-import { navLinks as navLinksPl, site } from "@/lib/site-config";
+import { navLinks as navLinksPl } from "@/lib/site-config";
 import { navLinks as navLinksEn } from "@/lib/site-config.en";
 import { localeFromPathname } from "@/lib/i18n";
 
-const cta = { pl: "Umów wizytę", en: "Book a visit" };
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
+const cta = { pl: "Kup ten szablon", en: "Buy this template" };
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,6 @@ export function Navbar() {
   const pathname = usePathname();
   const locale = localeFromPathname(pathname);
   const navLinks = locale === "en" ? navLinksEn : navLinksPl;
-  const contactHref = locale === "en" ? "/en/contact" : "/kontakt";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -50,18 +50,13 @@ export function Navbar() {
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <a
-            href={site.phoneHref}
-            className="hidden items-center gap-2 whitespace-nowrap text-sm font-medium text-white/85 hover:text-white xl:flex"
-          >
-            <Phone className="h-4 w-4 text-blue-2" />
-            {site.phone}
-          </a>
-          <Link
-            href={contactHref}
+            href={FB_URL}
+            target="_blank"
+            rel="noreferrer"
             className="whitespace-nowrap rounded-full bg-blue px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
           >
             {cta[locale]}
-          </Link>
+          </a>
           <LanguageSwitch />
         </div>
 
@@ -124,12 +119,14 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href={contactHref}
+              <a
+                href={FB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="mt-2 rounded-xl bg-blue px-4 py-3 text-center text-base font-semibold text-white"
               >
                 {cta[locale]}
-              </Link>
+              </a>
             </nav>
           </motion.div>
         )}

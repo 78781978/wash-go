@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Info, PhoneCall } from "lucide-react";
+import { Info } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { PricingCard } from "@/components/PricingCard";
 import { MotionStagger, MotionReveal } from "@/components/MotionReveal";
-import { pricingTiers, site } from "@/lib/site-config";
+import { pricingTiers } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Cennik - myjnia Goleniów",
-  description: "Cennik ręcznej myjni Wash & Go w Goleniowie, pełna lista usług mycia zewnętrznego, sprzątania wnętrza i zabiegów dodatkowych.",
+  title: "Cennik - przykładowe pakiety mycia",
+  description: "Przykładowy cennik usług myjni samochodowej, część gotowego szablonu strony na sprzedaż.",
 };
 
 export default function CennikPage() {
@@ -55,13 +55,6 @@ export default function CennikPage() {
               >
                 Oferta dla firm
               </Link>
-              <a
-                href={site.phoneHref}
-                className="flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                <PhoneCall className="h-4 w-4" />
-                {site.phone}
-              </a>
             </div>
           </MotionReveal>
         </div>

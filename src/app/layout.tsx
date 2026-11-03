@@ -7,7 +7,6 @@ import { CookieConsent } from "@/components/CookieConsent";
 import { PromoBadge } from "@/components/PromoBadge";
 import { AccessibilityWidget } from "@/components/AccessibilityWidget";
 import { SkipLink } from "@/components/SkipLink";
-import { StructuredData } from "@/components/StructuredData";
 import { site } from "@/lib/site-config";
 import { siteUrl } from "@/lib/base-path";
 
@@ -24,26 +23,26 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: `Myjnia Goleniów - ${site.name}`,
+    default: `${site.name} - szablon strony na sprzedaż`,
     template: `%s - ${site.name}`,
   },
   description:
-    "Wash & Go to ręczna myjnia samochodowa premium w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i oferta dla flot firmowych.",
+    "Gotowy, w pełni responsywny szablon strony dla myjni samochodowej i firmy detailingowej. Projekt na sprzedaż, do rozbudowy o chatbota, agenta AI i inne funkcje.",
   keywords: [
-    "myjnia Goleniów",
-    "myjnia ręczna Goleniów",
-    "myjnia samochodowa Goleniów",
-    "myjnia ręczna",
-    "myjnia samochodowa",
-    "detailing Goleniów",
-    "powłoka ceramiczna",
-    "mycie aut firmowych",
+    "szablon strony myjnia",
+    "projekt strony na sprzedaż",
+    "strona dla myjni samochodowej",
+    "szablon strony detailing",
     "wash & go",
   ],
   metadataBase: new URL(`${siteUrl}/`),
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
-    title: `Myjnia Goleniów - ${site.name}`,
-    description: "Ręczna myjnia samochodowa premium w Goleniowie. Mycie, detailing, ochrona lakieru i oferta dla firm.",
+    title: `${site.name} - szablon strony na sprzedaż`,
+    description: "Gotowy, w pełni responsywny szablon strony dla myjni samochodowej. Projekt na sprzedaż, do rozbudowy o chatbota i agenta AI.",
     locale: "pl_PL",
     type: "website",
     siteName: site.name,
@@ -65,7 +64,6 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-full flex-col bg-white text-foreground">
         <SkipLink />
-        <StructuredData />
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}

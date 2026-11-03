@@ -7,12 +7,12 @@ import type { Locale } from "@/lib/i18n";
 const copy = {
   pl: {
     featured: "Najczęściej wybierany",
-    choose: "Zarezerwuj",
+    choose: "Zapytaj o wycenę",
     contactHref: "/kontakt",
   },
   en: {
     featured: "Most popular",
-    choose: "Book now",
+    choose: "Ask for a quote",
     contactHref: "/en/contact",
   },
 };

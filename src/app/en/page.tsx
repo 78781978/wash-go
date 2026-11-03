@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, SprayCan, Sparkles, Droplets, Star, Building2 } from "lucide-react";
 import { MotionReveal, MotionStagger, MotionItem } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
+import { ForSaleBanner } from "@/components/ForSaleBanner";
 import { HeroVisual } from "@/components/HeroVisual";
 import { Marquee } from "@/components/Marquee";
 import { StatCounter } from "@/components/StatCounter";
@@ -11,7 +12,6 @@ import { PricingCard } from "@/components/PricingCard";
 import { GalleryTile } from "@/components/GalleryTile";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { site } from "@/lib/site-config";
 import {
   faqs,
   galleryItems,
@@ -23,10 +23,12 @@ import {
   values,
 } from "@/lib/site-config.en";
 
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
+
 export const metadata: Metadata = {
-  title: "Wash & Go, Premium hand car wash",
+  title: "Wash & Go - website template for sale",
   description:
-    "Wash & Go is a premium hand car wash in Goleniów. Hand washing, detailing, ceramic coatings, and fleet packages for businesses.",
+    "A ready-made, fully responsive website template for a car wash or detailing business. For sale, extendable with a chatbot, an AI agent and more.",
 };
 
 const marqueeItems = [
@@ -50,6 +52,7 @@ const featuredServices = serviceCategories.flatMap((c) => c.services).filter((s)
 export default function HomeEn() {
   return (
     <>
+      <ForSaleBanner />
       <section className="relative overflow-hidden bg-navy">
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-blue/25 blur-3xl animate-float-slow" />
         <div className="pointer-events-none absolute -left-24 top-1/2 h-80 w-80 rounded-full bg-blue-2/15 blur-3xl animate-float-slower" />
@@ -72,13 +75,15 @@ export default function HomeEn() {
               </p>
             </MotionReveal>
             <MotionReveal delay={0.24} className="mt-9 flex flex-wrap items-center gap-4">
-              <Link
-                href="/en/contact"
+              <a
+                href={FB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="group flex items-center gap-2 rounded-full bg-blue px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
               >
-                Book a visit
+                Buy this template
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
               <Link
                 href="/en/pricing"
                 className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
@@ -299,23 +304,19 @@ export default function HomeEn() {
         <div className="relative mx-auto max-w-3xl px-5 text-center sm:px-8">
           <MotionReveal>
             <h2 className="font-display text-3xl font-semibold text-white text-balance sm:text-4xl">
-              Book your car in today
+              Like what you see?
             </h2>
             <p className="mt-4 text-base text-white/60">
-              Call, message, or just drive in, we&apos;re waiting for you in {site.city}.
+              This website template is for sale and ready to deploy for your business.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/en/contact"
+              <a
+                href={FB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full bg-blue px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2"
               >
-                Book a visit
-              </Link>
-              <a
-                href={site.phoneHref}
-                className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Call: {site.phone}
+                Message us on Facebook
               </a>
             </div>
           </MotionReveal>
