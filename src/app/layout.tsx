@@ -28,13 +28,6 @@ export const metadata: Metadata = {
   },
   description:
     "Gotowy, w pełni responsywny szablon strony dla myjni samochodowej i firmy detailingowej. Projekt na sprzedaż, do rozbudowy o chatbota, agenta AI i inne funkcje.",
-  keywords: [
-    "szablon strony myjnia",
-    "projekt strony na sprzedaż",
-    "strona dla myjni samochodowej",
-    "szablon strony detailing",
-    "wash & go",
-  ],
   metadataBase: new URL(`${siteUrl}/`),
   robots: {
     index: false,
