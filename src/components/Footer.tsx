@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 import { Logo } from "./Logo";
 import { footerLegalLinks as footerLegalLinksPl, navLinks as navLinksPl, site as sitePl } from "@/lib/site-config";
 import { footerLegalLinks as footerLegalLinksEn, navLinks as navLinksEn, site as siteEn } from "@/lib/site-config.en";
@@ -28,7 +28,7 @@ function InstagramIcon({ className }: { className?: string }) {
 
 const copy = {
   pl: {
-    tagline: "Ręczna myjnia samochodowa w Goleniowie. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.",
+    tagline: "Ręczna myjnia samochodowa. Dbamy o Twoje auto z precyzją, jakiej oczekujesz od salonu.",
     nav: "Nawigacja",
     legal: "Informacje prawne",
     contact: "Kontakt",
@@ -40,7 +40,7 @@ const copy = {
     credit: "Projekt i realizacja:",
   },
   en: {
-    tagline: "A hand car wash in Goleniów. We take care of your car with the precision you'd expect from a showroom.",
+    tagline: "A hand car wash. We take care of your car with the precision you'd expect from a showroom.",
     nav: "Navigation",
     legal: "Legal",
     contact: "Contact",
@@ -130,14 +130,6 @@ export function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-2" />
                 {site.address}
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 shrink-0 text-blue-2" />
-                <a href={site.phoneHref} className="hover:text-white">{site.phone}</a>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 shrink-0 text-blue-2" />
-                <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-blue-2" />

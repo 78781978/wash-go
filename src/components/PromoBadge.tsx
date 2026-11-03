@@ -1,25 +1,24 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { localeFromPathname } from "@/lib/i18n";
 
 const copy = {
   pl: {
-    line1: "10.",
-    line2: "MYCIE",
-    line3: "GRATIS!",
-    href: "/kontakt",
-    aria: "Promocja: co dziesiąte mycie gratis, przejdź do kontaktu",
+    line1: "NA",
+    line2: "",
+    line3: "SPRZEDAŻ",
+    aria: "Ten projekt strony jest na sprzedaż, napisz do nas",
   },
   en: {
-    line1: "10th",
-    line2: "WASH",
-    line3: "FREE!",
-    href: "/en/contact",
-    aria: "Promotion: every 10th wash free, go to contact",
+    line1: "FOR",
+    line2: "",
+    line3: "SALE!",
+    aria: "This website project is for sale, message us",
   },
 };
+
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
 
 export function PromoBadge() {
   const pathname = usePathname();
@@ -27,8 +26,10 @@ export function PromoBadge() {
   const t = copy[locale];
 
   return (
-    <Link
-      href={t.href}
+    <a
+      href={FB_URL}
+      target="_blank"
+      rel="noreferrer"
       aria-label={t.aria}
       className="fixed right-3 top-1/2 z-40 -translate-y-1/2 xl:right-[90px] 2xl:right-[145px]"
     >
@@ -50,6 +51,6 @@ export function PromoBadge() {
           </span>
         </span>
       </span>
-    </Link>
+    </a>
   );
 }

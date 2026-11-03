@@ -21,8 +21,8 @@ import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReve
 import { stats, values } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "O nas - myjnia Goleniów",
-  description: "Poznaj historię i wartości myjni Wash & Go, ręcznej myjni samochodowej premium w Goleniowie.",
+  title: "O nas - przykładowa strona",
+  description: "Przykładowa treść o firmie, część gotowego szablonu strony na sprzedaż.",
 };
 
 const facility = [
@@ -80,16 +80,10 @@ export default function ONasPage() {
               samochodów, od miejskich kompaktów po samochody kolekcjonerskie i floty firmowe.
             </p>
             <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              Znajdziesz nas w Goleniowie, gdzie od ponad roku rozwijamy się razem z naszymi klientami, dziś to
+              Rozwijamy się razem z naszymi klientami, dziś to
               ponad 5000 umytych samochodów rocznie i grono stałych bywalców, którzy powierzają nam swoje auta.
               Dla tych, którzy cenią wygodę, oferujemy również odbiór i dostawę pojazdu, dzięki czemu czyste
               auto możesz mieć bez odrywania się od codziennych obowiązków.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-foreground/60">
-              <strong className="font-semibold text-navy">
-                Warto wiedzieć, że dotychczasowa myjnia Auto Lab Detailing Q zmieniła nazwę na Wash&amp;Go
-              </strong>
-              , to ta sama sprawdzona ekipa i jakość usług, teraz pod nowym szyldem.
             </p>
           </MotionReveal>
         </div>

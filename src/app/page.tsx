@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, SprayCan, Sparkles, Droplets, Star, Building2 } from "lucide-react";
 import { MotionReveal, MotionStagger, MotionItem } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
+import { ForSaleBanner } from "@/components/ForSaleBanner";
 import { HeroVisual } from "@/components/HeroVisual";
 import { Marquee } from "@/components/Marquee";
 import { StatCounter } from "@/components/StatCounter";
@@ -17,16 +18,15 @@ import {
   pricingTiers,
   processSteps,
   serviceCategories,
-  site,
   stats,
   testimonials,
   values,
 } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Myjnia Goleniów - Wash & Go",
+  title: "Wash & Go - szablon strony na sprzedaż",
   description:
-    "Wash & Go, ręczna myjnia samochodowa w Goleniowie. Mycie ręczne, detailing, powłoki ceramiczne i mycie flot firmowych. Bez rezerwacji, zadzwoń lub wjedź.",
+    "Gotowy, w pełni responsywny szablon strony dla myjni samochodowej i firmy detailingowej. Projekt na sprzedaż, do rozbudowy o chatbota, agenta AI i inne funkcje.",
 };
 
 const marqueeItems = [
@@ -47,9 +47,12 @@ const featuredServices = serviceCategories.flatMap((c) => c.services).filter((s)
   ["mycie-reczne", "wosk-ochronny", "odkurzanie-tapicerki", "powloka-ceramiczna"].includes(s.slug)
 );
 
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
+
 export default function Home() {
   return (
     <>
+      <ForSaleBanner />
       <section className="relative overflow-hidden bg-navy">
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-blue/25 blur-3xl animate-float-slow" />
         <div className="pointer-events-none absolute -left-24 top-1/2 h-80 w-80 rounded-full bg-blue-2/15 blur-3xl animate-float-slower" />
@@ -57,7 +60,7 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-5 pb-20 pt-16 sm:px-8 sm:pb-28 sm:pt-20 lg:grid-cols-2 lg:gap-10">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-2">
-              Ręczna myjnia samochodowa premium w Goleniowie
+              Ręczna myjnia samochodowa premium
             </span>
             <h1 className="mt-6 max-w-xl font-display text-4xl font-semibold leading-[1.08] text-white text-balance sm:text-5xl lg:text-[3.4rem]">
               Twoje auto zasługuje na więcej niż mycie.
@@ -72,13 +75,15 @@ export default function Home() {
               </p>
             </MotionReveal>
             <MotionReveal delay={0.24} className="mt-9 flex flex-wrap items-center gap-4">
-              <Link
-                href="/kontakt"
+              <a
+                href={FB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="group flex items-center gap-2 rounded-full bg-blue px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2 hover:shadow-blue-2/40"
               >
-                Umów wizytę
+                Kup ten szablon
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
               <Link
                 href="/cennik"
                 className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
@@ -299,23 +304,19 @@ export default function Home() {
         <div className="relative mx-auto max-w-3xl px-5 text-center sm:px-8">
           <MotionReveal>
             <h2 className="font-display text-3xl font-semibold text-white text-balance sm:text-4xl">
-              Umów swoje auto na dziś
+              Spodobał Ci się ten projekt?
             </h2>
             <p className="mt-4 text-base text-white/60">
-              Zadzwoń - czekamy na Ciebie w Goleniowie.
+              Ten szablon strony jest na sprzedaż i gotowy do wdrożenia dla Twojej firmy.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/kontakt"
+              <a
+                href={FB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full bg-blue px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue/30 transition-all hover:bg-blue-2"
               >
-                Umów wizytę
-              </Link>
-              <a
-                href={site.phoneHref}
-                className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Zadzwoń: {site.phone}
+                Napisz do nas na Facebooku
               </a>
             </div>
           </MotionReveal>

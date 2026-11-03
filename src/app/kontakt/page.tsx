@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { MapPin, Clock, Sparkles, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { ContactForm } from "@/components/ContactForm";
 import { MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config";
 
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
+
 export const metadata: Metadata = {
-  title: "Kontakt - myjnia Goleniów",
-  description: "Skontaktuj się z myjnią Wash & Go w Goleniowie, adres, telefon, e-mail, godziny otwarcia i formularz kontaktowy.",
+  title: "Kontakt - szablon strony na sprzedaż",
+  description: "Zainteresowany/a tym szablonem strony dla myjni lub firmy detailingowej? Sprawdź jak się z nami skontaktować.",
 };
 
 const infoCards = [
-  { icon: MapPin, label: "Adres", value: site.address },
-  { icon: Phone, label: "Telefon", value: site.phone, href: site.phoneHref },
-  { icon: Mail, label: "E-mail", value: site.email, href: `mailto:${site.email}` },
+  { icon: MapPin, label: "Przykładowy adres", value: site.address },
   {
     icon: Clock,
-    label: "Godziny otwarcia",
+    label: "Przykładowe godziny otwarcia",
     value: `Pon-Pt: ${site.hoursWeekdays}\nSob: ${site.hoursSaturday}\nNiedz: ${site.hoursSunday}`,
   },
 ];
@@ -27,8 +26,8 @@ export default function KontaktPage() {
       <PageHero
         eyebrow="Kontakt"
         crumb="Kontakt"
-        title="Porozmawiajmy o Twoim aucie"
-        description="Zadzwoń, napisz lub wjedź bez rezerwacji, chętnie doradzimy najlepszy zakres usług."
+        title="Zainteresowany/a tym projektem?"
+        description="To w pełni funkcjonalny szablon strony dla myjni samochodowej lub firmy detailingowej, dostępny do kupienia i dalszej personalizacji."
       />
 
       <section className="bg-white py-24">
@@ -44,53 +43,45 @@ export default function KontaktPage() {
                     <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       {c.label}
                     </p>
-                    {c.href ? (
-                      <a href={c.href} className="mt-1 block whitespace-pre-line text-sm font-medium text-navy hover:text-blue">
-                        {c.value}
-                      </a>
-                    ) : (
-                      <p className="mt-1 whitespace-pre-line text-sm font-medium text-navy">{c.value}</p>
-                    )}
+                    <p className="mt-1 whitespace-pre-line text-sm font-medium text-navy">{c.value}</p>
                   </div>
                 ))}
               </MotionReveal>
 
-              <MotionReveal delay={0.1} className="relative overflow-hidden rounded-2xl bg-navy p-8">
-                <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
-                <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue/25 blur-3xl" />
-                <div className="relative">
-                  <MapPin className="h-8 w-8 text-blue-2" />
-                  <p className="mt-4 font-display text-lg font-semibold text-white">{site.city}</p>
-                  <p className="mt-1 text-sm text-white/60">{site.address}</p>
-                  <a
-                    href={site.mapsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
-                  >
-                    <Navigation className="h-4 w-4" />
-                    Wyznacz trasę w Google Maps
-                  </a>
-                </div>
+              <MotionReveal delay={0.1} className="rounded-2xl border border-line bg-mist p-6">
+                <p className="text-sm leading-relaxed text-foreground/65">
+                  Powyższe dane (adres, godziny otwarcia) to przykładowa treść demonstracyjna, gotowa do
+                  podmiany na dane Twojej firmy po zakupie szablonu.
+                </p>
               </MotionReveal>
             </div>
 
-            <MotionReveal delay={0.15}>
-              <ContactForm />
+            <MotionReveal delay={0.15} className="relative overflow-hidden rounded-3xl bg-navy p-8 text-center sm:p-10">
+              <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
+              <div className="relative flex flex-col items-center gap-4">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-blue-2">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  Projekt na sprzedaż
+                </span>
+                <h2 className="font-display text-2xl font-semibold text-white">
+                  Ten projekt strony jest na sprzedaż
+                </h2>
+                <p className="max-w-sm text-sm leading-relaxed text-white/65">
+                  Kompletny, w pełni responsywny szablon dla myjni samochodowej lub firmy detailingowej.
+                  Można go rozbudować o chatbota, agenta AI i inne funkcje, dopasowane do Twojego biznesu.
+                </p>
+                <a
+                  href={FB_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 inline-flex items-center gap-2 rounded-full bg-blue px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-2"
+                >
+                  Napisz do nas na Facebooku
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
             </MotionReveal>
           </div>
-
-          <MotionReveal delay={0.2} className="mt-8">
-            <div className="overflow-hidden rounded-2xl border border-line">
-              <iframe
-                title="Mapa dojazdu - Wash & Go"
-                src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
-                className="h-[420px] w-full grayscale-[15%]"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </MotionReveal>
         </div>
       </section>
     </>

@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Info, PhoneCall } from "lucide-react";
+import { Info } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { PricingCard } from "@/components/PricingCard";
 import { MotionStagger, MotionReveal } from "@/components/MotionReveal";
-import { site } from "@/lib/site-config";
 import { pricingTiers } from "@/lib/site-config.en";
 
 export const metadata: Metadata = {
-  title: "Pricing - Wash & Go",
-  description: "Pricing for Wash & Go hand car wash, the full list of exterior wash, interior cleaning and add-on services.",
+  title: "Pricing - example wash packages",
+  description: "Example car wash pricing, part of a ready-made website template for sale.",
 };
 
 export default function PricingPage() {
@@ -59,13 +58,6 @@ export default function PricingPage() {
               >
                 Our business offer
               </Link>
-              <a
-                href={site.phoneHref}
-                className="flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                <PhoneCall className="h-4 w-4" />
-                {site.phone}
-              </a>
             </div>
           </MotionReveal>
         </div>

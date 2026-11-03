@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { MapPin, Clock, Sparkles, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
-import { ContactForm } from "@/components/ContactForm";
 import { MotionReveal } from "@/components/MotionReveal";
 import { site } from "@/lib/site-config.en";
 
+const FB_URL = "https://www.facebook.com/profile.php?id=61591915780293";
+
 export const metadata: Metadata = {
-  title: "Contact - Wash & Go",
-  description: "Get in touch with Wash & Go, address, phone, email, opening hours and contact form.",
+  title: "Contact - website template for sale",
+  description: "Interested in this website template for a car wash or detailing business? See how to get in touch.",
 };
 
 const infoCards = [
-  { icon: MapPin, label: "Address", value: site.address },
-  { icon: Phone, label: "Phone", value: site.phone, href: site.phoneHref },
-  { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
+  { icon: MapPin, label: "Example address", value: site.address },
   {
     icon: Clock,
-    label: "Opening hours",
+    label: "Example opening hours",
     value: `Mon-Fri: ${site.hoursWeekdays}\nSat: ${site.hoursSaturday}\nSun: ${site.hoursSunday}`,
   },
 ];
@@ -27,10 +26,10 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         crumb="Contact"
-        title="Let's talk about your car"
+        title="Interested in this project?"
         homeHref="/en"
         homeLabel="Home"
-        description="Call, message, or drive in without a booking, we're happy to recommend the best service for you."
+        description="This is a fully functional website template for a car wash or detailing business, available to buy and customise further."
       />
 
       <section className="bg-white py-24">
@@ -46,53 +45,45 @@ export default function ContactPage() {
                     <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-foreground/65">
                       {c.label}
                     </p>
-                    {c.href ? (
-                      <a href={c.href} className="mt-1 block whitespace-pre-line text-sm font-medium text-navy hover:text-blue">
-                        {c.value}
-                      </a>
-                    ) : (
-                      <p className="mt-1 whitespace-pre-line text-sm font-medium text-navy">{c.value}</p>
-                    )}
+                    <p className="mt-1 whitespace-pre-line text-sm font-medium text-navy">{c.value}</p>
                   </div>
                 ))}
               </MotionReveal>
 
-              <MotionReveal delay={0.1} className="relative overflow-hidden rounded-2xl bg-navy p-8">
-                <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
-                <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue/25 blur-3xl" />
-                <div className="relative">
-                  <MapPin className="h-8 w-8 text-blue-2" />
-                  <p className="mt-4 font-display text-lg font-semibold text-white">{site.city}</p>
-                  <p className="mt-1 text-sm text-white/60">{site.address}</p>
-                  <a
-                    href={site.mapsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
-                  >
-                    <Navigation className="h-4 w-4" />
-                    Get directions on Google Maps
-                  </a>
-                </div>
+              <MotionReveal delay={0.1} className="rounded-2xl border border-line bg-mist p-6">
+                <p className="text-sm leading-relaxed text-foreground/65">
+                  The data above (address, opening hours) is example demo content, ready to be replaced
+                  with your own business details after purchasing the template.
+                </p>
               </MotionReveal>
             </div>
 
-            <MotionReveal delay={0.15}>
-              <ContactForm locale="en" />
+            <MotionReveal delay={0.15} className="relative overflow-hidden rounded-3xl bg-navy p-8 text-center sm:p-10">
+              <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
+              <div className="relative flex flex-col items-center gap-4">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-blue-2">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  Project for sale
+                </span>
+                <h2 className="font-display text-2xl font-semibold text-white">
+                  This website project is for sale
+                </h2>
+                <p className="max-w-sm text-sm leading-relaxed text-white/65">
+                  A complete, fully responsive template for a car wash or detailing business. It can be
+                  extended with a chatbot, an AI agent, and other features tailored to your business.
+                </p>
+                <a
+                  href={FB_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 inline-flex items-center gap-2 rounded-full bg-blue px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-2"
+                >
+                  Message us on Facebook
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
             </MotionReveal>
           </div>
-
-          <MotionReveal delay={0.2} className="mt-8">
-            <div className="overflow-hidden rounded-2xl border border-line">
-              <iframe
-                title="Directions map - Wash & Go"
-                src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
-                className="h-[420px] w-full grayscale-[15%]"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </MotionReveal>
         </div>
       </section>
     </>

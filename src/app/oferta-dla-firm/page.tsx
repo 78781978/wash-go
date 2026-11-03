@@ -4,11 +4,11 @@ import { Building2, FileText, CalendarClock, Users, ArrowRight, Check } from "lu
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionStagger, MotionItem, MotionReveal } from "@/components/MotionReveal";
-import { fleetPlans, site } from "@/lib/site-config";
+import { fleetPlans } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Oferta dla firm - myjnia Goleniów",
-  description: "Mycie floty samochodowej Wash & Go w Goleniowie, rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
+  title: "Oferta dla firm - przykładowa oferta",
+  description: "Przykładowa oferta mycia floty samochodowej, rabaty, faktura zbiorcza i priorytetowa obsługa dla firm i leasingodawców.",
 };
 
 const benefits = [
@@ -127,12 +127,6 @@ export default function OfertaDlaFirmPage() {
                 Wyślij zapytanie
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <a
-                href={`mailto:${site.email}`}
-                className="flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
-              >
-                {site.email}
-              </a>
             </div>
           </MotionReveal>
         </div>
